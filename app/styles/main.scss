@@ -26,7 +26,101 @@
   margin: auto;
 }
 
-// FAVORITING
+// Test Stuff
+
+.test-unit{
+  margin-bottom: 1em;
+  cursor: pointer;
+  .test-photo{
+    width: 100%;
+    border-radius: $radius $radius 0 0;
+    @include maintain-ratio(1 1);
+    background-size: cover;
+    position: relative;
+    .icon-gold-star {
+      @include sprite-dimensions($view-sprite, Star_Gray_Filled);
+      background: sprite($view-sprite, Star_Gray_Filled) no-repeat;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+    }
+    .gradient-overlay{
+      width: 100%;
+      height: 100%;
+      @include background-image (linear-gradient(rgba(0,0,0,0) 80%, rgba(0,0,0,.5)));
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .discount{
+      position: absolute;
+      bottom: .5em;
+      left: 1em;
+      font-size: 1.25em;
+      color: white;
+      .sale-price{
+        padding-left: .5em;
+        color: $green;
+        font-weight: bold;
+      }
+    }
+  }
+  .test-caption{
+    width: 100%;
+    background: $white;
+    padding: 1em;
+    border: 1px solid $beige;
+    border-top: none;
+    border-radius: 0 0 $radius $radius;
+    color: $black;
+  }
+}
+
+.test-full{
+  padding: 1em;
+  border: 1px solid $beige;
+  margin-bottom: 2em;
+
+  .product-image{
+    width: 25%;
+    float: left;
+    margin-right: 2.5%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .product-description{
+    float: left;
+    width: 72.5%;
+  }
+}
+
+.module{
+  width: 100%;
+  margin: 0;
+  padding: 2em 0;
+}
+
+.strikethrough{
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    left: -10%;
+    top: 50%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: $green;
+    width: 120%;
+
+    -webkit-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    transform:rotate(-15deg);
+  }
+}
 
 
 

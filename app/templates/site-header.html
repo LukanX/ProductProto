@@ -1,0 +1,101 @@
+<header id="top" role="banner" class="site-header" ng-controller="HeaderCtrl">
+        <nav id="menu-utility" class="menu-utility site-menu-utility">
+          <div class="container">
+            <ul class="menu-utility-list">
+              <li class="menu-utility-item js-has-popup" ng-class="{'is-open' : showCountries}">
+                <span class="menu-utility-link popup-menu-toggle js-popup-toggle" aria-label="Select Language" ng-click = "showCountries = !showCountries">
+                  <i class="icon-sprited icon-flag-us" aria-label=" Select Country"></i>
+                </span>
+                <ul class="popup-menu">
+                  <li class="popup-menu-item">
+                    <a class="popup-menu-link" href="">
+                      <i class="icon-sprited icon-flag-canada"></i> Canada
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-utility-item js-has-popup js-signuplogin" ng-class="{'is-open' : showAccount}">
+                <span class="menu-utility-link popup-menu-toggle js-popup-toggle" ng-click ="showAccount = !showAccount"href="">My Account</span>
+                <ul class="popup-menu">
+                  <li class="popup-menu-item">
+                    <a class="popup-menu-link js-login"
+                       href=""
+                       data-toggle="modal"
+                       data-target="#loginModal">Log In</a>
+                  </li>
+                  <li class="popup-menu-item">
+                    <a class="popup-menu-link js-onboard" href="">Join For Free</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-utility-item js-favorited-stores-menu-item">
+                <a class="menu-utility-link" href="/community/edit-favorites/">
+                  <i class="icon-sprited icon-heart"
+                     aria-label=" Favorite Stores"></i>
+                </a>
+              </li>
+              <li class="menu-utility-item js-saved-coupons-menu-item">
+                <a class="menu-utility-link" href="/community/saved-coupons/">
+                  <i class="icon-sprited icon-gold-star"
+                     aria-label=" Saved Coupons"></i>
+                </a>
+              </li>
+              <li class="menu-utility-item">
+                <a class="menu-utility-link" href="/blog/">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <section class="site-header-main">
+          <div class="container">
+            <nav role="navigation" class="site-navigation">
+                <div id="logo" class="site-logo">
+                    <a href="/">
+                        <img class="logo js-lazy-img"  src="images/RMN-Logo.png" data-alt="Retail Me Not" />
+                    </a>
+                </div>
+
+                <div id="toggles" class="menu-site-toggles">
+                    <a href="#search-form" class="js-mobile-toggle icon icon-search"></a>
+                    <a href="#menu-utility" class="js-mobile-toggle icon icon-list"></a>
+                </div>
+                <div id="search-form" class="form-search-container">
+                  
+<form class="form-search inline-form-elements" role="search" action="/search.php" method="get">
+        <input class="query" name="query" type="search" placeholder="Kohls, Sephora, Best Buy..." aria-label="Search" autocomplete="off" /><button type="submit" class="button button--red button--search" data-track-category="Masthead" data-track-action="search">
+        <i class="icon icon-search button-image"></i>
+        <span class="button-text">Search</span>
+    </button>
+    <ul class="instant-results hide"></ul>
+</form>
+                </div>
+
+                <ul id="menu" class="menu-site">
+    <li class="menu-site-item js-has-popup" ng-class="{'is-open' : showBrowseCoupons}">
+      <a class="popup-menu-toggle js-popup-toggle" href="" ng-click="showBrowseCoupons = !showBrowseCoupons" data-before-text="Browse " aria-haspopup="true">Coupons</a>
+      <ul class="popup-menu">
+                          <li class="popup-menu-item"><a class="popup-menu-link" href="">Coupon Codes</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Product Deals</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Printable Coupons</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Free Shipping</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Only at RetailMeNot</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Gift Ideas</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="">Browse by Category</a></li>
+              </ul>
+    </li>
+    <li class="menu-site-item js-seasonal js-has-popup" ng-class="{'is-open' : showIdeas}">
+      
+              <a class="popup-menu-toggle js-popup-toggle" href="" ng-click="showIdeas = !showIdeas" aria-haspopup="true" data-track-category="Masthead" data-track-action="tab" data-track-label="Ideas">Ideas</a>
+        <ul class="popup-menu">
+          <li class="popup-menu-item"><a class="popup-menu-link" href="" data-track-category="Masthead" data-track-action="tab" data-track-label="Gift Ideas">Gift Ideas</a></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="" data-track-category="Masthead" data-track-action="tab" data-track-label="Blog">Shopping Tips</a></li>
+          <li class="popup-menu-item seperator"></li>
+          <li class="popup-menu-item"><a class="popup-menu-link" href="" data-track-category="Masthead" data-track-action="tab" data-track-label="View All Ideas">View all ideas</a></li>
+        </ul>
+          </li>
+</ul>
+            </nav>
+          </div>
+        </section>
+    </header>

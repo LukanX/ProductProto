@@ -1,3 +1,6 @@
+'use strict';
+
+
 angular.module('productsProtoApp')
   .controller('HeaderCtrl', function ($scope) {
     $scope.showBrowseCoupons = false;

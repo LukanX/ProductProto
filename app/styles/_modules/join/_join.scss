@@ -1,0 +1,59 @@
+.join-signup-section {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.join-signup {
+	@extend %full-width-text-inputs;
+	background-color: $white;
+	color: $black;
+
+	@include media ($breakpoint-320) {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+
+.join-signup-container {
+	@include media ($breakpoint-320) {
+	    max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+.join-signup-title {
+	@extend .h3;
+	text-align: left;
+
+	@include media ($breakpoint-320) {
+		text-align: center;
+	}
+}
+
+.join-signup-actions {
+	text-align: center;
+}
+
+// Full width and centered button.
+.join-signup-button {
+	text-align: center;
+	width: 100%;
+
+	@include media ($breakpoint-320) {
+		width: auto;
+	}
+}
+
+.join-signup-skip {
+	display: block;
+	margin: .5em auto 0;
+	padding: .5em;
+	max-width: 5em;
+
+	@include media ($breakpoint-320) {
+		margin-top: inherit;
+		margin-top: .5em;
+	}
+}

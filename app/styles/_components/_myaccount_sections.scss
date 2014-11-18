@@ -1,0 +1,21 @@
+.myaccount-container {
+  padding: $spacing*2 0;
+}
+.myaccount-page-title {
+    @extend .h3;
+    margin-bottom: 48px;
+    text-align: center;
+    @include media($breakpoint-500) {
+        text-align: left;
+    }
+}
+.myaccount-section-title {
+    @extend .h5;
+    margin-bottom: 36px;
+}
+.myaccount-li {
+    vertical-align: top;
+    position: relative;
+    line-height: 1.5em;
+    margin-bottom: 12px;
+}

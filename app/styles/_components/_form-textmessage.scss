@@ -1,0 +1,44 @@
+.form-textmessage {
+	.throb {
+		&:after {
+			display: none;
+
+			@include media($breakpoint-800) {
+				display: block;
+				left: 105%;
+				top: 25%;
+			}
+		}
+	}
+
+	.lt-ie10 & {
+		// Because IE8 and IE9 hate us all
+		input[name="phone_number"] {
+			width: 82%;
+		}
+	}
+
+	@include media($breakpoint-1100) {
+		input[name="phone_number"] {
+			min-width: 21em;
+		}
+	}
+}
+
+.form-textmessage-button {
+	width: auto;
+	min-width: 5em;
+}
+
+.form-textmessage-legal {
+	font-size: .75em;
+	margin-top: 1em;
+}
+
+.form-textmessage-input-error {
+	background: $error-background;
+	border: 1px solid $error-color;
+	color: $error-color;
+	margin-top: .5em;
+}
+

@@ -1,0 +1,35 @@
+.form-date-inline {
+	border: 1px solid $beige;
+	border-radius: $radius;
+	display: inline;
+	padding: 0.5em;
+}
+
+.form-date-inline-input {
+	// Remove the space between
+	// inline elements
+	display: inline-block;
+	margin-right: -4px;
+
+	input {
+		border: none;
+		font-family: $sans-serif;
+		font-size: 0.9275em;
+		margin: 0;
+		outline: 0;
+		letter-spacing: 1px;
+
+		&[placeholder="MM"] { max-width: 2em; }
+		&[placeholder="DD"] { max-width: 1.6em; }
+		&[placeholder="YYYY"] { max-width: 3em; }
+	}
+
+	&:before {
+		content: "/";
+	}
+
+	&:first-child:before {
+		content: "";
+	}
+
+}

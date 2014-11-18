@@ -1,0 +1,156 @@
+.form-search {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+
+	.button--search {
+		width: 3em;
+		line-height: 1;
+
+		.lt-ie10 & {
+			// Because IE8 hates everyone
+			height: 3.3em;
+		}
+
+		.button-text {
+			font-weight: 600;
+			display: none;
+		}
+
+		.button-image {
+			font-size: 1.5em;
+		}
+	}
+
+	// For IE 8 and 9
+	input.query {
+		vertical-align: top;
+	}
+
+	@include media($breakpoint-800) {
+		input.query {
+			font-size: 1.2em;
+			width: 60%; // fallback width
+
+			&.completing {
+				border-bottom-left-radius: 0;
+			}
+		}
+		.button--search {
+			height: 3.4em;
+		}
+	}
+	@include media($breakpoint-1080) {
+		.button--search {
+			width: 7em;
+			padding: 1.2em;
+
+			.button-image {
+				display: none;
+			}
+
+			.button-text {
+				display: inline;
+			}
+		}
+	}
+}
+// =========================================================================
+// Header toggles
+// Used to hide/show mobile
+// =========================================================================
+
+#search-form {
+	display: none;
+
+	@include media($breakpoint-800) {
+		display: block!important;
+	}
+}
+
+.instant-results {
+	z-index: 2000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 3em;
+	background: $white;
+	border-top: 0;
+	box-shadow: 2px 5px 5px 1px $shadow-light,
+				inset 0 2px 0 0 $shadow-light;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-bottom-left-radius: $radius;
+	border-bottom-right-radius: $radius;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	overflow:hidden;
+
+	.lt-ie9 & {
+		// make the search results align to the left
+		left: 11px;
+	}
+
+	&.hide {
+		display: none;
+	}
+
+	.result {
+		border-top: 1px solid $beige;
+
+		&.active {
+			background: $light-beige;
+		}
+	}
+
+	.result-thumb {
+		display: table-cell;
+		width: 100px;
+		padding: 0.5em;
+		text-align: center;
+		vertical-align: middle;
+		background: $white;
+	}
+
+	.result-thumb-img {
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	.result-text {
+		padding: 0.5em;
+		text-align: left;
+	}
+
+	.resultTitle {
+		margin: 0;
+	}
+
+	.avg-savings {
+		font-size: 0.875em;
+		margin: 0;
+	}
+
+	.result-link {
+		color: $body-text;
+		display: table;
+		width: 100%;
+		overflow: hidden;
+		text-decoration: none;
+		padding: .5em;
+	}
+
+	@include media($breakpoint-480-max) {
+		display: none !important; // JS Show/Hide override
+	}
+
+	@include media($breakpoint-1080) {
+		right: 7em;
+		.lt-ie10 & {
+			left: 4em;
+			right: 11em;
+		}
+	}
+}

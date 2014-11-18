@@ -1,0 +1,21 @@
+.section-header {
+	color: $white;
+	text-align: center;
+	background-color: $light-purple;
+}
+
+.section-header-text-title {
+	@extend .h2; // Uses headings component.
+	color: $white;
+	margin: 0.25em auto;
+
+	//to avoid over-running the image
+	.lt-ie9 & {
+		max-width: 800px;
+		margin: 0 auto 5px;
+	}
+}
+
+.section-header-text-content {
+	margin: 0;
+}

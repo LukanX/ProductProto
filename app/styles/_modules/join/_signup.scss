@@ -1,0 +1,62 @@
+.join-signup-facebook {
+	text-align: center;
+
+	// overrides the default styling to make the text fit in mobile
+	.button--facebook-signin {
+		font-size: 1.15em;
+	}
+}
+
+.join-signup-small-text {
+	margin-top: $spacing;
+	font-size: .75em;
+}
+
+.join-signup-choice {
+	margin: 0 auto .5em;
+	position: relative;
+	height: 2.25em;
+
+	@include media ($breakpoint-800) {
+		height: 3em;
+	}
+
+	&:after {
+		background-color: $beige;
+		content: ' ';
+		height: 2px;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 0;
+	}
+}
+
+.join-signup-or {
+	@extend .h5;
+	background-color: $white;
+	border: 2px solid $beige;
+	border-radius: 50%;
+	height: 2em;
+	line-height: 2em;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transform: translateX(-50%); // iOS Safari support
+	-ms-transform: translateX(-50%); // IE9 support
+	transform: translateX(-50%);  // Offset the element so that it is centered.
+	width: 2em;
+	z-index: 1;
+
+	.lt-ie9 & {
+		left: 47%;
+	}
+}
+
+.join-signup-email-alerts {
+	border: none;
+	padding: 0;
+	margin: 0;
+}

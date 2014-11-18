@@ -1,0 +1,231 @@
+
+
+/* Styleguide Styling
+========================================================================== */
+main {
+    padding: 0 0 3%;
+}
+
+.styleguide-section {
+  margin-bottom: 6em;
+}
+
+.styleguide-pattern {
+  margin-bottom: 1.5em;
+}
+
+.styleguide-pattern fieldset {
+  margin-bottom: 1.5em;
+}
+
+.styleguide-section-header,
+.styleguide-dev,
+.styleguide-design {
+  margin-bottom:1.5em;
+}
+
+.styleguide-actions button {
+  margin-bottom: 0.5em;
+}
+
+.styleguide-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.styleguide-section-header {
+    .h1 {
+        max-width: 225px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 22px;
+    }
+}
+
+.styleguide-element-link {
+  text-decoration: underline;
+}
+
+.styleguide-script-info {
+  margin-top: 1em;
+}
+
+
+/* Annotations
+========================================================================== */
+.styleguide-info {
+  ul, ol{
+    margin-bottom:1em;
+  }
+
+  ul{
+    list-style-type: disc;
+    padding-left: 1.2em;
+  }
+
+  ol{
+    list-style-type: decimal;
+    padding-left: 1.5em;
+  }
+}
+
+
+/* Color Swatches
+========================================================================== */
+.sg-colors {
+  font-family: $mono;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.sg-swatch {
+  width: 100%;
+  float: none;
+  display: block;
+  height: 0;
+  padding-bottom: 25%;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(45deg, #F1F1F1 25%, transparent 25%, transparent 75%, #F1F1F1 75%, #F1F1F1),
+                      -webkit-linear-gradient(45deg, #F1F1F1 25%, transparent 25%, transparent 75%, #F1F1F1 75%, #F1F1F1);
+    background-size: 10px 10px;
+    background-position:0 0, 5px 5px;
+    z-index:-1;
+  }
+
+  @media (min-width: 800px) {
+    padding-bottom: 75%;
+  }
+}
+
+.sg-colors-mini {
+  margin-top: 0.5em;
+  font-size: 0.875em;
+
+}
+.sg-colors-mini-item {
+  list-style-type: none;
+  display: table;
+  margin-bottom: 0.5em;
+
+  .sg-swatch {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    padding-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .sg-label {
+    display: inline-block;
+    padding: 0 1em;
+    font-family: monospace;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+}
+
+/* Background Colors for Styleguide Demos
+========================================================================== */
+.on-purple {
+  background: $purple;
+}
+.on-red {
+  background: $red;
+}
+.on-white {
+  background: $white;
+}
+
+/* Icon Grid
+========================================================================== */
+.sg-icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  [class*="icon-"] {
+    font-size: 2em;
+    min-width: 2em;
+    margin-bottom: 0.5em;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+/* Logo Display
+========================================================================== */
+
+.sg-logos {
+
+  .grid-unit {
+    text-align: center;
+  }
+
+  img {
+    padding: 2em;
+  }
+}
+
+/* Font Display
+========================================================================== */
+.font-serif {
+  font-family: $serif;
+  font-weight: 100;
+}
+
+.font-sans {
+  font-family: $sans-serif;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.font-monospace {
+  font-family: $monospace;
+}
+
+/* ==========================================================================
+  Show-Grid helper class
+========================================================================== */
+.show-grid {
+  text-align:center;
+  .grid-row {
+    background-color: rgba( #ddd, 0.7 );
+  }
+
+  .grid-unit {
+    color: $white;
+    padding: 0 0 !important;  // Helper class specificity override
+    margin-bottom: .25em !important; // Helper class specificity override.
+    margin-top: .25em;
+    min-height: 1em !important; // Helper class specificity override.
+    background-color: rgba( $purple, 0.9 ) !important // Helper class specificity override
+  }
+
+  .grid-unit.col-flip {
+    background-color: $red !important; // Helper class specificity override
+  }
+
+  div[class*="grid-"] {
+    border-radius: 5px;
+    margin-bottom: .5em;
+    padding: .5em 0;
+    min-height: 1.5em;
+    display: block
+  }
+}

@@ -1,0 +1,108 @@
+// ==========================================================================
+//	 Utility Styles
+// ==========================================================================
+
+// Visually Hidden
+// ==========================================================================
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visually-hidden {
+	position: absolute !important; // Ensure element is not displayed inline
+	clip: rect( 1px 1px 1px 1px ); /* IE6, IE7 */
+	clip: rect( 1px, 1px, 1px, 1px );
+	padding: 0 !important; // Specificity override
+	border: 0 !important; // Specificity override
+	height: 1px !important; // Specificity override
+	width: 1px !important; // Specificity override
+	overflow: hidden;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when
+ navigated to via the keyboard: h5bp.com/p */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+// Needed for Beacon Images
+// ==========================================================================
+
+.hidden {
+	display: none !important;  // adding important so this will always hides.
+}
+
+/* Microclearfix
+	 ==========================================================================
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+}
+
+.clearfix:after {
+		clear: both;
+}
+
+// For IE 6/7 only
+// Include this rule to trigger hasLayout and contain floats.
+.clearfix {
+		*zoom: 1;
+}
+
+// Centering Content in Module
+// ==========================================================================
+.centered {
+	text-align: center;
+}
+
+// Skip Nav Links
+// ==========================================================================
+.skip-nav {
+	position: absolute;
+	left: -100%;
+	z-index: 2000;
+
+	color: $purple;
+
+	&:focus {
+		left: 0;
+		background: $white;
+		padding: 0.5em;
+	}
+}
+
+
+// // Base Throb styling
+// // Set the positioning in the context of the use
+// // ==========================================================================
+// .throb {
+// 	position: relative;
+
+// 	&:after {
+// 		background: image-url("load.gif") no-repeat right center;
+// 		content: '';
+// 		display: block;
+// 		height: image-height("load.gif") - 1;
+// 		position: absolute;
+// 		width: image-width("load.gif");
+
+// 		// Vertically center and kick to the right of the element by $spacing
+// 		margin: auto 0 auto $spacing;
+// 		left: 100%;
+// 		top: 0;
+// 		bottom: 0;
+// 	}
+// }

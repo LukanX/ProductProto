@@ -1,0 +1,8 @@
+.top-coupons {
+	background: $light-beige;
+}
+.top-coupons-title {
+    @extend .h2;
+    margin-bottom: 0.5em;
+    text-align: center;
+}

@@ -1,0 +1,128 @@
+$coupon-logo-container-height: 200px;
+$coupon-logo-dimension: 150px;
+$coupon-logo-dimension-tablet-portrait-only: 100px;
+
+.coupon-square {
+	background: white;
+	margin-bottom: 30px;
+	border: solid 1px $beige;
+	@include clearfix;
+}
+
+.coupon-square-logo {
+	position: relative;
+	text-align: center;
+	height: $coupon-logo-container-height;
+	line-height: $coupon-logo-container-height;
+
+	@include media($breakpoint-tablet-portrait-only) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 40%;
+		height: auto;
+		line-height: 100%;
+	}
+}
+
+.coupon-square-img {
+	max-height: $coupon-logo-dimension;
+	max-width: $coupon-logo-dimension;
+
+	// centers vertically and horizontally
+	// requires a static height to work.
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	@include media($breakpoint-tablet-portrait-only) {
+		max-height: $coupon-logo-dimension-tablet-portrait-only;
+		max-width: $coupon-logo-dimension-tablet-portrait-only;
+	}
+}
+
+.coupon-square-type {
+	text-align: left;
+}
+
+.coupon-square-body {
+	padding: 18px;
+	padding-bottom: 42px;
+	position: relative;
+	text-align: center;
+	.grid-unit {
+		display: inline-block;
+	}
+	@include media($breakpoint-tablet-portrait-only) {
+		margin-left: 40%;
+	}
+	@include media($breakpoint-fwapping) {
+		padding-bottom: 18px;
+	}
+}
+
+.coupon-icon-star {
+	cursor: pointer;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	@include user-select( none );
+
+	.icon-star {
+		@include sprite-dimensions($view-sprite, Heart_Beige_Outline_Filled_24px);
+		background: sprite($view-sprite, Star_Beige_Trans) no-repeat;
+		&:before {
+			content: "";
+		}
+	}
+
+	&.checked .icon-star {
+		background: sprite($view-sprite, Star_Yellow) no-repeat;
+	}
+}
+
+.coupon-square-cta {
+	white-space: nowrap;
+	width: 130px;
+	float: right;
+	margin-bottom: 18px;
+	padding: 12px 0;
+	@include media($breakpoint-fwapping) {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+.coupon-star-input {
+	&:checked + label {
+		.icon-star {
+			background: sprite($view-sprite, Star_Yellow) no-repeat;
+		}
+	}
+}
+
+.coupon-square-details {
+	font-size: 0.8em;
+	white-space: nowrap;
+	float: left;
+
+	@include media($breakpoint-fwapping) {
+		&.grid-unit {
+			display: none;
+		}
+	}
+}
+
+.coupon-square-title {
+	text-align: left;
+	color: $black;
+	cursor: pointer;
+	font-size: 1.25em;
+	margin-bottom: 1em;
+	overflow: hidden;
+	min-height: 3.5em;
+}

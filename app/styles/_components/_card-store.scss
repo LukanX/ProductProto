@@ -1,0 +1,99 @@
+.card-store {
+	text-align: center;
+	@include media($breakpoint-800) {
+		margin-bottom: 0;
+	}
+    &::before {
+        content: "";
+        @include transition ( opacity 0.2s );
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        z-index: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: solid 1px red;
+        opacity: 0;
+    }
+}
+
+.card-store-help::before {
+    opacity: 1;
+}
+
+.card-store-logo {
+	background: $white;
+	margin-bottom: 1em;
+	padding: 1.5em;  // enough to not allow hearts to touch.
+	text-align: center;
+}
+
+.card-store-value-text {
+	text-overflow: ellipsis;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+	&:after {
+		content: ' \00bb';
+		display: inline;
+	}
+}
+
+.card-store-favorite-icon {
+	background: $transparent;
+	border: 0;
+	cursor: pointer;
+	display: block;
+	font-size: 1em;
+	padding: 0.5em;  // overridden by default styling in _forms
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+
+	.icon-heart {
+		@include sprite-dimensions($view-sprite, Heart_Beige_Outline_Filled_24px);
+		background: sprite($view-sprite, Heart_Beige_Outline_Filled_24px) no-repeat;
+	}
+
+	&.checked .icon-heart {
+		background: sprite($view-sprite, Heart_Red_Filled_24px) no-repeat;
+	}
+}
+
+// Modifiers
+/////////////////////////////////////////////////
+.card-store--outline {
+    border: solid 1px $beige;
+}
+
+.card-store--stacked {
+	border-left: 1px solid $beige;
+	border-bottom: 1px solid $beige;
+	position: relative;
+
+	&:before, &:after {
+		background: $lightest-beige;
+		border-left: 1px solid $beige;
+		border-bottom: 1px solid $beige;
+		content: "";
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	&:before {
+		top: 4px;
+		left: -5px;
+		z-index: -1;
+		@include transform( rotate( -2deg ));
+	}
+
+	&:after {
+		top: 3px;
+		left: 3px;
+		z-index: -2;
+		@include transform( rotate( .5deg ));
+	}
+}

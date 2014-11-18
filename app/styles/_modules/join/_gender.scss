@@ -1,0 +1,70 @@
+.gender-box {
+    position: relative;
+    border: solid 1px $dark-beige;
+    height: 168px;
+    width: 168px;
+    padding-top: 25px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        @include sprite-dimensions($view-sprite,"Checkmark_Off");
+        background: sprite($view-sprite,"Checkmark_Off");
+    }
+}
+.gender-center-row {
+    text-align: center;
+}
+.gender-unit {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.lt-ie9 {
+    .gender-center-row, .gender-hr {
+        display: none;
+    }
+}
+
+.gender-input:checked {
+    & + .gender-unit .gender-box {
+        border-color: $green;
+    }
+    & + .gender-unit .gender-caption {
+        color: $green;
+    }
+    & + .gender-unit .gender-box:after {
+            background: sprite($view-sprite,"Checkmark_On");
+    }
+}
+
+.gender-caption {
+    text-align: center;
+    color: $dark-beige;
+    font-weight: bold;
+}
+.gender-icon {
+    margin: 0 auto 15px auto;
+    background-repeat: no-repeat;
+}
+.gender-man {
+    @include sprite-dimensions($view-sprite,"OB_Man");
+    background: sprite($view-sprite,"OB_Man");
+}
+
+.gender-woman {
+    @include sprite-dimensions($view-sprite,"OB_Woman");
+    background: sprite($view-sprite,"OB_Woman");
+}
+
+.gender-kids {
+    @include sprite-dimensions($view-sprite,"OB_Kids");
+    background: sprite($view-sprite,"OB_Kids");
+    margin-top: 15px;
+}
+
+.gender-baby {
+    @include sprite-dimensions($view-sprite,"OB_Baby");
+    background: sprite($view-sprite,"OB_Baby");
+    margin-top: 11px;
+}

@@ -1,0 +1,56 @@
+.unauth-fave-modal-content {
+	@extend .modal-content;
+	border-radius: 0;
+}
+
+.unauth-fave-modal-section-header {
+	background-color: $purple;
+	padding: 2em 2em 4em;
+}
+
+.unauth-fave-modal-title {
+	@extend .h3;
+	color: $white;
+	text-align: center;
+}
+
+.unauth-fave-modal-text {
+	color: $white;
+	text-align: center;
+	margin: 0;
+}
+
+.unauth-fave-modal-actions {
+	padding: 4em 2em 2em;
+	position: relative;
+	text-align: center;
+}
+
+.unauth-fave-modal-seperator-img {
+	@include sprite-dimensions($view-sprite, timer-icon);
+	@include transform( translateX(-50%) );
+	background: sprite($view-sprite, timer-icon) no-repeat;
+	left: 50%;
+	position: absolute;
+	top: -(image-height(sprite-file($view-sprite, timer-icon)) / 2);
+
+	.lt-ie9 & {
+		left: 42%;
+	}
+}
+
+.unauth-fave-modal-cta {
+	.button {
+		margin-bottom: .5em;
+		@include media($breakpoint-500) {
+			margin-left: 1em; // add some space between buttons
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.unauth-fave-modal-login {
+	display: block; // force the login link to the another row
+}

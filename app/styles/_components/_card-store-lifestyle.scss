@@ -1,0 +1,56 @@
+$store_logo_size: 75px;
+$lifestyle_image_height: 600px;
+$lifestyle_image_width: 800px;
+
+.coupon-lifestyle {
+	margin-top: 2em;
+	max-width: $lifestyle_image_width;  // So the image doesn't stretch too far
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	@include media($breakpoint-800) {
+		margin-top: 0;
+	}
+}
+
+.coupon-lifestyle-background-image {
+	@include image-scale-aspect-ratio($lifestyle_image_height $lifestyle_image_width);  // Calculated aspect ratio
+	background-color: $lightest-beige;
+	border: 1px solid $beige;
+}
+
+.coupon-lifestyle-content {
+	@include clearfix;
+	// clear the floated containers
+	background-color: $shadow-light;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	position: absolute;
+	width: 100%;
+}
+
+.coupon-lifestyle-store-logo {
+	background-color: $white;
+	display: block;
+	float: left;
+	margin: 0 .5em 0 0;
+	max-height: $store_logo_size;
+	max-width: $store_logo_size;
+	padding: 5px;
+}
+
+.coupon-lifestyle-discount-text {
+	color: $white;
+	font-family: $sans-serif;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.coupon-lifestyle-title {
+	color: $white;
+	font-family: $sans-serif;
+	overflow: hidden;
+}

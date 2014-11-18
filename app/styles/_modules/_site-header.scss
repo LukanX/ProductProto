@@ -1,0 +1,149 @@
+// Requires components/menu, components/search, components/utility-menu
+
+/* ==========================================================================
+   Site Header
+   ========================================================================== */
+.site-header {
+	background: $purple;
+	color: $white;
+	position: relative;
+	z-index: 100;
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	@include media($breakpoint-800-max) {
+		.container {
+			width: 100%;
+		}
+	}
+
+	/* Header popups
+	========================================================================= */
+	.has-popup {
+		cursor: pointer;
+		-ms-touch-action: none; /* Enable FastClick */
+	}
+
+	.popup-menu {
+		box-shadow: 0 5px 5px $shadow-light;
+		top: 100%;
+	}
+
+}
+
+/* Header toggles
+========================================================================= */
+.menu-utility,
+#search-form {
+	display:none;
+}
+
+@include media($breakpoint-800) {
+	.menu-utility,
+	#search-form {
+		display: block!important;
+	}
+}
+
+/* ==========================================================================
+ Site Navigation teir: Grid cell and Logo sizing.
+ ========================================================================== */
+.site-navigation {
+	@include clearfix;
+	position: relative;
+
+	.site-logo {
+		display: block;
+		padding-top: 0.75em;
+		padding-bottom: 0.5em;
+		margin-left: 4%;
+		width: 120px;
+	}
+
+	.form-search-container {
+		padding: .5em 4%;
+
+		// Prevent ie8 from wrapping the
+		// search button as the viewport narrows
+		.lt-ie9 & {
+			white-space: nowrap;
+		}
+	}
+
+	.form-search {
+		width: 100%;
+
+		// Make sure the search form doesn't
+		// wrap in ie8/9
+		.lt-ie10 & {
+			white-space: nowrap;
+
+			// keep this from being inherited
+			// in the drop down results
+			.result {
+				white-space: normal !important;
+			}
+		}
+	}
+
+	@include media($breakpoint-800) {
+		// Need to stay in lockstep
+		$logo-medium-width:  160px;
+
+		padding-left: $logo-medium-width;
+
+		.site-logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: $logo-medium-width;
+			display: block;
+			padding: 0 1em 0 0;
+			margin-left: 0;
+		}
+
+		.form-search-container {
+			float: right;
+			padding: 0 0 0 3.33333%;
+			width: 58%;
+			position: relative;
+		}
+
+		.form-search {
+			bottom: auto;
+			padding: 0;
+			position: relative;
+		}
+	}
+
+	@include media($breakpoint-1000) {
+		// Need to stay in lockstep
+		$logo-large-width: 220px;
+
+		padding-left: $logo-large-width;
+
+		.site-logo {
+			width: $logo-large-width;
+			padding-top: 0em;
+			padding-left: 0;
+			padding-right: 2em;
+		}
+
+		// Fix the width of the search dropdown
+		// for ie8
+		.lt-ie10 & .instant-results {
+			left: 0;
+			width: 21em;
+		}
+	}
+
+}
+
+@include media($breakpoint-800) {
+	.site-header-main {
+		padding: 24px 0;
+	}
+}

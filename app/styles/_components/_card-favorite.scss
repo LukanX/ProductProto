@@ -1,0 +1,44 @@
+.card-favorite {
+	border: 1px solid $beige;
+	margin-bottom: 2em;
+	text-align: center;
+	width: auto;
+	@include media($breakpoint-800) {
+		margin-bottom: 0;
+	}
+}
+
+.card-favorite-logo {
+	background: $white;
+	cursor: pointer;
+	padding: .5em;
+	text-align: center;
+
+	.icon-heart {
+		background: sprite($view-sprite, Heart_Beige_Outline_Filled_24px) no-repeat;
+		@include sprite-dimensions($view-sprite, Heart_Beige_Outline_Filled_24px);
+	}
+
+	&.checked .icon-heart {
+		background: sprite($view-sprite, Heart_Red_Filled_24px) no-repeat;
+	}
+}
+
+.card-favorite-logo-img {
+	vertical-align: middle;
+}
+
+.card-favorite-label {
+	background: $transparent;
+	border: 0;
+	display: block;
+	font-size: 1em;
+	position: relative;
+	text-align: center;
+}
+
+.card-favorite-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}

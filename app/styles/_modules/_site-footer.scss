@@ -1,0 +1,125 @@
+.site-footer {
+	background: $purple;
+	color: $white;
+
+	.grid-row {
+		padding-bottom: 1em;
+	}
+
+	.button {
+		margin-bottom: 1em;
+
+		.icon {
+			margin: 0.05em 0.5em 0 0;
+			vertical-align: text-top;
+		}
+	}
+
+	@include media($breakpoint-500) {
+		.grid-row {
+			padding-bottom: 3em;
+		}
+	}
+
+}
+
+.cssimg-logo-r {
+	@include sprite-dimensions($view-sprite, rmn_r_white);
+	background: sprite($view-sprite, rmn_r_white) no-repeat;
+	display: inline-block;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+
+.site-footer-title,
+.site-footer-tagline {
+	@extend .h4;
+	color: $white;
+}
+
+.site-footer-title-link {
+	color: $white;
+}
+
+.site-footer-list-link {
+	color: $white;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 1.25;
+	padding: 0.45em 0;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+.site-footer-tagline {
+	border-top: 1px solid $dark-purple;
+	margin: 0 0 1em;
+	padding-top: 1.5em;
+
+	// currently we do not display the tagline
+	// for phones
+	@include media($breakpoint-480-max) {
+		display:none;
+	}
+}
+
+.site-footer-sitemap {
+	display: inline-block;
+	margin: 1.5em 0;
+}
+
+.site-footer-sitemap-link {
+	color: $white;
+	display: inline-block;
+	margin: 0 0.25em;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.site-footer-small-text {
+	font-size: 0.875em;
+	margin: 0 auto 1.5em;
+	max-width: 60em;
+}
+
+// Button Bar
+// ========================================================================== //
+.button-bar {
+	background: $dark-purple;
+	margin-bottom: 1.5em;
+	padding: 0.5em 1.5% 0.5em;
+
+	.button {
+		margin: 0.5em 1.5%;
+		width: 46%;
+
+		.icon {
+			display: block;
+			margin: 0 auto 0.5em;
+			line-height:1.15;
+		}
+	}
+
+	@include media($breakpoint-500) {
+		.button .icon {
+			display: inline-block;
+			margin: 0 0.25em 0 0;
+			vertical-align: text-top;
+		}
+	}
+
+	@include media($breakpoint-680) {
+		padding: 2em 0;
+
+		.button {
+			margin: 0.5em;
+			max-width: 10em;
+			width: 20%;
+		}
+	}
+}

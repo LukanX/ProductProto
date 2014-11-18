@@ -1,0 +1,6 @@
+$serif: "Adelle", Georgia, "Times New Roman", serif;
+$sans-serif: "Helvetica Neue", sans-serif;
+$mono: monospace;
+
+@include font-face( 'Adelle', font-url( 'adelle-lining-figures/adellelf-light-webfont', true ), 100);
+@include font-face( 'rmn-iconfont', font-url( 'rmn-iconfont/rmn-iconfont', true ));

@@ -1,0 +1,21 @@
+.top-picks-six {
+	// Adjacent sibling combinator - http://www.w3.org/TR/selectors/
+	// TLDR; Only remove padding if .top-picks-placements is immediately above it
+	.top-picks-placements + & {
+		padding-top: 0;
+	}
+}
+
+.top-picks-six-title {
+	@extend .h3;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.top-picks-six-subtext {
+	text-align: center;
+}
+
+.top-picks-six-text-red {
+	color: $red;
+}

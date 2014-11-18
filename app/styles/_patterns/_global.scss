@@ -1,0 +1,75 @@
+/* ==========================================================================
+	 Global Site Styles
+	 ========================================================================== */
+* {
+	@include box-sizing( border-box );
+}
+
+@-ms-viewport {width: device-width}
+@-o-viewport {width: device-width}
+
+html {
+	overflow-y:auto;
+}
+
+body {
+	background: $white;
+	color: $body-text;
+	font: 93.75%/1.6 $sans-serif;
+	font-weight: 400;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	// TODO: The following fixes bad font rendering in Chrome. May be fixed in future.
+	//		Watch this space. https: //code.google.com/p/chromium/issues/detail?id=152304 */
+	// TODO: provides for similar rendering on OSX as seen in Safari and Chrome */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video,
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+	display: block;
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: top;
+	font-style: normal;
+}
+
+small {
+	font-size: 12px;
+}
+
+strong {
+	font-weight: 600;
+}
+
+ul, ol, p {
+	margin: 0 0 1.5em;
+}
+
+a img {
+	border: 0; // Remove borders in IE8
+}
+
+/* Links
+	 ========================================================================== */
+a {
+	color: $blue;
+	text-decoration: none;
+}
+
+/* Custom HR! */
+hr {
+    border-top: 1px solid $beige;
+    border-bottom:0;
+    margin-bottom: 1.5em;
+}

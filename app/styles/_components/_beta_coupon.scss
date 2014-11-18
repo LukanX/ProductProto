@@ -1,0 +1,156 @@
+.coupon-list {
+  background: $white;
+  border-top: 1px solid $beige;
+  margin-bottom: 1em;
+
+  li {
+    padding: 1.75em 0;
+    border-bottom: 1px solid $beige;
+  }
+}
+
+.coupon {
+  padding: 0;
+  min-height: 90px;
+  position: relative;
+
+  .coupon-media {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background: white;
+    margin-right: 1em;
+    display: block;
+    border: 1px solid $beige;
+    margin-bottom: 1em;
+    text-align: center;
+
+    img {
+      max-width: 85%;
+      vertical-align: middle;
+    }
+  }
+
+  p {
+    margin:0;
+  }
+
+  .coupon-title {
+    font-weight: 400;
+    color: $black;
+    font-size: 28px;
+    line-height: 32px;
+    margin:0 0 16px;
+    min-height: 90px;
+    margin-left: 106px;
+  }
+
+  .coupon-actions {
+    text-align: right;
+    margin-bottom: 1em;
+    @extend .clearfix;
+
+    .button--primary {
+      float: left;
+    }
+  }
+
+  .coupon-details {
+    font-size: 0.8em;
+    clear: both;
+
+    .truncated {
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+      }
+
+      p:nth-of-type(n+2) {
+        display:none;
+      }
+    }
+
+    button {
+      appearance: none;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      padding:0 0.5em;
+    }
+
+    .coupon-details-toggle {
+      float:right;
+      background: $beige;
+      border-radius: 1.5em;
+      color: $white;
+      font-weight: bold;
+      padding:0.25em 0.5em;
+    }
+
+    .social-proof {
+      font-size: 1.2em;
+      position: relative;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      a {
+        color: $body-text;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+
+      .success {
+        color: #79b223; // TODO: Define color (Green?)
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    padding: 0 12em 0 116px;
+    min-height: 100px;
+
+    .coupon-title {
+      margin: 0 0 0.25em;
+      width: auto;
+      min-height: 0;
+    }
+
+    .coupon-media {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .coupon-actions {
+      position:absolute;
+      right: 0;
+      top: 0;
+
+      .actions {
+        display: block;
+        clear:both;
+        margin-top:1em;
+      }
+
+      .button--primary {
+        float: none;
+      }
+
+
+    }
+  }
+}

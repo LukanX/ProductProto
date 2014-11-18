@@ -1,0 +1,275 @@
+// 	Grid
+// ===========================================================================
+//
+// |        | 0px   | 320px | 600px | 800px | 1000px |
+// ===================================================
+// | .col-2	| 1 col	|   →   |   →	  | 2 col |	  →    |
+// | .col-3	| 1 col |	  →   |   →	  | 3 col | 	→    |
+// | .col-4	| 1 col |	2 col |   →	  |	4 col | 	→    |
+// | .col-6	| 1 col |	2 col |	3 col |  →	  |	6 col  |
+//
+// =========================================================================== /
+
+// Variables, Mixins, and Functions
+// --------------------------------------------------------------------------- /
+$gutter: 3.2%;
+
+//
+// Get width of 1 column in a given context
+//
+@function one-col( $context ) {
+	@return ((100% - ($gutter * ($context - 1))) / $context);
+}
+
+//
+// Generate ratio-based multicolumn sizes.
+// $ratio: a string like "1 of 3"
+//
+@mixin columns( $ratio ) {
+	// Create variables from parsed string
+	$cols: nth($ratio, 1);
+	$context: nth($ratio, 3);
+
+	// Add defaults for non-multicolumn grid-units.
+	@if $cols < 2 {
+		margin-right: $gutter;
+		float: left;
+	}
+
+	// Set the width of the grid-units.
+	width: (one-col( $context ) * $cols) + (($cols - 1) * $gutter);
+}
+
+//
+// Add content choreography support for reverse floated columns
+//
+@mixin flip-column-support() {
+	.grid-unit.col-flip {
+		float: right;
+
+		// Switch margin on right-aligned grid-units
+		margin-right: 0 !important;
+		margin-left: $gutter;
+	}
+}
+
+// Containers
+// -------------------------------------------------------------------------- //
+.container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+		@include media($breakpoint-800) {
+			width: 95%;
+		}
+}
+
+/* NOTE: box-sizing + padding on .container was affecting grid math, so a nested
+   div was needed to pull content off the container wall. */
+.padded-container {
+	padding: 3.3333%;
+}
+
+.site-header + .site-main + .padded-container {
+	padding-top: 4.5%;
+}
+
+// Global Grid Settings
+// -------------------------------------------------------------------------- //
+.grid-row {
+	@include clearfix();
+}
+
+.grid-padded-row {
+	@extend .grid-row;
+	margin: 0 0 1.5em;
+}
+
+.grid-unit {
+	position: relative;
+}
+
+// 2 Column Grid
+// -------------------------------------------------------------------------- //
+.col-2 {
+	@include media($breakpoint-600) {
+		.grid-unit {
+			@include columns(1 of 2);
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		@include flip-column-support();
+	}
+}
+
+// 3 Column Grid
+// -------------------------------------------------------------------------- //
+.col-3 {
+	@include media($breakpoint-800) {
+		.grid-unit {
+			@include columns(1 of 3);
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		.grid-unit.col-2 {
+			@include columns(2 of 3);
+		}
+
+		@include flip-column-support();
+	}
+}
+
+// 4 Column Grid
+// -------------------------------------------------------------------------- //
+.col-4 {
+	@include media($breakpoint-320) {
+		.grid-unit {
+			@include columns(1 of 2);
+
+			&:nth-of-type(even) { margin-right: 0; }
+			&:nth-of-type(odd)	{ clear:left; }
+			&:last-of-type		{ margin-right: 0; }
+		}
+
+		.grid-unit.col-2 {
+			@include columns(1 of 1);
+
+			& + .grid-unit {
+				margin-right: $gutter;
+				clear: left;
+
+				& + .grid-unit {
+					clear: none;
+				}
+			}
+		}
+		.grid-unit.col-4 {
+			@include columns(1 of 1);
+
+			& + .grid-unit {
+				margin-right: $gutter;
+				clear: left;
+			}
+		}
+	}
+
+	@include media($breakpoint-800) {
+		.grid-unit {
+			@include columns(1 of 4);
+
+			&:nth-of-type(even)	{ margin-right: $gutter; }
+			&:nth-of-type(odd)	{ clear:none; }
+			&:nth-of-type(4n)		{ margin-right: 0; }
+		}
+
+		.grid-unit.col-2 {
+			@include columns(2 of 4);
+
+			& + .grid-unit {
+				margin-right: $gutter;
+				clear: none;
+
+			}
+		}
+
+		.grid-unit + .grid-unit.col-2 + .grid-unit {
+			margin-right: 0;
+		}
+
+		@include flip-column-support();
+	}
+}
+
+// 6 Column Grid
+// -------------------------------------------------------------------------- //
+.col-6 {
+	@include media($breakpoint-320) {
+		.grid-unit {
+			@include columns(1 of 2);
+
+			&:nth-of-type(even) { margin-right: 0; }
+			&:nth-of-type(odd)	{ clear: left; }
+		}
+	}
+
+	@include media($breakpoint-600) {
+		.grid-unit {
+			@include columns(1 of 3);
+
+			&:nth-of-type(even)	{ margin-right: $gutter; }
+			&:nth-of-type(odd)	{ clear: none; }
+			&:nth-of-type(3n)	{ margin-right: 0; }
+			&:nth-of-type(4n)	{ clear: left; }
+		}
+	}
+
+	@include media($breakpoint-1000) {
+		.grid-unit {
+			@include columns(1 of 6);
+
+			&:nth-of-type(3n)	{ margin-right:  $gutter; }
+			&:nth-of-type(4n)	{ clear: none; }
+			&:last-of-type		{ margin-right: 0; }
+		}
+	}
+}
+
+/* ==========================================================================
+	Show-Grid helper class
+	NOTE: Can be removed from production
+========================================================================== */
+.show-grid {
+	.grid-row {
+		background-color: $beige;
+		background-color: $shadow-light;
+	}
+
+	.grid-unit {
+		color: $white;
+		padding: 0 0 !important;  // Helper class specificity override
+		margin-bottom: .25em !important; // Helper class specificity override.
+		margin-top: .25em;
+		min-height: 3em !important; // Helper class specificity override.
+		line-height: 3em !important;
+		background-color: $purple !important // Helper class specificity override
+	}
+
+	.grid-unit.col-flip {
+		background-color: $red !important; // Helper class specificity override
+	}
+
+	div[class*="grid-"] {
+		border-radius: 5px;
+		margin-bottom: .5em;
+		padding: .5em 0;
+		min-height: 1.5em;
+		display: block
+	}
+}
+
+
+// ==========================================================================
+//	IE8 Support
+//	NOTE: I'm so sorry
+//========================================================================== */
+
+.lt-ie9 {
+	body {
+		min-width: 800px;
+	}
+
+	.col-2 .grid-unit,
+	.col-3 .grid-unit,
+	.col-4 .grid-unit,
+	.col-6 .grid-unit {
+		margin-right: 1.5%;
+	}
+}

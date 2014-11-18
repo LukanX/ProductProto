@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Utility Menu and popup menus
+   ========================================================================== */
+
+$view-sprite: sprite-map("../images/utility-icons/*.png");
+
+.menu-utility {
+	@include clearfix;
+	background: $dark-purple;
+
+	@include media($breakpoint-800) {
+		font-size: 0.875em;
+		text-align: right;
+	}
+
+	// Popup Menu Styling
+	// ------------------------------------------------------------------------- /
+	.popup-menu-toggle {
+		&:after {
+			content: " \25BC";
+			font-size: 9px;
+		}
+	}
+
+	.popup-menu {
+		background: $darker-purple;
+		display: none;
+		margin-bottom: 0;
+		position: relative;
+	}
+
+	.popup-menu-block {
+		background: $white;
+		color: $body-text;
+		padding: 1em;
+		text-align: left;
+	}
+
+	.popup-menu-link {
+		display: block;
+		font-weight: 600;
+		padding: 0.25em 0.5em;
+
+		&:hover {
+			background: $darkest-purple;
+		}
+	}
+
+	@include media($breakpoint-800) {
+
+		.popup-menu {
+			min-width: 100%;
+			position: absolute;
+			right: 0;
+			width: auto;
+			z-index: 100;
+		}
+
+		.popup-menu-block {
+			min-width: 320px;
+		}
+
+		.popup-menu-item {
+			display: block;
+			margin-left: 0;
+			float: none;
+		}
+
+		.popup-menu-link {
+			padding: 0.5em 1em;
+			white-space: nowrap;
+		}
+	}
+
+	// Utility Menu Icons
+	// ------------------------------------------------------------------------- /
+	.icon-sprited {
+		display: inline-block;
+		padding-left: 24px;
+		pointer-events: none;
+		position: relative;
+	}
+
+	.icon-sprited[aria-label] {
+		font-style: normal;
+		width: auto;
+
+		&:after {
+			content: attr(aria-label);
+			display: inline-block;
+		}
+	}
+
+	// Flags for country selection
+	.icon-flag-us {
+		@include sprite-dimensions($view-sprite, Flag_Tiny_US);
+		background: sprite($view-sprite, Flag_Tiny_US) no-repeat;
+		padding-left: 28px;
+	}
+
+	.icon-flag-canada {
+		@include sprite-dimensions($view-sprite, Flag_Tiny_Canada);
+		background: sprite($view-sprite, Flag_Tiny_Canada) no-repeat;
+		padding-left: 28px;
+	}
+
+	// Lucky Charms
+	.icon-heart {
+		@include sprite-dimensions($view-sprite, Heart_White_Outline);
+		background: sprite($view-sprite, Heart_White_Outline) no-repeat;
+	}
+
+	.icon-gold-star {
+		@include sprite-dimensions($view-sprite, Star_White_Outline);
+		background: sprite($view-sprite, Star_White_Outline) no-repeat;
+	}
+
+	// Active States
+	.active .icon-heart {
+		background: sprite($view-sprite, Heart_Red_Filled) no-repeat;
+	}
+
+	.active .icon-gold-star  {
+		background: sprite($view-sprite, Star_Gold_Filled) no-repeat;
+	}
+
+	@include media($breakpoint-800) {
+		.icon-sprited[aria-label]:after {
+			content: '';
+		}
+	}
+
+}
+
+.menu-utility-list {
+	margin-bottom: 0;
+}
+
+.menu-utility-item {
+	position: relative;
+
+	&.is-open {
+		background: $darker-purple;
+
+		.popup-menu {
+			display: block !important; // JS Show/Hide override
+		}
+	}
+}
+
+.menu-utility-link {
+	line-height: image-height(sprite-file($view-sprite, Star_White_Outline));
+	font-weight: 600;
+	padding: 0.5em;
+	display: block;
+	cursor: pointer;
+}
+
+@include media($breakpoint-800) {
+	.menu-utility-item  {
+		float: right;
+		display: inline-block;
+		position: relative;
+		border-left: 1px solid $darker-purple;
+
+		&:last-of-type {
+			border: 0;
+		}
+	}
+
+	.menu-utility-link {
+		display: inline-block;
+		padding: 0.5em 1em;
+	}
+}
+
+
+/** JS Enabled Utility Menu
+ * Scoped to .site-header so it is visible in Pattern Lab.
+**/
+.js .site-header .menu-utility {
+	display: none;
+
+	@include media($breakpoint-800) {
+		display: block !important; // JS Show/Hide override
+	}
+}
+
+.logged-out-msg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $darker-purple;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}

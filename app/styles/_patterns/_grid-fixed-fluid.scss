@@ -1,0 +1,42 @@
+// Fixed-Fluid Grid
+// --------------------------------------------------
+$fix-width: 230px;
+
+.grid-fixed-fluid {
+
+  @media (min-width: 800px) {
+    .fixed {
+      width: $fix-width;
+      float: left;
+    }
+
+    .fluid {
+      padding-left: 3.2%;
+      margin-left: $fix-width;
+    }
+
+    &.show-gutter-line {
+      // Gutter Line
+      @include background-image(linear-gradient(to right, color-stops(
+          #ccc,
+          #ccc 50%,
+          transparent 50%,
+          transparent
+        )
+      ));
+      background-size: 2px 100%;
+      background-repeat: no-repeat;
+      background-position: calc( #{$fix-width} + 1.6%) top;
+      // End Gutter Line
+    }
+  }
+}
+
+.show-grid {
+  .fixed {
+    background: rgba(255,0,0,0.1);
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}

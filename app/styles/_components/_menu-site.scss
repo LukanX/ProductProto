@@ -1,0 +1,181 @@
+/* ==========================================================================
+# Menu
+
+// TODO: If test passes, update the following partials to support classes:
+// - placements.rmn_browse_coupons_dropdown
+// - placements.rmn_nav_tab
+========================================================================== */
+.menu-site {
+	@include clearfix;
+	z-index: 10;
+	padding-left: 0;
+	margin-bottom: 0;
+	border-top: 1px solid $dark-purple;
+
+	a {
+		background: $purple;
+		color: $white;
+		display: block;
+		font-weight: 600;
+		height: 55px;
+		line-height: 1.5em;
+		overflow: hidden;
+		padding-top: 0.75em;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 100%;
+	}
+
+	@include media($breakpoint-800) {
+		border: none;
+		width: 42%;
+	}
+
+	@include media($breakpoint-1100) {
+		[data-before-text]:before {
+			content: attr( data-before-text );
+		}
+	}
+
+	// Popup Menu Styling
+	// ------------------------------------------------------------------------- /
+	// Dropdown carrot
+	.popup-menu-toggle {
+		&:after {
+			content: " \25BC";
+			font-size: 9px;
+		}
+	}
+
+	.popup-menu {
+		background: $dark-purple;
+		display: none;
+		left: 0;
+		margin-bottom:0;
+		padding: 0.5em 0;
+		position: absolute;
+		width:100%;
+
+		a {
+			border: 0;
+			display: block;
+			height: auto;
+			line-height: 1.2em;
+			padding: 0.65em 1em;
+			text-align: left;
+
+			&:hover {
+				background: $darker-purple;
+			}
+		}
+
+		.seperator {
+			border-bottom: 1px solid $purple;
+			margin: 0 auto 0.25em;
+			padding: 0.25em 0;
+			width: 92%;
+		}
+	}
+
+	.popup-menu-item {
+		display: block;
+		line-height: 1.1em;
+		margin-left: 0;
+		text-align: left;
+	}
+
+
+	@include media($breakpoint-800) {
+		.popup-menu {
+			min-width: 12em;
+		}
+	}
+}
+// LIs
+.menu-site-item {
+	width: 50%;
+	float: left;
+	list-style-type: none;
+
+	&:last-of-type {
+		border-left: 1px solid $dark-purple;
+	}
+
+	&.is-open {
+		a {
+			background: $dark-purple;
+		}
+
+		.popup-menu {
+			display: block !important; // JS Show/Hide override
+		}
+	}
+
+	.lt-ie9 & {
+		// Because IE8 can't seem to apply a :first-child
+		margin-left: 4%;
+		width: 46%;
+	}
+
+	@include media($breakpoint-800) {
+		position: relative;
+		display: inline-block;
+
+		&:first-of-type {
+			width: 46%;
+		}
+
+		&:last-of-type {
+			margin-left: 8%;
+			width: 46%;
+			border-left: none;
+		}
+
+		> a {
+			background: $light-purple;
+			border-radius :$radius;
+			// NOTE: Changed font-size for more tolerance.
+			// font-size: 1.125em;
+			height: 3.4em;
+			line-height: 3.4em;
+			padding: 0 0.25em;
+		}
+
+		&.is-open > a {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			background: $dark-purple;
+		}
+	}
+
+	@include media($breakpoint-1100) {
+		// Kick in the "Better Button Text"
+		// Fudge this for MAXIMUM EXPERIENCE
+		&:first-of-type {
+			width: 52%;
+		}
+
+		&:last-of-type {
+			width: 40%;
+		}
+	}
+}
+
+.menu-site-toggles {
+	position: absolute;
+	right: 4%;
+	top: 0em;
+	font-size: 1.5em;
+
+	a {
+		font-size: 28px;
+		display: inline-block;
+		padding: 0.5em 0 0.5em 0.25em;
+	}
+
+	@include media($breakpoint-800) {
+		display: none;
+	}
+}

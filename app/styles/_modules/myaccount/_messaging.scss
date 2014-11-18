@@ -1,0 +1,47 @@
+.messaging-container {
+    @include clearfix;
+    background: $lightest-beige;
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding: 5%;
+    overflow: hidden;
+
+    @include media($breakpoint-500) {
+        text-align: left;
+        padding: 3.2%;
+        margin-bottom: 3em;
+    }
+}
+
+.messaging-title {
+    @extend .h5;
+    margin-bottom: 0;
+}
+
+.messaging-icon {
+    margin: 0 auto 5% auto;
+    @include media($breakpoint-500) {
+        margin: 0 3.2% 0 0;
+        float: left;
+    }
+}
+
+.faves-bottom .messaging-icon {
+    @include sprite-dimensions($view-sprite, search-icon);
+    background: sprite($view-sprite, search-icon);
+}
+
+.no-faves .messaging-icon {
+    @include sprite-dimensions($view-sprite, no-faves-icon);
+    background: sprite($view-sprite, no-faves-icon);
+}
+
+.anon-faves .messaging-icon {
+    @include sprite-dimensions($view-sprite, limited-time-icon);
+    background: sprite($view-sprite, limited-time-icon);
+}
+
+.fave-more .messaging-icon {
+    @include sprite-dimensions($view-sprite, fave-more-icon);
+    background: sprite($view-sprite, fave-more-icon);
+}

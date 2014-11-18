@@ -1,0 +1,22 @@
+.filters {
+  form {
+    border-top: 1px solid #d1d0c9;
+    padding-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.f-checkboxes {
+
+  .input {
+    padding: 0.3em 0;
+  }
+
+  input[type="reset"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ input[type="reset"] {
+    display: block;
+  }
+}

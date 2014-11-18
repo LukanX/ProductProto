@@ -1,0 +1,43 @@
+// Breakpoints
+//
+// Most of these breakpoints should be min-width
+// in rare cases there should be a max-width
+//////////////////////////////////////////////////
+
+@import "neat/neat";
+
+//Min-Width Breakpoints
+
+//Bumping up 1px to hit 320px phones
+$breakpoint-320: new-breakpoint(min-width 321px);
+
+$breakpoint-500: new-breakpoint(min-width 500px);
+
+$breakpoint-540: new-breakpoint(min-width 540px);
+
+$breakpoint-600: new-breakpoint(min-width 600px);
+
+$breakpoint-680: new-breakpoint(min-width 680px);
+
+$breakpoint-768: new-breakpoint(min-width 768px);
+
+$breakpoint-800: new-breakpoint(min-width 800px);
+
+$breakpoint-1000: new-breakpoint(min-width 1000px);
+
+$breakpoint-1080: new-breakpoint(min-width 1080px);
+
+$breakpoint-1100: new-breakpoint(min-width 1100px);
+
+
+//Max-Width Breakpoints
+
+$breakpoint-400-max: new-breakpoint(max-width 400px);
+
+$breakpoint-480-max: new-breakpoint(max-width 480px);
+
+$breakpoint-800-max: new-breakpoint(max-width 800px);
+
+$breakpoint-fwapping: new-breakpoint(max-width 900px min-width 800px);
+
+$breakpoint-tablet-portrait-only: new-breakpoint(max-width 799px min-width 500px);

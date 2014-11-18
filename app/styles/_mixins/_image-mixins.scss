@@ -1,0 +1,13 @@
+// Calculate the aspect ratio dimensions to scale images with (width/height)
+//
+// Usage
+//     @include image-scale-aspect-ratio( 600px 800px );
+//     @include image-scale-aspect-ratio( 9em 16em );
+@mixin image-scale-aspect-ratio($size) {
+	$width: nth($size, 1);
+	$height: nth($size, 2);
+
+	background-size: cover;
+	background-position: center;  /* Internet Explorer 7/8 */
+	padding-top: ($width/$height) * 100%; //use aspect ration percentage
+}

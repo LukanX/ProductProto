@@ -1,0 +1,382 @@
+.carousel {
+  position: relative;
+  -ms-touch-action: none;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  line-height: 1;
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+//  width: 15%;
+//  opacity: 0.5;
+//  filter: alpha(opacity=50);
+//  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.carousel-control.left {
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  z-index: 2000;
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  margin-bottom:0.75em;
+
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0.5em 0.3em 0;
+  text-indent: -999px;
+  border: 1px solid lighten($purple, 30%);
+  border-radius: 10em;
+  cursor: pointer;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  background-color: $purple;
+  border: 1px solid $purple;
+}
+
+.carousel-indicators {
+  @include media($breakpoint-500) {
+    display:none;
+  }
+}
+
+
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@include media($breakpoint-768) {
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+
+/* Custom styles
+----------------------------------------------------------------------------- */
+
+.carousel {
+  overflow: hidden;
+
+  @include media($breakpoint-500) {
+      margin-bottom:0;
+  }
+
+  .carousel-inner {
+    background: #555;
+
+    .item {
+      height: 100%;
+      min-height: 13em;
+      overflow:hidden;
+    }
+
+    .img {
+      display:none;
+      position: absolute;
+      right: 3.333333%;
+      height: 100%;
+      top: 0;
+      background-size: cover;
+      background-repeat:no-repeat;
+      background-position: center center;
+    }
+
+    .text {
+      color:#fff;
+      width: 100%;
+      padding: 2.2em 5% 0;
+
+      .title {
+        font-family: $adelle;
+        font-size: 2em;
+        line-height:1.25;
+        margin-bottom: 0.75em;
+      }
+      .subtext {
+          font-size:0.875em;
+        }
+
+    }
+
+    .item:after{
+      width:3.333333%;
+      background-color:inherit;
+      display:block;
+      content:'';
+      position:absolute;
+      height:100%;
+      right:0;
+      min-width: 32px;
+    }
+
+    @include media($breakpoint-500) {
+
+      .text {
+        width: 58%;
+        padding: 2em 2% 0 8.5%;
+        float: left;
+
+        .title {
+          font-size: 1.75em;
+        }
+
+        .subtext {
+          font-size:1em;
+        }
+      }
+      .img {
+        display: block;
+        width: 40%;
+      }
+    }
+
+    @include media($breakpoint-800) {
+        .item {
+        min-height: 16em;
+      }
+
+      .text {
+        width: 57%;
+        padding: 2.25em 2% 0 6%;
+        float: left;
+
+        .title {
+          font-size: 2.45em
+        }
+
+        .subtext {
+          font-size:1.25em;
+        }
+      }
+
+      .img {
+        display: block;
+        width: 43%;
+      }
+    }
+
+     @include media($breakpoint-1000) {
+      .item {
+        min-height: 22em;
+          .text {
+              width: 51%;
+              padding: 3.75em 2% 0 6.1%;
+          }
+
+          .img {
+              width: 47%;
+          }
+      }
+
+      .text {
+        .title {
+          font-size: 3em;
+        }
+      }
+    }
+
+    @include media($breakpoint-1100) {
+
+      .text {
+        .title {
+          font-size: 3.25em;
+        }
+      }
+    }
+
+  }
+}
+
+/* Fade In
+----------------------------------------------------------------------------- */
+.carousel-fade {
+  .carousel-inner {
+
+    .item {
+      opacity: 0;
+
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    .active.left,
+    .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+  }
+}
+.carousel-control {
+  text-decoration: none;
+  height: 100%;
+  width: 3.333333%;
+  min-width: 32px;
+  color: #fff;
+  font-size: 3.5em;
+  line-height:1;
+  background: rgba(0,0,0,0.2);
+  z-index: 2;
+  text-align:center;
+  padding-top:0.75em;
+  display:none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgba(0,0,0,0.4);
+  }
+
+  @include media($breakpoint-500) {
+      padding-top:1.1em;
+      display:inline;
+  }
+
+  @include media($breakpoint-800) {
+      padding-top:1.5em;
+  }
+
+  @include media($breakpoint-1000) {
+      padding-top:2.15em;
+  }
+}
+
+.carousel-inner a {
+  color:#fff;
+  text-decoration:none;
+  border-bottom:2px solid #fff;
+}
+
+.carousel-inner a:hover{
+  color:rgba(0,0,0,0.5);
+}
+
+.carousel-inner .subtext a{
+  border:none;
+}

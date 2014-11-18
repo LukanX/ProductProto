@@ -1,0 +1,12 @@
+.fb-message {
+    background: $light-beige;
+    border-radius: $radius*2;
+    padding: 1.5em 3.2%;
+    text-align: center;
+}
+.fb-message-banner {
+    margin-bottom: 1.5em;
+}
+.fb-message-title {
+    @extend .h5;
+}

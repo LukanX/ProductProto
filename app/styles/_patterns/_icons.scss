@@ -1,0 +1,28 @@
+.favs-inline, .stars-inline, .points-inline {
+    font-size: 1.25em;
+    vertical-align: top;
+    line-height: 32px;
+    margin-bottom: 6px;
+}
+
+%icon-inline {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.favs-inline::before {
+    @extend %icon-inline;
+    background: sprite($view-sprite, Heart_Red_Filled_24px) no-repeat;
+}
+.stars-inline::before {
+    @extend %icon-inline;
+    background: sprite($view-sprite, star_24) no-repeat;
+}
+.points-inline::before {
+    @extend %icon-inline;
+    background: sprite($view-sprite, menu_community, 0, 3) no-repeat;
+}

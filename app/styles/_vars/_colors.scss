@@ -1,0 +1,61 @@
+// Colors
+// -------------------------------------------------------------------------- */
+//== Purples
+$purple                   : #602D6C;
+$light-purple             : #784c82;
+$lightest-purple          : #6f3f7a; //Used in prototype
+$dark-purple              : #4b2354;
+$darker-purple            : darken( $dark-purple, 10% );
+$darkest-purple           : darken( $dark-purple, 20% ); // Utility popup a:hover
+
+//== Blues
+$blue                     : #259fc4;
+$darker-blue              : darken( $blue, 10% );
+
+//== Reds
+$red                      : #ea4545;
+$dark-red                 : darken( $red, 10% );
+
+//== Other Colors
+$green                    : #10B48A;
+$lighter-green						: lighten( $green, 10% );
+$darker-green             : darken( $green, 10% );
+$orange                   : #f16c3d; // Not in use
+$yellow                   : #e7b120;
+
+//== Beiges, Blacks, and Grays
+$lightest-beige           : #f9f9f7;
+$light-beige              : #efefe9;
+$beige                    : #d1d0c9;
+$dark-beige               : #a3a195; // Star Dust       // .button
+$darker-beige             : darken( $dark-beige, 10% ); // .button:hover
+
+//== Transparents, Whites, Blacks, and Shadows
+$black                    : #222222;
+$lightest-gray						: #ececec; //Used in prototype
+$light-gray								: #C4C4C4; //Used in prototype
+$gray                     : #646464; // Ironside Gray
+$off-white								: #f9f9f9; //Used in prototype
+$white                    : #ffffff;
+$body-text                : $gray;
+
+//== Transparents and Shadows
+$shadow-dark              : rgba( 0, 0, 0, 0.8 );
+$shadow-medium            : rgba( 0, 0, 0, 0.5 );
+$shadow-light             : rgba( 0, 0, 0, 0.2 );
+$transparent              : transparent;
+
+//== Success and Error Messaging
+// TODO: delete once login modal uses our error pattern
+$error-background         : #FBE7E8; // Armour
+$error-color              : $red;
+
+// TODO: where are these used?
+$success-background       : #e1f1cd; // Hint of Green
+$success-color            : #4e8736; // Sap Green
+
+//== Facebook Blues
+// TODO: Scope to Facebook Button component
+$facebook-blue            : #3B5997;
+$facebook-darker-blue     : darken( $facebook-blue, 10% );
+$facebook-darkest-blue    : darken( $facebook-blue, 15% );

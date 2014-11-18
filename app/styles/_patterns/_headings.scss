@@ -1,0 +1,113 @@
+// Headings
+// ===========================================================================
+//
+// |     | 0px	 | 500px | 800px | 1000px	|
+// =======================================
+// | .h1	| 28px | 36px  | 44px	 | 65px   |
+// | .h2	| 28px | 36px  | 44px	 |   →	  |
+// | .h3	| 24px | 28px  | 36px	 |   →    |
+// | .h4	| 20px | 26px  | 32px	 |   →    |
+// | .h5	| 20px |   →   | 24px	 |   →	  |
+// | .h6	| 20px |   →   |   →   |   →    |
+//
+// =========================================================================== /
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $serif;
+	// CHECK: Confirm font-weight
+	font-weight: 100;
+	font-size: 1.25em;
+	line-height: 1.1;
+	margin-top: 0;
+	color: $black;
+
+	small {
+		font-family: $sans-serif;
+		font-weight: 400;
+		font-size: .6em;
+		color: $beige;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.h1 {
+	font-size: 22px;
+	line-height: 1.15em;
+	margin-bottom: 0;
+
+	@include media($breakpoint-500)  { font-size: 36px; }
+	@include media($breakpoint-800)  { font-size: 44px; }
+	@include media($breakpoint-1000) { font-size: 65px; }
+
+}
+
+
+.h2 {
+	font-size: 28px;
+	line-height: 1.227em;
+	margin-bottom: 0;
+
+	@include media($breakpoint-500) { font-size: 36px; }
+	@include media($breakpoint-800) { font-size: 44px; }
+}
+
+.h3 {
+	font-size: 24px;
+	margin-bottom: 0.5em;
+	line-height: 1.15em;
+
+	@include media($breakpoint-500) { font-size: 28px; }
+	@include media($breakpoint-800) { font-size: 36px; }
+}
+
+.h4 {
+	font-size: 16px;
+	line-height: 1.15em;
+	margin-bottom: 0.5em;
+
+	@include media($breakpoint-500) { font-size: 26px; }
+	@include media($breakpoint-800) { font-size: 32px; }
+}
+
+.h5 {
+	font-size: 20px;
+	line-height: 1.15em;
+	margin-bottom: 0.5em;
+
+	@include media($breakpoint-800) {
+		font-size: 24px;
+	}
+
+}
+
+.h6 {
+	font-size: 20px;
+	margin-bottom: 0.5em;
+}
+
+.h-inline {
+		display: inline-block;
+		margin-top:0;
+}
+
+.page-header{
+	border: 1px solid $beige;
+	background: $light-beige;
+	padding: 0 1em;
+	margin-bottom: 2em;
+
+	.title{
+		@extend .h2;
+	}
+}

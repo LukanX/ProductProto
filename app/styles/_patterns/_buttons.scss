@@ -1,0 +1,123 @@
+// Modal Buttons
+// -------------------------------------------------------------------------- //
+.button {
+	@include button-color-hover( $blue, $darker-blue );
+	appearance: none;
+	border-radius: $radius;
+	border: 0;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1em;
+	min-width: 2em;
+	padding: 0.75em 1em;
+	text-align: center;
+	text-decoration: none; // Link styling specificity override
+	transition: background-color 0.2s linear,
+				border-color 0.2s linear,
+				color 0.2s linear,
+				height 0.2s linear,
+				width 0.2s linear;
+	width: 100%;
+
+	// For Dark Text
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	// States
+	&[disabled] {
+		background-color: $transparent;
+		box-shadow: none;
+		color: $darker-beige;
+		border: 1px solid $darker-beige;
+		cursor: not-allowed;
+		opacity: .65;
+		pointer-events: none;
+	}
+	@include media($breakpoint-500) {
+		width: auto;
+	}
+}
+
+// RMN-15190 Paravel suggested trying to go with a single button size
+// commenting out the code just in case we need it in the future
+// Remove if this proves out
+
+// .button--md {
+// 	padding: 0.5em;
+// }
+
+// .button--lg {
+// 	padding: 0.75em 1em;
+// }
+
+// .button--xl {
+// 	font-size: 1.125em; /*18px*/
+// 	padding: 1em 1.25em;
+// }
+
+// Types
+.button--red { @include button-color-hover( $red, $dark-red ); }
+.button--blue, .button--primary { @extend .button; }  // This is the default treatment
+.button--purple { @include button-color-hover( $purple, $light-purple ); }  // Do not use outside of the footer
+.button--dark-purple { @include button-color-hover( $dark-purple, $darker-purple ); } // Do not use outside of the footer
+.button--white, .button--secondary {
+	// Mixin doesn't handle this color change
+	color: $blue;
+	border: 1px solid $blue;
+	background-color: $transparent;
+
+	&:hover,
+	&:focus {
+		background-color: $blue;
+		border: 1px solid $blue;
+		color: $white;
+	}
+}
+
+// Intent is for the revealed code to be displayed with this class
+// Can't use pointer-events: none in this situations, Android devices don't allow Copy in that situation.
+.button--code {
+	background-color: $transparent;
+	border: 1px solid $beige;
+	color: $black;
+	cursor: text;
+
+	&:hover,
+	&:focus {
+		background-color: $transparent;
+		border-color: $beige;
+		color: $black;
+	}
+}
+
+.button--facebook-signin {
+	@include button-color-hover( $facebook-blue, $facebook-darker-blue );
+	color: $white;
+	font-size: 1em;
+	position: relative;
+	padding-left: 3em;
+	width: 100%;
+
+	@include media($breakpoint-500) {
+		width: auto;
+	}
+
+	.icon-facebook-signin {
+		border-right: 1px solid $facebook-darkest-blue;
+		font-size: 1.25em;
+		height: 100%;
+		left: 0.6em;
+		padding-top: 0.55em;
+		padding-right: 0.5em;
+		position: absolute;
+		top: 0;
+	}
+}

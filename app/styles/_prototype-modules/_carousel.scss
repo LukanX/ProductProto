@@ -1,0 +1,384 @@
+ul[rn-carousel]{
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  li{
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+
+  }
+}
+
+
+// DEAL CAROUSEL
+
+section.deal-carousel{
+  padding-top: 1em;
+}
+ul[rn-carousel].deal-carousel{
+  margin: 0;
+  @include maintain-ratio(4 3);
+  li{
+    background-size: fit;
+    .carousel-content{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .deal-info-area{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: $spacing;
+        width: 100%;
+      }
+
+      .brand-logo{
+        img{
+          padding: $spacing/2;
+        }
+      }
+      .deal-details{
+        width: 75%;
+      }
+      .logo-wrapper{
+        width:25%;
+      }
+      .deal-details{
+        h2, p{
+          color: white;
+        }
+        h2.h4{
+          margin-bottom: .25em;;
+        }
+        p{
+          font-weight: bold;
+          font-size: 14px;
+          text-transform: capitalize;
+          margin: 0;
+        }
+      }
+    }
+    
+    .gradient{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include background-image(linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.25) 60%, rgba(0,0,0,.8) 90%, rgba(0,0,0,1)));
+    }
+  }
+}
+
+div.rn-carousel-indicator{
+  text-align: center;
+  background: rgba(0,0,0,1);
+  span{
+    color: white;
+    padding: .25em;
+    &.active{
+      color: $green;
+    }
+  }
+}
+
+.rn-carousel-control{
+  top: 25%;
+  &.rn-carousel-control-next{
+    right: .5em;
+    &:before{
+      display: inline-block;
+      -webkit-transform: scale(.75,2.5);
+      -ms-transform: scale(.75,2.5);
+      -o-transform: scale(.75,2.5);
+      transform: scale(.75,2.5);
+    }
+  }
+  &.rn-carousel-control-prev{
+    left: .5em;
+    &:before{
+      display: inline-block;
+      -webkit-transform: scale(.75,2.5);
+      -ms-transform: scale(.75,2.5);
+      -o-transform: scale(.75,2.5);
+      transform: scale(.75,2.5);
+    }
+  }
+}
+
+
+// WIDE CAROUSEL
+
+ul[rn-carousel].wide-favorite{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  @include maintain-ratio(16 7);
+  li{
+    width: 100%;
+    padding: 1em 3em;
+  }
+  .wide-favorite-card{
+    width: 100%;
+    border: 1px solid $light-gray;
+    background: $white;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+  }
+  .signup-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $white;
+    top:0%;
+    left:0;
+    transition: top .5s .5s;
+    z-index: 5;
+    &.ng-hide{
+      top: 101%;
+      display:block!important;
+    }
+    .signup-top{
+      width: 100%;
+      height: 70%;
+      border: 1px solid $light-gray;
+      border-bottom: none;
+      background-size: 25%;
+      position: relative;
+      .signup-text{
+        padding: 5% 2%;
+        width: 100%;
+        text-align: center;
+        line-height: 1em;
+        font-size: 14px;
+        .small-header{
+          font-size: 16px;
+          line-height: 1.4 em;
+          padding-bottom: .2em;
+        }
+      }
+      .x-out{
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        width: 4%;
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    .signup-bottom{
+      width: 100%;
+      height: 30%;
+      border: 1px solid $blue;
+      .divider{
+        padding: 2.4% 2%;
+        width: 50%;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        color: $blue;
+        &.primary{
+          background: $blue;
+          color: white;
+        }
+      }
+    }
+  }
+  .deal-info-area{
+  padding: $spacing;
+  }
+  .merchant-name-area{
+    border-top: 1px solid $light-gray;
+    width: 100%;
+    font-size: 14px;
+    color: $black;
+    font-weight: bold;
+    text-align: center;
+    padding: .25em;
+  }
+  .logo-wrapper{
+    width: 25%;
+  }
+  .favorite-icon-container{
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding-left: 1.5em;
+    img{
+      display: block;
+    }
+    input[type=radio]{
+      position: absolute;
+      left: -99999px;
+      &:checked {
+        + label.heart-circle .filler {
+          width: 100%;
+          height: 100%;
+        }
+        + label.x-circle {
+          background-color: #8C8C82;
+          background-image: url(../../images/white-x.svg);
+        }
+      }
+    }
+  }
+
+  .heart-circle, .x-circle{
+    width: 100%;
+    @include maintain-ratio(1 1);
+    border-radius: 100%;
+  }
+  .heart-circle{
+    width: 100%;
+    @include maintain-ratio(1 1);
+    border: 2px solid #E8474A;
+    border-radius: 100%;
+    position: relative;
+    // &:hover .filler{
+    //   width: 100%;
+    //   height: 100%;
+    // }
+    img{
+      width: 50%;
+      @extend %absolute-center;
+      z-index: 2;
+    }
+    .filler{
+      width: 0%;
+      height: 0%;
+      background: #E8474A;
+      border-radius: 100%;
+      @extend %absolute-center;
+      transition: all 600ms ease-in-out;
+    }
+  }
+  .x-circle{
+    border: 2px solid #8C8C82;
+    background: white;
+    background-image: url(../../images/gray-x.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+// TALL CAROUSEL
+ul[rn-carousel].tall-favorite{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  @include maintain-ratio(9 5);
+  li{
+    width: 47.5%;
+    padding-right: 2.5%;
+    color: $black;
+    .merchant-wrapper{
+      width: 100%;
+      background: $white;
+      position: relative;
+      .signup-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $white;
+        top:0%;
+        left:0;
+        transition: top .5s;
+        &.ng-hide{
+          top: 101%;
+          display:block!important;
+        }
+        .signup-top{
+          width: 100%;
+          @include maintain-ratio(1 1);
+          background: url(../../images/watch.svg) no-repeat center 15%;
+          border: 1px solid $light-gray;
+          border-bottom: none;
+          background-size: 25%;
+          position: relative;
+          .signup-text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 5% 2%;
+            width: 100%;
+            text-align: center;
+            line-height: 1em;
+            font-size: 14px;
+            .small-header{
+              font-size: 14px;
+            }
+          }
+          .x-out{
+            position: absolute;
+            top: .5em;
+            right: .5em;
+            width: 8%;
+            img{
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+        .signup-bottom{
+          width: 100%;
+          border: 1px solid $blue;
+          .divider{
+            padding: 2.4% 2%;
+            width: 50%;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: $blue;
+            &.primary{
+              background: $blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .merchant-top{
+      width: 100%;
+      position: relative;
+      border: 1px solid $light-gray;
+      border-bottom: none;
+      @include maintain-ratio(1 1);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center 40%;
+      .merchant-name{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5%;
+        text-align: center;
+      }
+    }
+    .merchant-bottom{
+      width: 100%;
+      border: 1px solid $light-gray;
+      .divider{
+        padding: 3.5%;
+        width: 50%;
+        float: left;
+        text-align: center;
+        img{
+          display: block;
+          width: 33%;
+          margin: auto;
+        }
+        &.x{
+          border-right: 1px solid $light-gray;
+        }
+      }
+    }
+  }
+}

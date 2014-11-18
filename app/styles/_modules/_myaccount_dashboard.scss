@@ -1,0 +1,49 @@
+.dashboard-avatar-left, .dashboard-avatar-right {
+    vertical-align: top;
+    text-align: center;
+    @include media($breakpoint-500) {
+        display: inline-block;
+        text-align: left;
+    }
+}
+.dashboard-title {
+    @extend .h2; //TODO %h2
+    margin-bottom: 25px;
+    text-align: center;
+    display: none;
+    @include media($breakpoint-500) {
+        text-align: left;
+        display: block;
+    }
+}
+.dashboard-avatar {
+    line-height: 2em;
+    text-align: center;
+}
+.dashboard-avatar img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+@include media($breakpoint-500) {
+    .dashboard-avatar-left {
+        padding-right: 60px;
+    }
+}
+.dashboard-avatar-right {
+    width: 200px;
+    text-align: left;
+    display: none;
+    @include media($breakpoint-500) {
+        display: block;
+    }
+}
+
+.p-border {
+    border-bottom: solid 1px $light-beige;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    &:last-child {
+        border-width: 0;
+    }
+}

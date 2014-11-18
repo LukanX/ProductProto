@@ -1,0 +1,149 @@
+// Modal Positioning and Transitions
+// -------------------------------------------------------------------------- //
+.modal-open {
+	overflow: hidden;
+}
+
+.modal {
+	display: none;
+	overflow: auto;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	-webkit-overflow-scrolling: touch;
+}
+
+.modal.fade .modal-dialog {
+	@include transform( translate( 0, -25% ) );
+	@include transition( transform 0.2s ease-out );
+}
+
+.modal.in .modal-dialog {
+	@include transform ( translate( 0, 0 ));
+}
+
+.modal-dialog {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	padding: 10px;
+	z-index: 1050;
+}
+
+.modal-content {
+	position: relative;
+	background-color: $white;
+	border-radius: 6px;
+	box-shadow: 0 3px 9px $shadow-medium;
+	background-clip: padding-box;
+	outline: none;
+
+	// Custom styles
+	text-align: center;
+}
+
+@include media($breakpoint-768) {
+	.modal-dialog {
+		left: 50%;
+		right: auto;
+		width: 600px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.modal-content {
+		box-shadow: 0 5px 15px $shadow-medium;
+	}
+}
+
+// Backdrop
+// -------------------------------------------------------------------------- //
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1030;
+	background-color: $black;
+	background-color: $shadow-dark;
+}
+
+.modal-backdrop.fade {
+	opacity: 0;
+	filter: alpha( opacity=0 );
+}
+
+.modal-backdrop.in {
+	opacity: 0.5;
+	filter: alpha( opacity=50 );
+}
+
+// Modal Header
+// -------------------------------------------------------------------------- //
+.modal-close {
+	margin-top: 0;
+	right: -0.5em;
+	top: -0.5em;
+	position: absolute;
+	font-size: 1em;
+	display: block;
+	height: 2em;
+	width: 2em;
+	line-height: 1.5em;
+	text-align: center;
+	padding: 0;
+	font-family: $mono;
+	background: $black;
+	border: 2px solid $white;
+	color: $white;
+	border-radius: 2em;
+	box-shadow: 0 0 3px $shadow-dark;
+}
+
+.modal-header {
+	padding: 1em;
+
+	.close {
+		@extend .modal-close;  // Need to migrate other modals to .modal-close
+	}
+}
+
+.modal-title {
+	@extend .h3;
+	margin: 0;
+	line-height: 1.428571429;
+}
+
+// Modal Body
+// -------------------------------------------------------------------------- //
+.modal-body {
+	position: relative;
+	padding: 0 1em 1em;
+
+	max-width: 500px;
+	margin: 0 auto;
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	@include media($breakpoint-800) {
+		p {
+			margin-bottom: 1.5em;
+		}
+	}
+}
+
+// Modal Footer
+// -------------------------------------------------------------------------- //
+.modal-footer {
+	padding: 1em;
+	border-top: 1px solid $light-beige;
+
+	@extend .clearfix;
+}

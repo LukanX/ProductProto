@@ -1,0 +1,40 @@
+.international-coupons {
+	background: $light-beige;
+	padding: 3em 3.333%;
+	text-align: center;
+}
+
+.international-coupons-title {
+	@extend .h4;
+	margin-bottom: 1em;
+}
+
+.international-coupons-country-list {
+	list-style-type: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.cl-item {
+	display: inline-block;
+	vertical-align:top;
+}
+
+// .cl is shorthand for "country list"
+.cl-link {
+	@include sprite-dimensions($view-sprite, Flag_Large_UK);
+	//we can't use color:transparent b/c of IE8
+	font-size:0px;
+	display: block;
+	overflow: hidden;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.cl-uk .cl-link { background: sprite($view-sprite, Flag_Large_UK) no-repeat; }
+.cl-de .cl-link { background: sprite($view-sprite, Flag_Large_Germany) no-repeat; }
+.cl-fr .cl-link { background: sprite($view-sprite, Flag_Large_France) no-repeat; }
+.cl-ca .cl-link { background: sprite($view-sprite, Flag_Large_Canada) no-repeat; }
+.cl-in .cl-link { background: sprite($view-sprite, Flag_Large_India) no-repeat; }
+.cl-au .cl-link { background: sprite($view-sprite, Flag_Large_Australia) no-repeat; }
+.cl-nl .cl-link { background: sprite($view-sprite, Flag_Large_Netherlands) no-repeat; }

@@ -1,0 +1,10 @@
+@mixin button-color-hover($foreground, $hover) {
+	background-color: $foreground;
+	border: 1px solid $foreground;
+
+	&:hover,
+	&:focus {
+		background-color: $hover;
+		border-color: $hover;
+	}
+}

@@ -26,6 +26,10 @@
   margin: auto;
 }
 
+.relative{
+  position: relative;
+}
+
 // Test Stuff
 
 .test-unit{
@@ -38,8 +42,8 @@
     background-size: cover;
     position: relative;
     .icon-gold-star {
-      @include sprite-dimensions($view-sprite, Star_Gray_Filled);
-      background: sprite($view-sprite, Star_Gray_Filled) no-repeat;
+      @include sprite-dimensions($view-sprite, Heart_Red_Outline);
+      background: sprite($view-sprite, Heart_Red_Outline) no-repeat;
       position: absolute;
       top: 1em;
       right: 1em;
@@ -121,6 +125,174 @@
     transform:rotate(-15deg);
   }
 }
+
+.carousel{
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: "";
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+  &.right{
+    right: -3em;
+    border-width: 25px 0 25px 25px;
+    border-color: transparent transparent transparent $beige;
+    &:hover{
+      border-color: transparent transparent transparent $darker-beige;
+    }
+  }
+  &.left{
+    left: -3em;
+    border-width: 25px 25px 25px 0;
+    border-color: transparent $beige transparent transparent;
+    &:hover{
+      border-color: transparent $darker-beige transparent transparent;
+    }
+  }
+}
+
+.merchant-logo{
+  @include maintain-ratio(1 1);
+  border: 1px solid $beige;
+  margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}
+
+.sub-right{
+  font-size: 75%;
+  float: right;
+}
+
+.pb1{
+  padding-bottom: 1em;
+}
+
+.pt1{
+  padding-top: 1em;
+}
+
+.border-bottom{
+  border-bottom: 1px solid $beige;
+}
+
+.favorite-heart{
+  @include sprite-dimensions($view-sprite, Heart_Red_Outline);
+  background: sprite($view-sprite, Heart_Red_Outline) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.collection-bg{
+  width: 100%;
+  @include maintain-ratio(16 9);
+  border: 1px solid $beige;
+  position: relative;
+  .favorite-heart{
+    top: 1em;
+    right: 1em;
+  }
+  .description{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0, .6);
+    color: white;
+    padding: .5em 1em;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &:hover .description{
+    background: rgba(0,0,0,.75);
+  }
+}
+
+
+.photo-background{
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.collection-image{
+  width: 100%;
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+
+.ugc-photo{
+  width: 100%;
+  @include maintain-ratio(1 1);
+}
+
+.pricing{
+  font-size: 18px;
+  color: $black;
+  .smaller{
+    font-size: 75%;
+    color: $lighter-gray;
+  }
+  .crossout{
+    text-decoration: line-through;
+  }
+}
+
+.collection-description .button{
+  min-width: 175px;
+  margin-top: 1em;
+}
+
+@include media($breakpoint-1000)  {
+  .desktop-show{
+    display: block;
+  }
+}
+
+@include media($breakpoint-1000)  {
+  .desktop-hide{
+    display: none;
+  }
+}
+
+@include media($breakpoint-800-max){
+  .mobile-hide{
+    display: none;
+  }
+
+  .triangle{
+    top: 35%;
+    &.right{
+      right: -2em;
+      border-width: 20px 0 20px 20px;
+      border-color: transparent transparent transparent $beige;
+    }
+    &.left{
+      left: -2em;
+      border-width: 20px 20px 20px 0;
+      border-color: transparent $beige transparent transparent;
+    }
+  }
+
+  .ugc-photo, .collection-image{
+    margin-bottom: 1em;
+  }
+}
+
+
 
 
 

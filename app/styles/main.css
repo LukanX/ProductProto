@@ -3171,7 +3171,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003659}}
-  .ugc-photo, .collection-image, .product-coupon-item {
+  .ugc-photo, .product-coupon-item {
+    margin-bottom: 1em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003663}}
+  .collection-item {
     margin-bottom: 1em;
   }
 }

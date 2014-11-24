@@ -656,7 +656,11 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 
-  .ugc-photo, .collection-image, .product-coupon-item{
+  .ugc-photo, .product-coupon-item{
+    margin-bottom: 1em;
+  }
+
+  .collection-item{
     margin-bottom: 1em;
   }
 

@@ -94,36 +94,6 @@
 		"verified": true
 	},
 	{
-		"name": "Nike Dart 10 Womens",
-		"merchant": "Foot Locker",
-		"logo": "http://o.rmncdn.com/thumbs/logos/m/footlocker.com-coupons.jpg",
-		"bgImage": "images/products/nikeDart.jpg",
-		"location": "Online & In-Store",
-		"dealType": "product",
-		"oldPrice": 59.99,
-		"couponDiscount": "17% Off with 1 Coupon",
-		"newPrice": 49.99,
-		"description": "Offering a soft step on the street, track or trail, the Nike Dart 10 is comfortable and versatile. Mesh upper combines with a lightweight, molded midfoot to provide ideal breathability and all-purpose support, keeping your feet cool and dry while stabilizing your run. The full-length Reslon midsole foam cushions your step, absorbing shock and adding bounce to your stride. To handle a variety of terrains, this running shoe features a combination outsole pattern, which offers optimal traction and long-lasting durability. Wt. 8.6 oz.",
-		"stars": 5,
-		"viewedToday": 384,
-		"category": "running shoes womens apparel best price"
-	},
-	{
-		"name": "1/4 or 1/2 CTTW Certified Diamond Martini-Set Stud Earrings in 14K Gold",
-		"merchant": "Blue Nile",
-		"logo": "http://o.rmncdn.com/thumbs/logos/m/bluenile.com-coupons.jpg",
-		"bgImage": "images/products/diamondStuds.jpg",
-		"location": "Online",
-		"dealType": "product",
-		"oldPrice": 539,
-		"couponDiscount": "81% Off with 2 Coupons",
-		"newPrice": 99.99,
-		"description": "Martini settings crafted from solid 14k gold cradle round-cut diamonds that catch the light with their many facets. Diamond color: H-I Diamond clarity: I1-I2. Certified diamond products ship with an individual quality certification issued by a third-party gemological laboratory that provides a general product assurance as per the quality range stated.",
-		"stars": 4,
-		"viewedToday": 503,
-		"category": "womens apparel"
-	},
-	{
 		"name": "DV by Dolce Vita Lyran",
 		"merchant": "6PM",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/6pm.com-coupons.jpg",
@@ -154,6 +124,36 @@
 		"category": "womens apparel"
 	},
 	{
+		"name": "1/4 or 1/2 CTTW Certified Diamond Martini-Set Stud Earrings in 14K Gold",
+		"merchant": "Blue Nile",
+		"logo": "http://o.rmncdn.com/thumbs/logos/m/bluenile.com-coupons.jpg",
+		"bgImage": "images/products/diamondStuds.jpg",
+		"location": "Online",
+		"dealType": "product",
+		"oldPrice": 539,
+		"couponDiscount": "81% Off with 2 Coupons",
+		"newPrice": 99.99,
+		"description": "Martini settings crafted from solid 14k gold cradle round-cut diamonds that catch the light with their many facets. Diamond color: H-I Diamond clarity: I1-I2. Certified diamond products ship with an individual quality certification issued by a third-party gemological laboratory that provides a general product assurance as per the quality range stated.",
+		"stars": 4,
+		"viewedToday": 503,
+		"category": "womens apparel"
+	},
+	{
+		"name": "Nike Dart 10 Womens",
+		"merchant": "Foot Locker",
+		"logo": "http://o.rmncdn.com/thumbs/logos/m/footlocker.com-coupons.jpg",
+		"bgImage": "images/products/nikeDart.jpg",
+		"location": "Online & In-Store",
+		"dealType": "product",
+		"oldPrice": 59.99,
+		"couponDiscount": "17% Off with 1 Coupon",
+		"newPrice": 49.99,
+		"description": "Offering a soft step on the street, track or trail, the Nike Dart 10 is comfortable and versatile. Mesh upper combines with a lightweight, molded midfoot to provide ideal breathability and all-purpose support, keeping your feet cool and dry while stabilizing your run. The full-length Reslon midsole foam cushions your step, absorbing shock and adding bounce to your stride. To handle a variety of terrains, this running shoe features a combination outsole pattern, which offers optimal traction and long-lasting durability. Wt. 8.6 oz.",
+		"stars": 5,
+		"viewedToday": 384,
+		"category": "running shoes womens apparel best price"
+	},
+	{
 		"type": "code",
 		"merchant": "Old Navy",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/oldnavy.com-coupons.jpg",
@@ -169,21 +169,6 @@
 		"category": "womens apparel",
 		"dealType": "coupon",
 		"verified": true
-	},
-	{
-		"name": "Nike Dart 10 Mens",
-		"merchant": "Foot Locker",
-		"logo": "http://o.rmncdn.com/thumbs/logos/m/nike.com-coupons.jpg",
-		"bgImage": "images/products/nikeDartM.jpg",
-		"location": "Online & In-Store",
-		"dealType": "product",
-		"oldPrice": 59.99,
-		"couponDiscount": "17% Off with 1 Coupon",
-		"newPrice": 49.99,
-		"description": "Offering a soft step on the street, track, or trail, the Nike Dart 10 is comfortable and versatile. Mesh upper promotes airflow. Full-length Reslon midsole foam cushions your step, absorbing shock and adding bounce to your stride. Combination outsole pattern offers optimal traction on a variety of terrain. Wt. 10.2 oz.",
-		"stars": 5,
-		"viewedToday": 342,
-		"category": "running shoes mens apparel best price"
 	},
 	{
 		"name": "Calvin Klein Jeans Zip Up Hoodie",
@@ -230,7 +215,7 @@
 		"description": "A soft, rib-knit stocking cap is detailed with a logo tab on the brim. 100% acrylic.",
 		"stars": 5,
 		"viewedToday": 3845,
-		"category": "mens apparel"
+		"category": " mens apparel"
 	},
 	{
 		"name": "484 Jean in Dark Worn Wash",
@@ -245,7 +230,22 @@
 		"description": "Our slimmest fit yet, for guys who like their denim slim, not skinny. This pair is made from traditional cotton denim that's lightly washed to preserve the rich, inky indigo color, then hand sanded just enough to achieve that perfectly broken-in feel.",
 		"stars": 4,
 		"viewedToday": 5235,
-		"category": "mens apparel"
+		"category": " mens apparel"
+	},
+	{
+		"name": "Nike Dart 10 Mens",
+		"merchant": "Foot Locker",
+		"logo": "http://o.rmncdn.com/thumbs/logos/m/nike.com-coupons.jpg",
+		"bgImage": "images/products/nikeDartM.jpg",
+		"location": "Online & In-Store",
+		"dealType": "product",
+		"oldPrice": 59.99,
+		"couponDiscount": "17% Off with 1 Coupon",
+		"newPrice": 49.99,
+		"description": "Offering a soft step on the street, track, or trail, the Nike Dart 10 is comfortable and versatile. Mesh upper promotes airflow. Full-length Reslon midsole foam cushions your step, absorbing shock and adding bounce to your stride. Combination outsole pattern offers optimal traction on a variety of terrain. Wt. 10.2 oz.",
+		"stars": 5,
+		"viewedToday": 342,
+		"category": "running shoes mens apparel best price"
 	},
 	{
 		"name": "Toys R Us Exclusive Zoomer Dino - Onyx",

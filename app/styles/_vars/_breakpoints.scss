@@ -9,7 +9,7 @@
 //Min-Width Breakpoints
 
 //Bumping up 1px to hit 320px phones
-$breakpoint-320: new-breakpoint(min-width 320px);
+$breakpoint-320: new-breakpoint(min-width 319px);
 
 $breakpoint-500: new-breakpoint(min-width 500px);
 

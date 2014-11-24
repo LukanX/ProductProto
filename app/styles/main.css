@@ -562,7 +562,7 @@ form .error {
   }
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 319px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003137}}
   .col-4 .grid-unit {
     margin-right: 3.2%;
@@ -648,7 +648,7 @@ form .error {
   }
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 319px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003198}}
   .col-6 .grid-unit {
     margin-right: 3.2%;

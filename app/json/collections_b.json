@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Best Running Shoes 2014",
-		"bgImage": "images/collecions/bestRunningShoes.jpg",
+		"bgImage": "images/collections/bestRunningShoes.jpg",
 		"category": "homepage row1"
 	},
 	{
@@ -11,52 +11,52 @@
 	},
 	{
 		"name": "Get this Look: Cozy Fall Fashion",
-		"bgImage": "images/collecions/getthislookFallWomens.jpg",
+		"bgImage": "images/collections/getthislookFallWomens.jpg",
 		"category": "homepage row1"
 	},
 	{
 		"name": "Holiday Kids Clothes",
-		"bgImage": "images/collecions/holidayKidsClothes.jpg",
+		"bgImage": "images/collections/holidayKidsClothes.jpg",
 		"category": "homepage row2"
 	},
 	{
 		"name": "Layer Up: This Seasons Menswear",
-		"bgImage": "images/collecions/mensLayers.jpg",
+		"bgImage": "images/collections/mensLayers.jpg",
 		"category": "homepage row2"
 	},
 	{
 		"name": "Nursery Necessities",
-		"bgImage": "images/collecions/nurseryEssentials.jpg",
+		"bgImage": "images/collections/nurseryEssentials.jpg",
 		"category": "homepage row2"
 	},
 	{
 		"name": "This Seasons Best Handbags",
-		"bgImage": "images/collecions/seasonsHandbags.jpg",
+		"bgImage": "images/collections/seasonsHandbags.jpg",
 		"category": "homepage row3"
 	},
 	{
 		"name": "Home Trend: Boho Modern",
-		"bgImage": "images/collecions/warmwoodsyhome.jpg",
+		"bgImage": "images/collections/warmwoodsyhome.jpg",
 		"category": "homepage row3"
 	},
 	{
 		"name": "Beautiful Men's Timepieces",
-		"bgImage": "images/collecions/mensTimepieces.jpg",
+		"bgImage": "images/collections/mensTimepieces.jpg",
 		"category": "homepage row3"
 	},
 	{
 		"name": "Best Fitness Trackers 2014",
-		"bgImage": "images/collecions/fitnessTrackers.jpg",
+		"bgImage": "images/collections/fitnessTrackers.jpg",
 		"category": "related"
 	},
 	{
 		"name": "Review: Water Bottles",
-		"bgImage": "images/collecions/waterbottleReview.jpg",
+		"bgImage": "images/collections/waterbottleReview.jpg",
 		"category": "related"
 	},
 	{
 		"name": "Cute Workout Wear",
-		"bgImage": "images/collecions/workoutWear.jpg",
+		"bgImage": "images/collections/workoutWear.jpg",
 		"category": "related"
 	}
 

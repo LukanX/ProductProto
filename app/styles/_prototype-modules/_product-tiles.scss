@@ -1,0 +1,502 @@
+// Favoriting
+
+.favorite-heart{
+  @include sprite-dimensions($view-sprite, Heart_Red_Outline);
+  background: sprite($view-sprite, Heart_Red_Outline) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  &.active{
+  	background: sprite($view-sprite, Big_Heart_Red_Filled) no-repeat;
+  }
+}
+
+.favorite-star{
+  @include sprite-dimensions($view-sprite, Big_Star_Gold_Outline);
+  background: sprite($view-sprite, Big_Star_Gold_Outline) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  &.active{
+  	background: sprite($view-sprite, Big_Heart_Red_Filled) no-repeat;
+  }
+}
+
+
+//PRODUCTS
+
+.product-coupon-item{
+	.product-photo{
+		 width: 100%;
+    @extend %rounded-top;
+    border: 1px solid $beige;
+    @include maintain-ratio(4 3);
+    position: relative;
+    background-size: contain;
+    .merchant-logo-container{
+				width: 25%;
+				position: absolute;
+				bottom: 1em;
+				left: 1em;
+		}
+		&.coupon-background{
+			background-image: url(../images/bg-pattern.png);
+			background-color: $light-purple;
+			background-size: auto;
+			.merchant-logo-container{
+				width: 50%;
+				left: 25%;
+				background-color: transparent;
+				bottom: 17%;
+				.merchant-logo{
+					border-radius: $radius;
+					background-color: white;
+				}
+			}
+		}
+	}
+	.product-coupon-description{
+		padding: 1em 1em;
+		border: 1px solid $beige;
+		border-top: none;
+		position: relative;
+		@extend %rounded-bottom;
+		.favorite-heart{
+			top: .5em;
+			right: 1em;
+		}
+		.smaller{
+			color: $gray;
+			font-size: 75%;
+		}
+		.description{
+			font-weight: bold;
+			line-height: 1.2em;
+			padding: .25em 0;
+		}
+		.price{
+			font-weight: bold;
+			font-size: 110%;
+			color: $green;
+		}
+		.full-button{
+			width: 100%;
+			display: block;
+		}
+		.expiration-price{
+			padding-bottom: .5em;
+		}
+	}
+}
+
+.product-item{
+  margin-bottom: 1em;
+  cursor: pointer;
+  position: relative;
+  .favorite-heart{
+    top: 1em;
+    right: 1em;
+  }
+  .product-photo{
+    width: 100%;
+    @extend %rounded-top;
+    border: 1px solid $beige;
+    @include maintain-ratio(1 1);
+    position: relative;
+  }
+  .product-description{
+    width: 100%;
+    background: $white;
+    padding: .5em 1em;
+    border: 1px solid $beige;
+    border-top: none;
+    border-radius: 0 0 $radius $radius;
+    color: $black;
+    .product-name{
+      font-weight: bold;
+      line-height: 1.2em;
+      font-size: 14px;
+    }
+    .product-info{
+      width: 100%;
+      vertical-align: baseline;
+      font-size: 14px;
+      line-height: 14px;
+      padding-top: .5em;
+      .merchant{
+        width: 50%;
+        font-size: 75%;
+        color: $gray;
+        float: left;
+      }
+      .price{
+        width: 50%;
+        float: left;
+        text-align: right;
+        color: $green;
+        font-weight: bold;
+        .strikethrough{
+          color: $gray;
+          font-weight: normal;
+          font-size: 75%;
+        }
+      }
+    }
+  }
+}
+
+//Pricing
+.pricing{
+  font-size: 18px;
+  color: $black;
+  .shipping{
+  	font-size: 75%;
+  }
+
+  .price{
+  	font-weight: bold;
+  	color: $green;
+  }
+  .smaller{
+  	color: $lighter-gray;
+  }
+  .crossout{
+    text-decoration: line-through;
+  }
+}
+
+.smaller{
+    font-size: 75%;
+    color: $light-gray;
+  }
+
+//Products
+
+
+//Collections
+
+.collection-item{
+	.collection-bg{
+	  width: 100%;
+	  @include maintain-ratio(4 3);
+	  border: 1px solid $beige;
+	  position: relative;
+	  border-bottom: none;
+	  @extend %rounded-top;
+	  .favorite-heart{
+	    top: 1em;
+	    right: 1em;
+	  }
+	}
+	.description{
+		border: 1px solid $beige;
+		padding: .5em 1em;
+		@extend %rounded-bottom;
+	}
+}
+
+.best-price{
+	color: $green;
+}
+
+	
+
+.collection-image{
+  width: 100%;
+  position: relative;
+  img{
+    width: 100%;
+    display: block;
+  }
+  .merchant-logo-container{
+  	width: 25%;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  }
+}
+
+.price-button{
+	font-size: 22px;
+}
+
+.collection-description .button{
+  min-width: 175px;
+  margin-top: 1em;
+}
+
+// UGC Stuff
+
+.ugc-photo{
+  width: 100%;
+  @include maintain-ratio(1 1);
+}
+
+// -------------------------------------------
+// Horizontal Coupon
+// -------------------------------------------
+
+.products-coupons{
+	list-style: none;
+	li{
+		 border: 1px solid $beige;
+		 border-top: none;
+		 &:first-child{
+		 	border-top: 1px solid $beige;
+		 }
+	}
+}
+
+
+
+.h-coupon {
+  padding: 0.5em 3.25em 0.5em 0;
+  position: relative;
+  font-size:12px;
+  max-width: 1280px;
+
+  a img{
+  	padding-left: .75em;
+  	padding-top: 2em;
+  }
+
+  img.small-merchant-logo{
+		width: 10px;
+		padding: 0;
+		margin-right: .25em;
+	}
+
+  .h4 {
+  	font-size:20px;
+	}
+
+
+  &:before {
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    bottom: 0;
+    color: #ccc;
+    content: '';
+    display: inline-block;
+    height: 10px;
+    margin: auto 0;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+  }
+}
+
+.button--code {
+  position:relative;
+  margin-right: 2em;
+  background: $blue;
+  color: white;
+  border: 1px solid $blue;
+  cursor: pointer;
+  &:hover{
+		color: white;
+		background: $darker-blue;
+		border: 1px solid $darker-blue;
+  }
+  &:after {
+    content: '123';
+    position: absolute;
+    border: 1px solid #d3d3d3;
+    height: 100%;
+    background: white;
+    color: black;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    padding: 0 0.5em 0 0;
+    border-radius:$radius;
+    height: 100%;
+    z-index: -1;
+    top: -1px;
+    right: -1.75em;
+  }
+}
+
+.h-coupon-media {
+  float: left;
+  width: 20%;
+}
+
+.h-block-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.h-coupon-content {
+  margin-left: 25%;
+}
+
+.h-coupon-title {
+  @extend .h4;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-right: 0.5em;
+}
+
+.h-coupon-validation {
+  margin-bottom: 0;
+}
+
+.h-coupon-validation {
+  .sep {
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.h-coupon-details {
+  margin-bottom:0;
+  display: none;
+}
+
+.h-coupon-button {
+  display: none;
+}
+
+.favorite-star {
+  // Position
+  position: absolute;
+  top: 0.5em;
+  right: .75em;
+  @include sprite-dimensions($view-sprite, Big_Star_Gold_Outline);
+  background: sprite($view-sprite, Big_Star_Gold_Outline) no-repeat;
+
+  &.active {
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/17/star-filled.png);
+  }
+}
+
+.h-product-details{
+	margin: 0;
+	.price{
+		font-size: 14px;
+		font-weight: bold;
+		color: $green;
+	}
+}
+
+@media (min-width: 500px) {
+  .h-coupon {
+    font-size: 15px;
+    a img{
+	  	padding: 0;
+	  }
+
+	  img.small-merchant-logo{
+			width: 12px;
+		}
+  }
+}
+
+@media (min-width: 600px) {
+  .h-coupon {
+    padding: 1em 3em 1em 2.5%;
+  }
+
+  .h-coupon-media {
+    padding-left: 2.5%;
+  }
+
+  .h-coupon-title {
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+  }
+
+  .h-coupon-validation {
+    .sep {
+      height: auto;
+      display: inline-block;
+      visibility: visible;
+      margin: 0 0.5em;
+    }
+  }
+
+  .h-coupon-details {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right:2.5em;
+    margin-right: 2.5em;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: 'More';
+      float: right;
+      display: block;
+      text-decoration: none;
+      color: #09c;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .is-open & {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: none;
+      margin-right: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 800px) {
+  
+  .h-coupon .favorite-star {
+//    position:relative;
+    position: absolute;
+    right: 2em;
+    top:1em;
+  }
+
+  .h-product-details .price{
+  	font-size: 18px;
+  }
+
+  .h-coupon {
+    padding: 1.5em 10em 1.5em 0;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  .h-coupon-media {
+    width: 18.5%;
+    padding-left: 5%;
+  }
+
+  .h-coupon-content {
+    margin-left: 22.5%;
+  }
+
+  .h-coupon-button {
+    position: absolute;
+    display: block;
+    right:2em;
+    margin-top:0;
+    top: 5.5em;
+    
+  }
+}
+
+.shop-button{
+    	width: 125px;
+    }

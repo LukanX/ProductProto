@@ -15,11 +15,16 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'productsProtoServices'
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+    .when('/', {
+        templateUrl: 'views/home.html',
+        controller: 'MainCtrl'
+      })
+      .when('/test', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -33,6 +38,22 @@ angular
       })
       .when('/experience/product', {
         templateUrl: 'views/experience-product.html',
+        controller: 'MainCtrl'
+      })
+      .when('/deals', {
+        templateUrl: 'views/deals-home.html',
+        controller: 'dealsACtrl'
+      })
+      .when('/deals/category', {
+        templateUrl: 'views/deals-category.html',
+        controller: 'dealsACtrl'
+      })
+      .when('/deals/product', {
+        templateUrl: 'views/deals-product.html',
+        controller: 'dealsACtrl'
+      })
+      .when('/products-coupons/product', {
+        templateUrl: 'views/product-coupons-product.html',
         controller: 'MainCtrl'
       })
       .otherwise({

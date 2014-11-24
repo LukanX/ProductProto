@@ -1640,35 +1640,35 @@ ul.list-padded li {
 .menu-utility .icon-flag-us {
   height: 15px;
   width: 23px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -149px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -149px no-repeat;
   padding-left: 28px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003101}}
 .menu-utility .icon-flag-canada {
   height: 15px;
   width: 23px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -134px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -134px no-repeat;
   padding-left: 28px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003108}}
 .menu-utility .icon-heart {
   height: 16px;
   width: 16px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -248px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -248px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003113}}
 .menu-utility .icon-gold-star {
   height: 15px;
   width: 16px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -323px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -323px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003119}}
 .menu-utility .active .icon-heart {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -188px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -188px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003123}}
 .menu-utility .active .icon-gold-star {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -264px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -264px no-repeat;
 }
 @media screen and (min-width: 800px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003128}}
@@ -1901,7 +1901,7 @@ ul.list-padded li {
 .favorite-heart {
   height: 22px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -1909,14 +1909,14 @@ ul.list-padded li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000310}}
 .favorite-heart.active {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000315}}
 .favorite-star {
   height: 24px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -1924,7 +1924,7 @@ ul.list-padded li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000322}}
 .favorite-star.active {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000331}}
@@ -2305,7 +2305,7 @@ ul.list-padded li {
   right: .75em;
   height: 24px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003378}}
 .favorite-star.active {
@@ -2551,7 +2551,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003114}}
 .comparison.product-comparison .pricing .arrow {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -353px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -353px no-repeat;
   height: 47px;
   width: 27px;
   position: absolute;
@@ -2667,7 +2667,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003216}}
 .coupons-used .coupons .coupon:before {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -117px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -117px no-repeat;
   height: 17px;
   width: 17px;
   position: absolute;
@@ -2688,7 +2688,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003235}}
 .urgency .ending:before {
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -338px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -338px no-repeat;
   height: 15px;
   width: 16px;
   position: absolute;
@@ -2822,7 +2822,7 @@ h1, h2, h3, h4, h5, h6 {
 .favorite-heart {
   height: 22px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
+  background: url('app/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
   position: absolute;
   top: 0;
   right: 0;

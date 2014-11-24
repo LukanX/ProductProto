@@ -543,10 +543,14 @@ form .error {
     width: 31.2%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003117}}
-  .col-3 .grid-unit:last-of-type {
+  .col-3 .grid-unit.multi:last-of-type {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003120}}
+  .col-3 .grid-unit.last {
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003125}}
   .col-3 .grid-unit.col-2 {
     width: 65.6%;
   }
@@ -559,80 +563,80 @@ form .error {
 }
 
 @media screen and (min-width: 321px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003137}}
   .col-4 .grid-unit {
     margin-right: 3.2%;
     float: left;
     width: 48.4%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003140}}
   .col-4 .grid-unit:nth-of-type(even) {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003141}}
   .col-4 .grid-unit:nth-of-type(odd) {
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003142}}
   .col-4 .grid-unit:last-of-type {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003145}}
   .col-4 .grid-unit.col-2 {
     margin-right: 3.2%;
     float: left;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003148}}
   .col-4 .grid-unit.col-2 + .grid-unit {
     margin-right: 3.2%;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003152}}
   .col-4 .grid-unit.col-2 + .grid-unit + .grid-unit {
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003157}}
   .col-4 .grid-unit.col-4 {
     margin-right: 3.2%;
     float: left;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003160}}
   .col-4 .grid-unit.col-4 + .grid-unit {
     margin-right: 3.2%;
     clear: left;
   }
 }
 @media screen and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003168}}
   .col-4 .grid-unit {
     margin-right: 3.2%;
     float: left;
     width: 22.6%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003171}}
   .col-4 .grid-unit:nth-of-type(even) {
     margin-right: 3.2%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003172}}
   .col-4 .grid-unit:nth-of-type(odd) {
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003173}}
   .col-4 .grid-unit:nth-of-type(4n) {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003176}}
   .col-4 .grid-unit.col-2 {
     width: 48.4%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003179}}
   .col-4 .grid-unit.col-2 + .grid-unit {
     margin-right: 3.2%;
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003186}}
   .col-4 .grid-unit + .grid-unit.col-2 + .grid-unit {
     margin-right: 0;
   }
@@ -645,61 +649,61 @@ form .error {
 }
 
 @media screen and (min-width: 321px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003198}}
   .col-6 .grid-unit {
     margin-right: 3.2%;
     float: left;
     width: 48.4%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003201}}
   .col-6 .grid-unit:nth-of-type(even) {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003202}}
   .col-6 .grid-unit:nth-of-type(odd) {
     clear: left;
   }
 }
 @media screen and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003207}}
   .col-6 .grid-unit {
     margin-right: 3.2%;
     float: left;
     width: 31.2%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003210}}
   .col-6 .grid-unit:nth-of-type(even) {
     margin-right: 3.2%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003211}}
   .col-6 .grid-unit:nth-of-type(odd) {
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003212}}
   .col-6 .grid-unit:nth-of-type(3n) {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003213}}
   .col-6 .grid-unit:nth-of-type(4n) {
     clear: left;
   }
 }
 @media screen and (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003218}}
   .col-6 .grid-unit {
     margin-right: 3.2%;
     float: left;
     width: 14%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003221}}
   .col-6 .grid-unit:nth-of-type(3n) {
     margin-right: 3.2%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003222}}
   .col-6 .grid-unit:nth-of-type(4n) {
     clear: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003223}}
   .col-6 .grid-unit:last-of-type {
     margin-right: 0;
   }
@@ -709,12 +713,12 @@ form .error {
 	Show-Grid helper class
 	NOTE: Can be removed from production
 ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003233}}
 .show-grid .grid-row, .show-grid .grid-padded-row {
   background-color: #d1d0c9;
   background-color: rgba(0, 0, 0, 0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003238}}
 .show-grid .grid-unit {
   color: #ffffff;
   padding: 0 0 !important;
@@ -724,11 +728,11 @@ form .error {
   line-height: 3em !important;
   background-color: #602D6C !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003248}}
 .show-grid .grid-unit.col-flip {
   background-color: #ea4545 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003252}}
 .show-grid div[class*="grid-"] {
   border-radius: 5px;
   margin-bottom: .5em;
@@ -737,11 +741,11 @@ form .error {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003268}}
 .lt-ie9 body {
   min-width: 800px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_patterns\/_grid\.scss}line{font-family:\00003272}}
 .lt-ie9 .col-2 .grid-unit,
 .lt-ie9 .col-3 .grid-unit,
 .lt-ie9 .col-4 .grid-unit,
@@ -1636,35 +1640,35 @@ ul.list-padded li {
 .menu-utility .icon-flag-us {
   height: 15px;
   width: 23px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -119px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -149px no-repeat;
   padding-left: 28px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003101}}
 .menu-utility .icon-flag-canada {
   height: 15px;
   width: 23px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -104px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -134px no-repeat;
   padding-left: 28px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003108}}
 .menu-utility .icon-heart {
   height: 16px;
   width: 16px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -218px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -248px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003113}}
 .menu-utility .icon-gold-star {
   height: 15px;
   width: 16px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -293px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -323px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003119}}
 .menu-utility .active .icon-heart {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -158px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -188px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003123}}
 .menu-utility .active .icon-gold-star {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -234px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -264px no-repeat;
 }
 @media screen and (min-width: 800px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_components\/_menu-utility\.scss}line{font-family:\00003128}}
@@ -1897,7 +1901,7 @@ ul.list-padded li {
 .favorite-heart {
   height: 22px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -174px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -1905,14 +1909,14 @@ ul.list-padded li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000310}}
 .favorite-heart.active {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -15px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000315}}
 .favorite-star {
   height: 24px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -63px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -1920,7 +1924,7 @@ ul.list-padded li {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000322}}
 .favorite-star.active {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -15px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -45px no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\0000331}}
@@ -2296,7 +2300,7 @@ ul.list-padded li {
   right: .75em;
   height: 24px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -63px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003374}}
 .favorite-star.active {
@@ -2476,7 +2480,7 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000359}}
 .comparison.product-comparison .product-photo {
   float: left;
-  width: 30%;
+  width: 17%;
   padding: 1em 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000363}}
@@ -2489,7 +2493,7 @@ h1, h2, h3, h4, h5, h6 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000368}}
 .comparison.product-comparison .details {
   float: left;
-  width: 40%;
+  width: 63%;
   padding: 1.5em 1em;
   border-right: 1px solid #d1d0c9;
   border-left: 1px solid #d1d0c9;
@@ -2504,143 +2508,161 @@ h1, h2, h3, h4, h5, h6 {
 .comparison.product-comparison .details .description {
   padding-right: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000384}}
 .comparison.product-comparison .reviews {
   font-size: 12px;
   padding: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000388}}
 .comparison.product-comparison .flavor-text {
   line-height: 1.1em;
   font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 2em;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000396}}
+.comparison.product-comparison .flavor-text:after {
+  content: "more";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #259fc4;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003103}}
+.comparison.product-comparison .flavor-text:after:hover {
+  color: #1d7c99;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003108}}
 .comparison.product-comparison .pricing {
-  width: 30%;
-  padding: 3em 2em;
+  width: 20%;
+  padding: 1.5em 2em;
   float: left;
   text-align: center;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003114}}
 .comparison.product-comparison .pricing .arrow {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -323px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -353px no-repeat;
   height: 47px;
   width: 27px;
   position: absolute;
   top: 37%;
   right: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003125}}
 .comparison.merchant-comparison .merchant-logo-container {
   width: 15%;
-  min-height: 130px;
+  min-height: 170px;
   border-right: 1px solid #d1d0c9;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003130}}
 .comparison.merchant-comparison .merchant-logo-container .merchant-logo {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .comparison.merchant-comparison .details {
   float: left;
   padding: 2em 1em;
   width: 45%;
   border-right: 1px solid #d1d0c9;
-  min-height: 130px;
+  min-height: 170px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003141}}
 .comparison.merchant-comparison .details .favorite-heart {
   top: 1em;
   right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003146}}
 .comparison.merchant-comparison .calculations {
   padding: 2em 1em;
-  min-height: 130px;
+  min-height: 170px;
   border-right: 1px solid #d1d0c9;
   width: 15%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003152}}
 .comparison.merchant-comparison .calculations .discount {
   font-size: 75%;
   color: #10B48A;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003157}}
 .comparison.merchant-comparison .purchase {
   padding: 2em 1.5em;
   float: left;
   width: 25%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003161}}
 .comparison.merchant-comparison .purchase .pricing {
   float: left;
   width: 40%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003165}}
 .comparison.merchant-comparison .purchase .buy-area {
   float: left;
   width: 60%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003168}}
 .comparison.merchant-comparison .purchase .buy-area .button, .comparison.merchant-comparison .purchase .buy-area .button--blue, .comparison.merchant-comparison .purchase .buy-area .button--primary {
   width: 100%;
   margin-top: .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003162}}
-.product-coupon-item .product-photo, .product-item .product-photo, .collection-item .collection-bg {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003179}}
+.product-coupon-item .product-photo, .product-item .product-photo, .collection-item .collection-bg, .tabs li {
   border-radius: 3px 3px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003183}}
 .product-coupon-item .product-coupon-description, .collection-item .description {
   border-radius: 0 0 3px 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003187}}
 .relative {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003191}}
 .merchant-logo-container {
   background-color: #ffffff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003197}}
 .coupons-used {
   padding-top: 2em;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003200}}
 .coupons-used .merchant-logo-container {
   width: 25%;
   float: left;
   margin-right: 2.5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003205}}
 .coupons-used .coupons {
   width: 72.5%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003208}}
 .coupons-used .coupons .coupon {
   padding-left: 28px;
   position: relative;
   display: block;
   padding-bottom: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003213}}
 .coupons-used .coupons .coupon:last-child {
   padding-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003216}}
 .coupons-used .coupons .coupon:before {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -87px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -117px no-repeat;
   height: 17px;
   width: 17px;
   position: absolute;
@@ -2649,19 +2671,19 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003229}}
 .urgency {
   color: #ea4545;
   padding-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003232}}
 .urgency .ending {
   padding-left: 22px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003235}}
 .urgency .ending:before {
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -308px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -338px no-repeat;
   height: 15px;
   width: 16px;
   position: absolute;
@@ -2670,41 +2692,41 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003247}}
 .test-full {
   padding: 1em;
   border: 1px solid #d1d0c9;
   margin-bottom: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003252}}
 .test-full .product-image {
   width: 25%;
   float: left;
   margin-right: 2.5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003256}}
 .test-full .product-image img {
   display: block;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003261}}
 .test-full .product-description {
   float: left;
   width: 72.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003267}}
 .module {
   width: 100%;
   margin: 0;
   padding: 2em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003273}}
 .strikethrough {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003275}}
 .strikethrough:before {
   position: absolute;
   content: "";
@@ -2721,14 +2743,14 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-15deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003293}}
 .carousel {
   width: 90%;
   margin: auto;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003299}}
 .triangle {
   width: 0;
   height: 0;
@@ -2738,28 +2760,28 @@ h1, h2, h3, h4, h5, h6 {
   top: 30%;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003307}}
 .triangle.right {
   right: -3em;
   border-width: 25px 0 25px 25px;
   border-color: transparent transparent transparent #d1d0c9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003311}}
 .triangle.right:hover {
   border-color: transparent transparent transparent #8b897a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003315}}
 .triangle.left {
   left: -3em;
   border-width: 25px 25px 25px 0;
   border-color: transparent #d1d0c9 transparent transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003319}}
 .triangle.left:hover {
   border-color: transparent #8b897a transparent transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003308}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003325}}
 .merchant-logo {
   width: 100%;
   height: 0;
@@ -2770,38 +2792,38 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003333}}
 .sub-right {
   font-size: 75%;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003338}}
 .pb1 {
   padding-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003342}}
 .pt1 {
   padding-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003346}}
 .border-bottom {
   border-bottom: 1px solid #d1d0c9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003350}}
 .favorite-heart {
   height: 22px;
   width: 24px;
-  background: url('/images/generated/../images/utility-icons-sbe0e0bf34b.png') 0 -174px no-repeat;
+  background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -204px no-repeat;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003358}}
 .banner {
   color: #ffffff;
   font-weight: bold;
@@ -2813,30 +2835,30 @@ h1, h2, h3, h4, h5, h6 {
   right: -1px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003368}}
 .banner.best-price {
   background: #10B48A;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003374}}
 .photo-background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003382}}
 .deals-hero {
   height: 50%;
   width: 100%;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003386}}
 .deals-hero .background-container {
   width: 100%;
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003390}}
 .deals-hero .hero-background {
   width: 50%;
   height: 100%;
@@ -2845,7 +2867,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003398}}
 .deals-hero .hero-description {
   width: 50%;
   padding: 1em;
@@ -2854,61 +2876,61 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003405}}
 .deals-hero .hero-description .product-name {
   font-size: 150%;
   font-weight: bold;
   color: #222222;
   line-height: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003412}}
 .deals-hero .hero-description .pricing .new-price {
   color: #10B48A;
   margin: 0 .5em;
   font-size: 125%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003401}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003418}}
 .deals-hero .hero-description .button, .deals-hero .hero-description .button--blue, .deals-hero .hero-description .button--primary {
   width: 25%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003422}}
 .deals-hero .hero-description .product-description {
   padding: 1em 0;
   line-height: 1.3em;
 }
 
 @media screen and (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003430}}
   .desktop-show {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003433}}
   .desktop-hide {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003438}}
   .coupons-used .merchant-logo-container {
     width: 15%;
     margin-right: 2.5%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003425}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003442}}
   .coupons-used .coupons {
     width: 82.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003447}}
   .product-coupon-description .description {
-    min-height: 44px;
+    min-height: 62px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003453}}
 .radio-filters input[type="radio"] {
   position: absolute;
   left: -1000px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003439}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003456}}
 .radio-filters input[type="radio"] + label {
   display: block;
   padding: 6px 12px;
@@ -2916,7 +2938,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #349dc5;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003462}}
 .radio-filters input[type="radio"] + label.icon-label {
   padding-left: 38px;
   font-size: 14px;
@@ -2924,46 +2946,46 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   border-bottom: 1px solid #d9d9d6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003468}}
 .radio-filters input[type="radio"] + label.icon-label.all {
   background-image: url(../images/icons/All.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003454}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003471}}
 .radio-filters input[type="radio"] + label.icon-label.code {
   background-image: url(../images/icons/Codes.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003457}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003474}}
 .radio-filters input[type="radio"] + label.icon-label.sale {
   background-image: url(../images/icons/Sales.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003460}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003477}}
 .radio-filters input[type="radio"] + label.icon-label.printable {
   background-image: url(../images/icons/Printable.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003480}}
 .radio-filters input[type="radio"] + label.icon-label.free-shipping {
   background-image: url(../images/icons/Free-Shipping.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003466}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003483}}
 .radio-filters input[type="radio"] + label.icon-label.bogo {
   background-image: url(../images/icons/filter-icon_14.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003486}}
 .radio-filters input[type="radio"] + label.icon-label.cash-off {
   background-image: url(../images/icons/cash-off.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003472}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003489}}
 .radio-filters input[type="radio"] + label.icon-label.percent-off {
   background-image: url(../images/icons/percent-off.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003494}}
 .radio-filters input[type="radio"]:checked + label {
   border-radius: 6px;
   background-color: #DFDFDF;
   position: relative;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003500}}
 .radio-filters input[type="radio"]:checked + label:after {
   content: '';
   position: absolute;
@@ -2975,133 +2997,175 @@ h1, h2, h3, h4, h5, h6 {
   right: -32px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003514}}
+.tabs {
+  border-bottom: 1px solid #d1d0c9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003516}}
+.tabs li {
+  display: inline-block;
+  margin-bottom: -1px;
+  padding: .5em 2em;
+  border: 1px solid #d1d0c9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003522}}
+.tabs li.active {
+  border-bottom: 1px solid white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003529}}
+.compare {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003531}}
+.compare.visible {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003536}}
+.form-search.product-search {
+  margin-bottom: 2em;
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003536}}
+  .form-search.product-search {
+    display: block !important;
+  }
+}
+
 @media screen and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003547}}
   .mobile-hide {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003551}}
+  .tabs {
+    font-size: 12px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003555}}
   .mobile-center {
     display: block;
     text-align: center;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003560}}
   .deals-hero {
     max-height: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003511}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003562}}
   .deals-hero .hero-background {
     width: 100%;
     height: 50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003515}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003566}}
   .deals-hero .hero-description {
     width: 100%;
     border: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003569}}
   .deals-hero .hero-description .product-name {
     font-size: 115%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003572}}
   .deals-hero .hero-description .button, .deals-hero .hero-description .button--blue, .deals-hero .hero-description .button--primary {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003530}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003581}}
   .comparison.product-comparison .product-photo {
     width: 100%;
     border-bottom: 1px solid #d1d0c9;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003534}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003585}}
   .comparison.product-comparison .details {
     width: 100%;
     clear: left;
     border: none;
     padding: .5em 1em 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003591}}
   .comparison.product-comparison .pricing {
     width: 100%;
     padding: 0 1em 1em;
     clear: left;
     text-align: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003544}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003595}}
   .comparison.product-comparison .pricing .arrow {
     top: -30%;
     right: 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003548}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003599}}
   .comparison.product-comparison .pricing div {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003602}}
   .comparison.product-comparison .pricing .strikethrough {
     margin-right: .5em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003558}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003609}}
   .comparison.merchant-comparison .merchant-logo-container {
     width: 25%;
     border: none;
     min-height: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003563}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003614}}
   .comparison.merchant-comparison .details {
     width: 75%;
     border: none;
     min-height: 0;
     padding: 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003569}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003620}}
   .comparison.merchant-comparison .calculations {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003623}}
   .comparison.merchant-comparison .purchase {
     clear: left;
     width: 100%;
     padding: 1em;
     border-top: 1px solid #d1d0c9;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003577}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003628}}
   .comparison.merchant-comparison .purchase .pricing {
     text-align: right;
     padding-right: 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003580}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003631}}
   .comparison.merchant-comparison .purchase .pricing div {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003582}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003633}}
   .comparison.merchant-comparison .purchase .pricing div .price {
     padding-left: 1em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003587}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003638}}
   .comparison.merchant-comparison .purchase .buy-area .button, .comparison.merchant-comparison .purchase .buy-area .button--blue, .comparison.merchant-comparison .purchase .buy-area .button--primary {
     margin-top: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003645}}
   .triangle {
     top: 35%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003596}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003647}}
   .triangle.right {
     right: -2em;
     border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent #d1d0c9;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003652}}
   .triangle.left {
     left: -2em;
     border-width: 20px 20px 20px 0;
     border-color: transparent #d1d0c9 transparent transparent;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003659}}
   .ugc-photo, .collection-image, .product-coupon-item {
     margin-bottom: 1em;
   }

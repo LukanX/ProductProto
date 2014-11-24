@@ -4,20 +4,20 @@
 			<div class="grid-unit">
 				<div class="collection-image photo-background"><img src="images/collections/winter-fashion.jpg" alt=""></div>
 			</div>
-			<div class="grid-unit col-2">
-				<h3 class="h3">Winter Clothing Collection</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga repellendus minus repellat, error, culpa, placeat ipsum excepturi, vel quod velit veritatis. Ullam tenetur dolor optio quod provident impedit architecto.</p>
+			<div class="grid-unit multi col-2">
+				<h3 class="h3">Cozy Fall Fashion</h3>
+				<p>Cozy up next to a warm fire with our fall fashion.  Enjoy high fashion at low prices. Warm colors and warm clothing, all attached to the smart savings you expect.</p>
 
 				<h6
 
 				 class="h6">Photos from our customers</h6>
 				<div class="grid-row col-6">
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
-					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(http://www.film1.nl/images/plaatjes/12160.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW01.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW02.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW03.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW04.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW05.jpg);"></div></div>
+					<div class="grid-unit"><div class="ugc-photo photo-background" style="background-image: url(images/userSubmitted/fallFashionW06.jpg);"></div></div>
 				</div>
 			</div>
 
@@ -27,61 +27,46 @@
 
 <div class="module">
 	<div class="container">
-		<div class="grid-row col-4">
-			
-			<div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
-          </div>
-        </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
+		<div class="grid-row col-3">
+			<div ng-repeat="deal in deals | filter: {category: 'fall fashion womens row1'}">
+        <div class="grid-unit product-item" ng-class="{'last':$last}">
+            <div class="favorite-heart"></div>
+            <a href="#/experience/product">
+            <div class="product-photo photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}">
+              <div class="gradient-overlay">
+              </div>
+            </div>
+            <div class="product-description">
+              <div class="product-name">{{deal.name}}</div>
+              <div class="product-info clearfix">
+                <div class="merchant">{{deal.merchant}}</div>
+                <div class="price"><span class="strikethrough">${{deal.oldPrice | number:2}}</span> ${{deal.newPrice | number:2}}</div>
+              </div>
+            </div>
+          </a>
           </div>
         </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
-          </div>
-        </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
+
+        <div ng-repeat="deal in deals | filter: {category: 'fall fashion womens row2'}">
+        <div class="grid-unit product-item" ng-class="{'last':$last}">
+            <div class="favorite-heart"></div>
+            <a href="#/experience/product">
+            <div class="product-photo photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}">
+              <div class="gradient-overlay">
+              </div>
+            </div>
+            <div class="product-description">
+              <div class="product-name">{{deal.name}}</div>
+              <div class="product-info clearfix">
+                <div class="merchant">{{deal.merchant}}</div>
+                <div class="price"><span class="strikethrough">${{deal.oldPrice | number:2}}</span> ${{deal.newPrice | number:2}}</div>
+              </div>
+            </div>
+          </a>
           </div>
         </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
+
       </div>
 
 		</div>
 	</div>
-</div>

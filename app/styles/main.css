@@ -2022,6 +2022,10 @@ ul.list-padded li {
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003109}}
+.product-item .photo-background {
+  background-size: contain;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003112}}
 .product-item .product-description {
   width: 100%;
   background: #ffffff;
@@ -2031,13 +2035,14 @@ ul.list-padded li {
   border-radius: 0 0 3px 3px;
   color: #222222;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003120}}
 .product-item .product-description .product-name {
   font-weight: bold;
   line-height: 1.2em;
   font-size: 14px;
+  min-height: 32px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003126}}
 .product-item .product-description .product-info {
   width: 100%;
   vertical-align: baseline;
@@ -2045,14 +2050,14 @@ ul.list-padded li {
   line-height: 14px;
   padding-top: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003132}}
 .product-item .product-description .product-info .merchant {
   width: 50%;
   font-size: 75%;
   color: #646464;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003138}}
 .product-item .product-description .product-info .price {
   width: 50%;
   float: left;
@@ -2060,43 +2065,43 @@ ul.list-padded li {
   color: #10B48A;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003144}}
 .product-item .product-description .product-info .price .strikethrough {
   color: #646464;
   font-weight: normal;
   font-size: 75%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003155}}
 .pricing {
   font-size: 18px;
   color: #222222;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003158}}
 .pricing .shipping {
   font-size: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003162}}
 .pricing .price {
   font-weight: bold;
   color: #10B48A;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003166}}
 .pricing .smaller {
   color: #C4C4C4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003169}}
 .pricing .crossout {
   text-decoration: line-through;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003174}}
 .smaller {
   font-size: 75%;
   color: #7e7e7e;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003185}}
 .collection-item .collection-bg {
   width: 100%;
   width: 100%;
@@ -2106,33 +2111,33 @@ ul.list-padded li {
   position: relative;
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003192}}
 .collection-item .collection-bg .favorite-heart {
   top: 1em;
   right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003197}}
 .collection-item .description {
   border: 1px solid #d1d0c9;
   padding: .5em 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003204}}
 .best-price {
   color: #10B48A;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003210}}
 .collection-image {
   width: 100%;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003213}}
 .collection-image img {
   width: 100%;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003217}}
 .collection-image .merchant-logo-container {
   width: 25%;
   position: absolute;
@@ -2140,18 +2145,18 @@ ul.list-padded li {
   left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003225}}
 .price-button {
   font-size: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003229}}
 .collection-description .button, .collection-description .button--blue, .collection-description .button--primary {
   min-width: 175px;
   margin-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003232}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003236}}
 .ugc-photo {
   width: 100%;
   width: 100%;
@@ -2159,43 +2164,43 @@ ul.list-padded li {
   padding-bottom: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003245}}
 .products-coupons {
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003247}}
 .products-coupons li {
   border: 1px solid #d1d0c9;
   border-top: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003250}}
 .products-coupons li:first-child {
   border-top: 1px solid #d1d0c9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003258}}
 .h-coupon {
   padding: 0.5em 3.25em 0.5em 0;
   position: relative;
   font-size: 12px;
   max-width: 1280px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003264}}
 .h-coupon a img {
   padding-left: .75em;
   padding-top: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003269}}
 .h-coupon img.small-merchant-logo {
   width: 10px;
   padding: 0;
   margin-right: .25em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003275}}
 .h-coupon .h4, .h-coupon .h-coupon-title {
   font-size: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003280}}
 .h-coupon:before {
   border-style: solid;
   border-width: 3px 3px 0 0;
@@ -2213,7 +2218,7 @@ ul.list-padded li {
   width: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003298}}
 .button--code {
   position: relative;
   margin-right: 2em;
@@ -2222,13 +2227,13 @@ ul.list-padded li {
   border: 1px solid #259fc4;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003305}}
 .button--code:hover {
   color: white;
   background: #1d7c99;
   border: 1px solid #1d7c99;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003310}}
 .button--code:after {
   content: '123';
   position: absolute;
@@ -2246,54 +2251,54 @@ ul.list-padded li {
   right: -1.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003328}}
 .h-coupon-media {
   float: left;
   width: 20%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003333}}
 .h-block-link {
   color: inherit;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003338}}
 .h-coupon-content {
   margin-left: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003342}}
 .h-coupon-title {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   margin-right: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003349}}
 .h-coupon-validation {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003354}}
 .h-coupon-validation .sep {
   display: block;
   visibility: hidden;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003361}}
 .h-coupon-details {
   margin-bottom: 0;
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003366}}
 .h-coupon-button {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003370}}
 .favorite-star {
   position: absolute;
   top: 0.5em;
@@ -2302,16 +2307,16 @@ ul.list-padded li {
   width: 24px;
   background: url('/images/generated/../images/utility-icons-s034e267a07.png') 0 -93px no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003378}}
 .favorite-star.active {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/17/star-filled.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003383}}
 .h-product-details {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003385}}
 .h-product-details .price {
   font-size: 14px;
   font-weight: bold;
@@ -2319,37 +2324,37 @@ ul.list-padded li {
 }
 
 @media (min-width: 500px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003393}}
   .h-coupon {
     font-size: 15px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003395}}
   .h-coupon a img {
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003399}}
   .h-coupon img.small-merchant-logo {
     width: 12px;
   }
 }
 @media (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003406}}
   .h-coupon {
     padding: 1em 3em 1em 2.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003410}}
   .h-coupon-media {
     padding-left: 2.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003410}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003414}}
   .h-coupon-title {
     margin-bottom: 0.5em;
     margin-right: 1em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003420}}
   .h-coupon-validation .sep {
     height: auto;
     display: inline-block;
@@ -2357,7 +2362,7 @@ ul.list-padded li {
     margin: 0 0.5em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003424}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003428}}
   .h-coupon-details {
     display: block;
     white-space: nowrap;
@@ -2368,7 +2373,7 @@ ul.list-padded li {
     cursor: pointer;
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003434}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003438}}
   .h-coupon-details:before {
     content: 'More';
     float: right;
@@ -2380,52 +2385,52 @@ ul.list-padded li {
     top: 0;
     height: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003450}}
   .is-open .h-coupon-details {
     white-space: normal;
     overflow: visible;
     text-overflow: none;
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003452}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003456}}
   .is-open .h-coupon-details:before {
     display: none;
   }
 }
 @media (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003462}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003466}}
   .h-coupon .favorite-star {
     position: absolute;
     right: 2em;
     top: 1em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003473}}
   .h-product-details .price {
     font-size: 18px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003477}}
   .h-coupon {
     padding: 1.5em 10em 1.5em 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003476}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003480}}
   .h-coupon:before {
     content: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003481}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003485}}
   .h-coupon-media {
     width: 18.5%;
     padding-left: 5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003486}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003490}}
   .h-coupon-content {
     margin-left: 22.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003490}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003494}}
   .h-coupon-button {
     position: absolute;
     display: block;
@@ -2434,7 +2439,7 @@ ul.list-padded li {
     top: 5.5em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/_prototype-modules\/_product-tiles\.scss}line{font-family:\00003504}}
 .shop-button {
   width: 125px;
 }

@@ -106,6 +106,9 @@
     @include maintain-ratio(1 1);
     position: relative;
   }
+  .photo-background{
+  	background-size: contain;
+  }
   .product-description{
     width: 100%;
     background: $white;
@@ -118,6 +121,7 @@
       font-weight: bold;
       line-height: 1.2em;
       font-size: 14px;
+      min-height: 32px;
     }
     .product-info{
       width: 100%;

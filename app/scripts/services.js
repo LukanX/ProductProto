@@ -15,3 +15,17 @@ productsProtoServices.factory('DealsC', ['$resource',
       query: {method:'GET', isArray:true}
     });
   }]);
+
+productsProtoServices.factory('DealsB', ['$resource',
+  function($resource){
+    return $resource('json/products_b.json', {}, {
+      query: {method:'GET', isArray:true}
+    });
+  }]);
+
+productsProtoServices.factory('CollectionsB', ['$resource',
+  function($resource){
+    return $resource('json/collections_b.json', {}, {
+      query: {method:'GET', isArray:true}
+    });
+  }]);

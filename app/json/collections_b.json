@@ -1,0 +1,63 @@
+[
+	{
+		"name": "Best Running Shoes 2014",
+		"bgImage": "images/collecions/bestRunningShoes.jpg",
+		"category": "homepage row1"
+	},
+	{
+		"name": "Holiday Gift Guide",
+		"bgImage": "images/collections/holidayGiftGuide.jpg",
+		"category": "homepage row1"
+	},
+	{
+		"name": "Get this Look: Cozy Fall Fashion",
+		"bgImage": "images/collecions/getthislookFallWomens.jpg",
+		"category": "homepage row1"
+	},
+	{
+		"name": "Holiday Kids Clothes",
+		"bgImage": "images/collecions/holidayKidsClothes.jpg",
+		"category": "homepage row2"
+	},
+	{
+		"name": "Layer Up: This Seasons Menswear",
+		"bgImage": "images/collecions/mensLayers.jpg",
+		"category": "homepage row2"
+	},
+	{
+		"name": "Nursery Necessities",
+		"bgImage": "images/collecions/nurseryEssentials.jpg",
+		"category": "homepage row2"
+	},
+	{
+		"name": "This Seasons Best Handbags",
+		"bgImage": "images/collecions/seasonsHandbags.jpg",
+		"category": "homepage row3"
+	},
+	{
+		"name": "Home Trend: Boho Modern",
+		"bgImage": "images/collecions/warmwoodsyhome.jpg",
+		"category": "homepage row3"
+	},
+	{
+		"name": "Beautiful Men's Timepieces",
+		"bgImage": "images/collecions/mensTimepieces.jpg",
+		"category": "homepage row3"
+	},
+	{
+		"name": "Best Fitness Trackers 2014",
+		"bgImage": "images/collecions/fitnessTrackers.jpg",
+		"category": "related"
+	},
+	{
+		"name": "Review: Water Bottles",
+		"bgImage": "images/collecions/waterbottleReview.jpg",
+		"category": "related"
+	},
+	{
+		"name": "Cute Workout Wear",
+		"bgImage": "images/collecions/workoutWear.jpg",
+		"category": "related"
+	}
+
+]

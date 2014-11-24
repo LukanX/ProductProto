@@ -30,15 +30,19 @@ angular
       })
       .when('/experience', {
         templateUrl: 'views/experience-home.html',
-        controller: 'MainCtrl'
+        controller: 'dealsBCtrl'
       })
       .when('/experience/collection', {
         templateUrl: 'views/experience-collection.html',
-        controller: 'MainCtrl'
+        controller: 'dealsBCtrl'
+      })
+      .when('/experience/category', {
+        templateUrl: 'views/experience-category.html',
+        controller: 'dealsBCtrl'
       })
       .when('/experience/product', {
         templateUrl: 'views/experience-product.html',
-        controller: 'MainCtrl'
+        controller: 'dealsBCtrl'
       })
       .when('/deals', {
         templateUrl: 'views/deals-home.html',

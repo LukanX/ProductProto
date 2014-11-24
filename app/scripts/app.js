@@ -52,9 +52,17 @@ angular
         templateUrl: 'views/deals-product.html',
         controller: 'dealsACtrl'
       })
+      .when('/products-coupons', {
+        templateUrl: 'views/product-coupons-home.html',
+        controller: 'dealsCCtrl'
+      })
       .when('/products-coupons/product', {
         templateUrl: 'views/product-coupons-product.html',
-        controller: 'MainCtrl'
+        controller: 'dealsCCtrl'
+      })
+      .when('/products-coupons/category', {
+        templateUrl: 'views/product-coupons-category.html',
+        controller: 'dealsCCtrl'
       })
       .otherwise({
         redirectTo: '/'

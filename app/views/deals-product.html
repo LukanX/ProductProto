@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="grid-row col-3 relative" ng-repeat = "deal in deals | filter: {name: 'Nike Dart 10 Womens'}">
       <div class="favorite-star"></div>
-			<div class="grid-unit relative">
+			<div class="grid-unit multi relative">
 				<div class="collection-image">
           <img ng-src="{{deal.bgImage}}" alt="">
         </div>
 			</div>
-			<div class="grid-unit col-2 collection-description">
+			<div class="grid-unit col-2 multi collection-description">
 				<h3 class="h3">{{deal.name}}</h3>
 				<p>{{deal.description}}</p>
 

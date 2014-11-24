@@ -1,27 +1,27 @@
 <div class="module border-bottom">
 	<div class="container">
-		<div class="grid-row col-3 relative">
+		<div class="grid-row col-3 relative" ng-repeat = "deal in deals | filter: {name: 'Nike Dart 10 Womens'}">
       <div class="favorite-heart"></div>
-			<div class="grid-unit relative">
+			<div class="grid-unit multi relative">
 				<div class="collection-image">
-          <img src="images/products/bear.jpg" alt="">
+          <img ng-src="{{deal.bgImage}}" alt="">
           <div class="merchant-logo-container">
-            <div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/mobile/target.com-logo.png)"></div>
+            <div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/mobile/footlocker.com-logo.png)"></div>
           </div>
         </div>
 			</div>
-			<div class="grid-unit col-2 collection-description">
+			<div class="grid-unit col-2 multi collection-description">
         <div class="best-price">Today's Best Price</div>
-				<h3 class="h3">Jellycat Bartholomew Bear Medium</h3>
-        <div class="reviews"><img src="images/utility-icons/4_Stars.png" alt=""> <a href="">1750 Reviews</a></div>
+				<h3 class="h3">{{deal.name}}</h3>
+        <div class="reviews"><img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt=""> <a href="">1750 Reviews</a></div>
 
         <div class="pricing mobile-center">
-          <span class="strikethrough">$100</span> (50% Off) <span class="smaller">with <a href="">Extra 15% Off Coupon</a> &amp; <a href="">Free Shipping Coupons</a></span>
+          <span class="strikethrough">${{deal.oldPrice | number:2}}</span> ({{((deal.oldPrice - deal.newPrice) / deal.oldPrice) * 100 | number: 0}}% Off) <span class="smaller">with <a href="">Extra 17% Off Coupon</a> &amp; <a href="">Free Shipping Coupons</a></span>
         </div>
         
-        <div class="button price-button">$50</div> <span class="mobile-center">at <a href="">Target.com</a></span>
+        <div class="button price-button">${{deal.newPrice | number:2}}</div> <span class="mobile-center">at <a href="">{{deal.merchant}}</a></span>
 
-        <p class="pt1">Tawny-tousled and full of softness, Bartholomew Bear is the perfect bedtime buddy. Read him a story, sing him ‘The Teddy Bears’ Picnic' or maybe just rest on his fluffy fudge tummy - he’s adorably podgy!</p>
+        <p class="pt1">{{deal.description}}</p>
 
         <p>Lowest Price Since Jan 2012: $49.99 <a href="">View Price History</a></p>
 
@@ -33,61 +33,114 @@
 
 <div class="module">
 	<div class="container">
-		<div class="grid-row col-4">
-			
-			<div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
-          </div>
+		<ul class="tabs">
+      <li ng-class="{'active':activeTab == 'compareStores'}" ng-click="activeTab = 'compareStores'">Compare Stores</li>  
+      <li ng-class="{'active':activeTab == 'compareProducts'}" ng-click="activeTab = 'compareProducts'">Compare Products</li>
+    </ul>
+    
+    <div class="compare compareStores" ng-class="{'visible':activeTab == 'compareStores'}"}>
+
+      <div class="full-width comparison merchant-comparison clearfix">
+        <div class="merchant-logo-container">
+          <div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/mobile/target.com-logo.png)"></div>
         </div>
-        <div class="test-caption">
-          Buy my book!
+        <div class="details">
+          <div class="favorite-heart"></div>
+          <div class="smaller">Target Online Sale</div>
+          <div class="description">25% Off Running Shoes</div>
+          <div class="smaller">Expires Dec 25, 2014 <a href="">More Details</a></div>
         </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
-          </div>
+        <div class="calculations">
+          <div class="original-price">$75.00</div>
+          <div class="discount">-$18.75</div>
+          <div class="discount">+ Free Shipping</div>
         </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
+        <div class="purchase clearfix">
+          <div class="pricing">
+            <div class="smaller"><span class="strikethrough">$75.00</span></div>
+            <div class="price">$56.25</div>
           </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
+          <div class="buy-area">
+            <div class="button">Buy</div>
           </div>
-        </div>
-        <div class="test-caption">
-          Buy my book!
-        </div>
-      </div>
-      <div class="grid-unit test-unit">
-        <div class="test-photo" style="background-image: url(http://dnok91peocsw3.cloudfront.net/product/39991-610x610-1322251732-primary.png);">
-          <div class="icon-gold-star"></div>
-          <div class="gradient-overlay">
-          </div>
-          <div class="discount">
-            <!-- <span class="strikethrough">$30</span> <span class="sale-price">$15</span> --> 50% Off
-          </div>
-        </div>
-        <div class="test-caption">
-          Buy my book!
         </div>
       </div>
 
-		</div>
-	</div>
+      <div class="full-width comparison merchant-comparison clearfix">
+        <div class="merchant-logo-container">
+          <div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/zappos.com-coupons.jpg)"></div>
+        </div>
+        <div class="details">
+          <div class="favorite-heart"></div>
+          <div class="smaller">Zappos</div>
+          <div class="description">Free Shipping</div>
+          <div class="smaller">Expires Dec 25, 2014 <a href="">More Details</a></div>
+        </div>
+        <div class="calculations">
+          <div class="original-price">$59.99</div>
+          <div class="discount">+ Free Shipping</div>
+        </div>
+        <div class="purchase clearfix">
+          <div class="pricing">
+            <div class="price">$59.99</div>
+          </div>
+          <div class="buy-area">
+            <div class="button">Buy</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width comparison merchant-comparison clearfix">
+        <div class="merchant-logo-container">
+          <div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/mobile/walmart.com-logo.png)"></div>
+        </div>
+        <div class="details">
+          <div class="favorite-heart"></div>
+          <div class="smaller">Walmart Online &amp; In-Store Sale</div>
+          <div class="description">20% Off Running Shoes</div>
+          <div class="smaller">Expires Dec 25, 2014 <a href="">More Details</a></div>
+        </div>
+        <div class="calculations">
+          <div class="original-price">$75.00</div>
+          <div class="discount">-$15.00</div>
+        </div>
+        <div class="purchase clearfix">
+          <div class="pricing">
+            <div class="smaller"><span class="strikethrough">$75.00</span></div>
+            <div class="price">$60.00</div>
+          </div>
+          <div class="buy-area">
+            <div class="button">Buy</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="compare compareStores" ng-class="{'visible':activeTab == 'compareProducts'}"}>
+      <div ng-repeat="deal in deals | filter: {category: 'running shoes womens'}">
+        <div class="full-width comparison product-comparison clearfix">
+          <div class="product-photo">
+            <div class="photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}"></div>
+          </div>
+          <div class="details">
+            <div class="favorite-heart"></div>
+            <div class="smaller">{{deal.merchant}} {{deal.location}}</div>
+            <div class="description">{{deal.name}}</div>
+            <div class="reviews"><img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt=""> <a href="">1750 Reviews</a></div>
+            <div class="flavor-text mobile-hide">{{deal.description}}</div>
+          </div>
+          <div class="pricing">
+            <div class="smaller old-price"><span class="strikethrough">${{deal.oldPrice}}</span></div>
+            <div class="price">${{deal.newPrice}}</div>
+            <div class="smaller">At <a href="">{{deal.merchant}}</a></div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </div>
+    

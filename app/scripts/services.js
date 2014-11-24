@@ -8,3 +8,10 @@ productsProtoServices.factory('DealsA', ['$resource',
       query: {method:'GET', isArray:true}
     });
   }]);
+
+productsProtoServices.factory('DealsC', ['$resource',
+  function($resource){
+    return $resource('json/deals_c.json', {}, {
+      query: {method:'GET', isArray:true}
+    });
+  }]);

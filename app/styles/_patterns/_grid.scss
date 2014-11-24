@@ -114,7 +114,10 @@ $gutter: 3.2%;
 		.grid-unit {
 			@include columns(1 of 3);
 
-			&:last-of-type {
+			&.multi:last-of-type { // Angular Hack
+				margin-right: 0;
+			}
+			&.last{ // Angular Hack
 				margin-right: 0;
 			}
 		}

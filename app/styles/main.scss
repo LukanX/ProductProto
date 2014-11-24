@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
   &.product-comparison{
     .product-photo{
       float: left;
-      width: 30%;
+      width: 17%;
       padding: 1em 0;
       .photo-background{
         @include maintain-ratio(16 9);
@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
     }
     .details{
       float: left;
-      width: 40%;
+      width: 63%;
       padding: 1.5em 1em;
       border-right: 1px solid $beige;
       border-left: 1px solid $beige;
@@ -78,6 +78,7 @@ h1,h2,h3,h4,h5,h6{
       }
       .description{
         padding-right: 1.5em;
+
       }
     }
     .reviews{
@@ -87,10 +88,26 @@ h1,h2,h3,h4,h5,h6{
     .flavor-text{
       line-height: 1.1em;
       font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 2em;
+      position: relative;
+      &:after{
+        content: "more";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $blue;
+        cursor: pointer;
+        &:hover{
+          color: $darker-blue;
+        }
+      }
     }
     .pricing{
-      width: 30%;
-      padding: 3em 2em;
+      width: 20%;
+      padding: 1.5em 2em;
       float: left;
       text-align: center;
       position: relative;
@@ -107,7 +124,7 @@ h1,h2,h3,h4,h5,h6{
   &.merchant-comparison{
     .merchant-logo-container{
       width: 15%;
-      min-height: 130px;
+      min-height: 170px;
       border-right: 1px solid $beige;
       float: left;
       .merchant-logo{
@@ -119,7 +136,7 @@ h1,h2,h3,h4,h5,h6{
       padding: 2em 1em;
       width: 45%;
       border-right: 1px solid $beige;
-      min-height: 130px;
+      min-height: 170px;
       position: relative;
       .favorite-heart{
         top: 1em;
@@ -128,7 +145,7 @@ h1,h2,h3,h4,h5,h6{
     }
     .calculations{
       padding: 2em 1em;
-      min-height: 130px;
+      min-height: 170px;
       border-right: 1px solid $beige;
       width: 15%;
       float: left;
@@ -428,7 +445,7 @@ h1,h2,h3,h4,h5,h6{
   }
 
   .product-coupon-description .description{
-    min-height: 44px;
+    min-height: 62px;
   }
 }
 
@@ -494,11 +511,45 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+.tabs{
+  border-bottom: 1px solid $beige;
+  li{
+    display: inline-block;
+    margin-bottom: -1px;
+    padding: .5em 2em;
+    @extend %rounded-top;
+    border: 1px solid $beige;
+    &.active{
+      border-bottom: 1px solid white;
+    }
+  }
+
+}
+
+.compare{
+  display: none;
+  &.visible{
+    display: block;
+  }
+}
+
+.form-search.product-search{
+  margin-bottom: 2em;
+  width: 80%;
+  @include media($breakpoint-480-max) {
+    display: block !important; // JS Show/Hide override
+  }
+}
+
 
 
 @include media($breakpoint-800-max){
   .mobile-hide{
     display: none;
+  }
+
+  .tabs{
+    font-size: 12px;
   }
 
   .mobile-center{

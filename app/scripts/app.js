@@ -24,49 +24,33 @@ angular
         templateUrl: 'views/home.html',
         controller: 'MainCtrl'
       })
+    .when('/index', {
+        templateUrl: 'views/homepage.html',
+        controller: 'productCtrl'
+      })
       .when('/test', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/experience', {
-        templateUrl: 'views/experience-home.html',
-        controller: 'dealsBCtrl'
+      .when('/search-category', {
+        templateUrl: 'views/search-category.html',
+        controller: 'productCtrl'
       })
-      .when('/experience/collection', {
-        templateUrl: 'views/experience-collection.html',
-        controller: 'dealsBCtrl'
+      .when('/research-category', {
+        templateUrl: 'views/research-category.html',
+        controller: 'productCtrl'
       })
-      .when('/experience/category', {
-        templateUrl: 'views/experience-category.html',
-        controller: 'dealsBCtrl'
+      .when('/products/:productId', {
+        templateUrl: 'views/product.html',
+        controller: 'productCtrl'
       })
-      .when('/experience/product', {
-        templateUrl: 'views/experience-product.html',
-        controller: 'dealsBCtrl'
+      .when('/compare', {
+        templateUrl: 'views/compare.html',
+        controller: 'productCtrl'
       })
-      .when('/deals', {
-        templateUrl: 'views/deals-home.html',
-        controller: 'dealsACtrl'
-      })
-      .when('/deals/category', {
-        templateUrl: 'views/deals-category.html',
-        controller: 'dealsACtrl'
-      })
-      .when('/deals/product', {
-        templateUrl: 'views/deals-product.html',
-        controller: 'dealsACtrl'
-      })
-      .when('/products-coupons', {
-        templateUrl: 'views/product-coupons-home.html',
-        controller: 'dealsCCtrl'
-      })
-      .when('/products-coupons/product', {
-        templateUrl: 'views/product-coupons-product.html',
-        controller: 'dealsCCtrl'
-      })
-      .when('/products-coupons/category', {
-        templateUrl: 'views/product-coupons-category.html',
-        controller: 'dealsCCtrl'
+      .when('/collection', {
+        templateUrl: 'views/collection.html',
+        controller: 'productCtrl'
       })
       .otherwise({
         redirectTo: '/'

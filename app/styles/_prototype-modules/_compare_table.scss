@@ -1,0 +1,117 @@
+// TABLE
+table.comparison-table{
+  width: 100%;
+  border-spacing: 0;
+  overflow-x: auto;
+  thead{
+    td{
+      line-height: 1.2em;
+      border-left: none;
+      &.price-cell{
+        text-align: left;
+        padding: 1em;
+        &:before{
+          displaY: none;
+        }
+      }
+      @include media($breakpoint-500){
+        &.specs-cell, &.coupons-cell{
+          text-indent: -9999px;
+          line-height: 0;
+        }
+        &.specs-cell:after{
+          content: "Specifications";
+          text-indent: 0;
+          display: block;
+          line-height: initial; /* New content takes up original line height */
+        }
+        &.coupons-cell:after{
+          content: "Coupons & Promotions";
+          text-indent: 0;
+          display: block;
+          line-height: initial; /* New content takes up original line height */
+        }
+      }
+    }
+  }
+  td{
+    width: 33%;
+    border-left: 1px solid $beige;
+    padding: 1em;
+    border-bottom: 1px solid $beige;
+    font-size: 10px;
+    line-height: 1.3em;
+    position: relative;
+    @include media($breakpoint-500){
+      width: 20%;
+    }
+    &.price-cell{
+      text-align: right;
+      position: relative;
+      padding-right: 3em;
+      &:before{
+        border-style: solid;
+        border-width: 0.25em 0.25em 0 0;
+        border-color: $blue;
+        content: '';
+        display: inline-block;
+        height: 0.45em;
+        position: absolute;
+        top: 50%;
+        -webkit-translateY: -50%;
+        -moz-translateY: -50%;
+        -ms-translateY: -50%;
+        -o-translateY: -50%;
+        translateY: -50%;
+        right: 1em;
+        transform: rotate(-45deg);
+        vertical-align: top;
+        width: 0.45em;
+        transform: rotate(45deg);
+      }
+    }
+    li{
+      margin-bottom: .75em;
+      line-height: 1.2em;
+    }
+    @include media($breakpoint-500){
+      font-size: 15px;
+    }
+    &:first-child{
+      border-left: none;
+    }
+    &.products-cell{
+      width: 25%;
+      padding-left: 0;
+      @include media($breakpoint-500){
+        width: 40%;
+      }
+      .product-photo-container{
+        display: none;
+        .product-photo{
+          @include maintain-ratio(4 3);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+      .product-info{
+        .product-name{
+          line-height: 1.3em;
+        }
+      }
+      @include media($breakpoint-800){
+        .product-photo-container{
+          display: block;
+          float: left;
+          width: 30%;
+        }
+        .product-info{
+          float: left;
+          width: 70%;
+          padding-left: 1em;
+        }
+      }
+    }
+  }
+}

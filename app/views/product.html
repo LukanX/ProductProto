@@ -1,0 +1,149 @@
+<div class="module">
+	<div class="container">
+		<div class="grid-row col-3 relative pb1" ng-repeat = "deal in featuredDeal = (deals | filter: {productId: searchId}:true | limitTo: 1)">
+      <div class="favorite-heart" ng-click="favorited = !favorited" ng-class="{'active': favorited}"></div>
+			<div class="grid-unit relative">
+				<div class="collection-image">
+          <img ng-src="{{deal.bgImage}}" alt="">
+        </div>
+			</div>
+			<div class="grid-unit col-2 multi product-description">
+				<h3 class="h3 no-margin pr1">{{deal.name}}</h3>
+				<div class="reviews">
+          <img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt="">
+        </div>
+				<p class="pt1">{{deal.description}}</p>
+
+				<div class="green">Today's Best Price <span class="smaller green">({{((deal.oldPrice - deal.newPrice) / deal.oldPrice) * 100 | number: 0}}% Off with coupons)</span></div>
+
+        <div class="pricing pt1 clearfix">
+        	<div class="merchant-logo-container">
+        		<div class="merchant-logo" ng-style="{'background-image':'url('+deal.logo+')'}"></div>
+        	</div>
+          <div class="price-calculation">
+          <div class="old-price-coupons">
+          	<span class="smaller"><span class="crossout">${{deal.oldPrice | number:2}}</span> + <span class="faux-link">Extra 17% Off Coupon</span> + <span class="faux-link">Free Shipping</span></span>
+          </div>
+          <div>
+          	${{deal.newPrice | number:2}} <span class="smaller black">+ Free Shipping</span></div>
+          </div>
+        </div>
+        
+        <div class="button button--secondary">Alert when on sale</div> <br>
+        <div class="button product-button">Buy</div> <span class="mobile-center">at <a href="">{{deal.merchant}}</a></span>
+
+      </div>
+    </div>
+    <h3 class="h3 centered pt1">Also Available At</h3>
+    <ul class="price-compare">
+    	
+    	<li class="clearfix">
+    		<div class="merchant-info clearfix">
+    			<div class="merchant-logo-container">
+    				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/target.com-coupons.jpg);"></div>
+  				</div>
+  				<div class="merchant-coupon-details">
+  					<div>Target</div>
+  					<div class="smaller">With 1 coupon &bull; <span class="faux-link">view coupon code</span></div>
+  				</div>
+    		</div>
+    		<div class="purchase-price">
+    			<div class="price">
+    				<div>${{featuredDeal[0].newPrice + 5 | number: 2}}</div>
+    			</div>
+    			<div class="buy">
+    				<div class="button">Buy</div>
+    			</div>
+    		</div>
+    	</li>
+
+    	<li class="clearfix">
+    		<div class="merchant-info clearfix">
+    			<div class="merchant-logo-container">
+    				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/kohls.com-coupons.jpg);"></div>
+  				</div>
+  				<div class="merchant-coupon-details">
+  					<div>Kohls</div>
+  					<div class="smaller">No coupon codes available</div>
+  				</div>
+    		</div>
+    		<div class="purchase-price">
+    			<div class="price">
+    				<div>${{featuredDeal[0].newPrice + 10 | number: 2}}</div>
+    				<div class="smaller">+ Free Shpping</div>
+    			</div>
+    			<div class="buy">
+    				<div class="button">Buy</div>
+    			</div>
+    		</div>
+    	</li>
+
+    	<li class="clearfix">
+    		<div class="merchant-info clearfix">
+    			<div class="merchant-logo-container">
+    				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/walmart.com-coupons.jpg);"></div>
+  				</div>
+  				<div class="merchant-coupon-details">
+  					<div>Wal-Mart</div>
+  					<div class="smaller">No coupon codes available</div>
+  				</div>
+    		</div>
+    		<div class="purchase-price">
+    			<div class="price">
+    				<div>${{featuredDeal[0].newPrice + 15 | number: 2}}</div>
+    				<div class="smaller">+ Free Shpping</div>
+    			</div>
+    			<div class="buy">
+    				<div class="button">Buy</div>
+    			</div>
+    		</div>
+    	</li>
+
+    </ul>
+  </div>
+</div>
+<div class="module beige-bg">
+	<div class="container">
+		<h3 class="h3 centered">Other shoppers also considered</h3>
+
+		<div class="grid-row col-4">
+			<div ng-repeat="deal in deals | filter: {dealType: 'product'} | filter: {category: featuredDeal[0].category} | filter: {productId: '!' + featuredDeal[0].productId } | limitTo: viewLimit">
+				
+				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
+          <a href="#/products/{{deal.productId}}" class="block-link"></a>
+					<div class="favorite-heart" ng-class="{'active':favorited}" ng-click="favorited = !favorited; showFavoriteMessage()"></div>
+					<div class="sale-alert" ng-class="{'active':saleAlerted}" ng-click="saleAlerted = !saleAlerted" ng-show="favorited"></div>
+					<div class="favorite-message" ng-class="{'visible':showMessageVisible && favorited && !alreadyFavorited}">
+						<div class="message-container centered">
+							<p>Favorited!</p>
+							<p>Set a sale alert on your favorite items by selecting the alarm clock below.</p>
+						</div>
+					</div>
+          <div class="product-photo-container">
+          	<div class="product-photo photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}"></div>
+          </div>
+          <div class="product-description">
+            <div class="smaller">{{deal.merchant}} {{deal.location}}</div>
+            <div class="description">{{deal.name}}</div>
+            <div class="discount">{{deal.couponDiscount}}</div>
+            <div class="price-reviews clearfix">
+	            <div class="reviews">
+	            	<img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt="">
+	            </div>
+	            <div class="expiration-price">
+	            	<span class="smaller strikethrough oldprice">${{deal.oldPrice | number:2}}</span> 
+	            	<span ng-switch on="deal.newPrice">
+	            		<span class="price" ng-switch-default>${{deal.newPrice | number: 2}}</span>
+	            		<span class="price" ng-switch-when="FREE">FREE!</span>
+	            	</span>
+		          </div>
+		        </div>
+	        </div>
+				</div> 
+				<!-- /PRODUCT CARD -->
+
+	    </div>
+
+		</div>
+	</div>
+</div>

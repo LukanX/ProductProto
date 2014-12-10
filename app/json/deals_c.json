@@ -1,5 +1,6 @@
 [
 	{
+		"productId": "F1D7SB89",
 		"name": "Nikon D3200 24.2 MP CMOSDigital SLR Camera with Nikon 18-55mm ED II Lens",
 		"merchant": "New Egg",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/newegg.com-coupons.jpg",
@@ -12,9 +13,13 @@
 		"description": "The Nikon D3200 DSLR camera is an addition to Nikon’s entry level DSLR cameras. Featuring a 24.2 MP DX-format CMOS image sensor and EXPEED 3 image-processing engine, you can obtain pleasing resolution even when printing trimmed images from your Nikon D3200 DSLR camera. The Nikon 24.2 MP camera has a Guide Mode function, which give information on the range of functions and helps beginners become accustomed to them. With the optional Wireless Mobile Adapter WU-1a, you can control the Nikon 24.2 MP camera and also transmit captured images to smart devices wirelessly. Designed with a compact and lightweight body which you can carry with you wherever you go, the Nikon D3200 DSLR camera is a perfect switch from point and shoot cameras and bridge cameras",
 		"stars": 5,
 		"viewedToday": 4503,
-		"category": "handpicked row1 electronics best price"
+		"category": "electronics",
+		"collection": "fitnessTracker",
+		"top10": true,
+		"bestDeal": false
 	},
 	{
+		"productId": "H739f5",
 		"name": "KitchenAid KV25GOXER Professional 450 Watt 5™ Plus Series 5 Quart Bowl-Lift Standing Mixer",
 		"merchant": "Amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -27,10 +32,11 @@
 		"description": "The Professional 5 Plus has a powerful 450-Watt motor that delivers enough power to handle the heaviest mixtures, and mixes large batches easily. This special bowl lift model has brackets on the bowl that fit over support pins on the stand mixer, which is than lifted up by a handle on the right side of the mixer to lock the bowl in place while mixing (this design is made to handle heavy mixtures and large recipes).",
 		"stars": 5,
 		"viewedToday": 1242,
-		"category": "handpicked row1 electronics best price"
+		"category": "electronics"
 	},
 	
 	{
+		"productId": "gn6a8s",
 		"name": "Beats Solo HD By Dr. Dre Beats Solo HD On-Ear Genuine Headphones",
 		"merchant": "Best Buy",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/bestbuy.com-coupons.jpg",
@@ -43,9 +49,10 @@
 		"description": "Clearer sound. Deeper bass. Beats Solo HD headphones are the only Beats by Dr. Dre that come with not one, but two speakers inside each can. That means you get crystal clear highs and deep, rumbling lows in high definition Every pair is now constructed of super-durable, flexible material, reinforced with a metal strip to make sure it never comes apart Built-In mic for calls. Switch easily between songs and incoming calls. No need to take off your headphones or talk into the phone like a walkie-talkie Remote control. Take calls, skip songs and adjust volume right from the cord of your Beats Solo HD headphones. No more searching for your phone or music player just to find the right song.",
 		"stars": 5,
 		"viewedToday": 3932,
-		"category": "handpicked row1 electronics"
+		"category": "electronics"
 	},
 	{
+		"productId": "j4udh23",
 		"name": "1800 Count Deep Pocket 6 Piece Bed Sheet Set",
 		"merchant": "Macy's",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/macys.com-coupons.jpg",
@@ -61,6 +68,7 @@
 		"category": "handpicked row2 home garden"
 	},
 	{
+		"productId": "28dksfj",
 		"name": "Today Only! Free Redbox DVD Rental or $1.20 Off a Game or Blu-ray Rentalr",
 		"merchant": "Redbox",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/redbox.com-coupons.jpg",
@@ -94,6 +102,7 @@
 		"verified": true
 	},
 	{
+		"productId": "3kefw8j",
 		"name": "DV by Dolce Vita Lyran",
 		"merchant": "6PM",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/6pm.com-coupons.jpg",
@@ -109,6 +118,7 @@
 		"category": "womens apparel"
 	},
 	{
+		"productId": "239ewdiw",
 		"name": "BCBGMAXAZRIA Dress - Alondra Sleeveless Double V-Neck Sheath",
 		"merchant": "Bloomingdales",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/bloomingdales.com-coupons.jpg",
@@ -124,6 +134,7 @@
 		"category": "womens apparel"
 	},
 	{
+		"productId": "29eijdw",
 		"name": "1/4 or 1/2 CTTW Certified Diamond Martini-Set Stud Earrings in 14K Gold",
 		"merchant": "Blue Nile",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/bluenile.com-coupons.jpg",
@@ -139,6 +150,7 @@
 		"category": "womens apparel"
 	},
 	{
+		"productId": "2ej2dio",
 		"name": "Nike Dart 10 Womens",
 		"merchant": "Foot Locker",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/footlocker.com-coupons.jpg",
@@ -171,6 +183,7 @@
 		"verified": true
 	},
 	{
+		"productId": "f7ai823",
 		"name": "Calvin Klein Jeans Zip Up Hoodie",
 		"merchant": "Amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -203,6 +216,7 @@
 		"verified": true
 	},
 	{
+		"productId": "23e8d2j",
 		"name": "Brixton 'Heist' Rib Knit Cap",
 		"merchant": "Macy's",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/macys.com-coupons.jpg",
@@ -218,6 +232,7 @@
 		"category": " mens apparel"
 	},
 	{
+		"productId": "3usjh3",
 		"name": "484 Jean in Dark Worn Wash",
 		"merchant": "JCrew Factory",
 		"logo": "http://o.rmncdn.com/thumbs/logos/l/jcrewfactory.com-coupons.jpg",
@@ -233,6 +248,7 @@
 		"category": " mens apparel"
 	},
 	{
+		"productId": "jf83kjd",
 		"name": "Nike Dart 10 Mens",
 		"merchant": "Foot Locker",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/nike.com-coupons.jpg",
@@ -248,6 +264,7 @@
 		"category": "running shoes mens apparel best price"
 	},
 	{
+		"productId": "dsakjs03",
 		"name": "Toys R Us Exclusive Zoomer Dino - Onyx",
 		"merchant": "Toys R Us",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/toysrus.com-coupons.jpg",
@@ -297,6 +314,7 @@
 		"verified": true
 	},
 		{
+		"productId": "sd92jds",
 		"name": "Disney's Frozen 20-Piece Dress-Up Trunk",
 		"merchant": "Target",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/target.com-coupons.jpg",
@@ -312,6 +330,7 @@
 		"category": "top deals toys"
 	},
 	{
+		"productId": "sdj29dj",
 		"name": "Sesame Street 16-Book Read-Along Nursery Rhymes Set",
 		"merchant": "Barnes and Nobles",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/barnesandnobles.com-coupons.jpg",
@@ -344,6 +363,7 @@
 		"verified": true
 	},
 	{
+		"productId": "ds9e3j",
 		"name": "Melissa & Doug Shape Sorting Cube",
 		"merchant": "Amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -359,6 +379,7 @@
 		"category": "toys"
 	},
 		{
+		"productId": "20sjk1jd",
 		"name": "Adidas Originals T ZXZ 700 Mens",
 		"merchant": "amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -374,6 +395,7 @@
 		"category": "running shoes men"
 	},
 	{
+		"productId": "390dcj2",
 		"name": "New Balance Fresh Foam 980 Womens",
 		"merchant": "New Balance",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/newbalance.com-coupons.jpg",
@@ -423,6 +445,7 @@
 		"verified": true
 	},
 	{
+		"productId": "2d932j23",
 		"name": "Under Armour SpeedForm Apollo Womens",
 		"merchant": "Macy's",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/macys.com-coupons.jpg",
@@ -438,6 +461,7 @@
 		"category": "running shoes womens"
 	},
 	{
+		"productId": "c0dkjd",
 		"name": "New Balance 1260v4 Mens",
 		"merchant": "Foot Locker",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/footlocker.com-coupons.jpg",
@@ -453,6 +477,7 @@
 		"category": "running shoes mens"
 	},
 	{
+		"productId": "cmck3md",
 		"name": "Adidas Supernova Glide 6 Boost Womens",
 		"merchant": "Adidas",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/adidas.com-coupons.jpg",
@@ -468,6 +493,7 @@
 		"category": "running shoes womens"
 	},
 	{
+		"productId": "d0cj2jd",
 		"name": "Saucony Guide 7 Womens",
 		"merchant": "Amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -483,6 +509,7 @@
 		"category": "running shoes womens"
 	},
 	{
+		"productId": "djkd0k3",
 		"name": "New Balance Women's WT610 Trail Running Shoe",
 		"merchant": "Amazon",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/amazon.com-coupons.jpg",
@@ -498,6 +525,7 @@
 		"category": "running shoes womens"
 	},
 	{
+		"productId": "dkdci3",
 		"type": "sale",
 		"merchant": "Kohls",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/kohls.com-coupons.jpg",
@@ -515,6 +543,7 @@
 		"verified": true
 	},
 	{
+		"productId": "93kcu3n",
 		"name": "Saucony Omni 13 Mens",
 		"merchant": "Dick's Sporting Goods",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/dickssportinggoods.com-coupons.jpg",
@@ -530,6 +559,7 @@
 		"category": "running shoes mens"
 	},
 	{
+		"productId": "flabberjabber",
 		"name": "New Balance 574 Womens",
 		"merchant": "Foot Locker",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/footlocker.com-coupons.jpg",
@@ -545,6 +575,7 @@
 		"category": "running shoes womens"
 	},
 	{
+		"productId": "dogpistons",
 		"name": "Nike Free 4.0 Flyknit Mens",
 		"merchant": "Dick's Sporting Goods",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/dickssportinggoods.com-coupons.jpg",
@@ -560,6 +591,7 @@
 		"category": "running shoes mens"
 	},
 	{
+		"productId": "muttongrinders",
 		"name": "Nike Air Zoom Pegasus 31 Mens",
 		"merchant": "Nike.com",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/nike.com-coupons.jpg",
@@ -575,6 +607,7 @@
 		"category": "running shoes mens"
 	},
 	{
+		"productId": "larenard",
 		"name": "Puma Voltaic 5 Mens",
 		"merchant": "Zappos",
 		"logo": "http://o.rmncdn.com/thumbs/logos/m/zappos.com-coupons.jpg",

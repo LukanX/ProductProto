@@ -29,7 +29,7 @@
 
 .product-coupon-item{
 	.product-photo{
-		 width: 100%;
+		width: 100%;
     @extend %rounded-top;
     border: 1px solid $beige;
     @include maintain-ratio(4 3);

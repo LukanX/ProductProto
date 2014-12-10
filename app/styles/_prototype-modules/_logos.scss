@@ -1,0 +1,9 @@
+.merchant-logo{
+  @include maintain-ratio(1 1);
+  border: 1px solid $beige;
+  background-color: white;
+  border-radius: $radius;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}

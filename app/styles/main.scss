@@ -9,7 +9,15 @@
 @import "_modules/site-header";
 @import "prototype-modules";
 
-%vertical-align {
+%rounded-top{
+  border-radius: $radius $radius 0 0;
+}
+
+%rounded-bottom{
+  border-radius: 0 0 $radius $radius;
+}
+
+.middle-align {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -17,22 +25,53 @@
   transform: translateY(-50%);
 }
 
+.pr1{
+  padding-right: 1em;
+}
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+h1,h2,h3,h4,h5,h6{
+  &.no-margin{
+    margin-bottom: 0;
+  }
+}
+
 html, body{
   width: 100%;
   height: 100%;
+}
+
+.hero-module{
+  padding: 4em 0;
+}
+
+.green{
+  color: $green;
+}
+
+.pricing .smaller.black{
+  color: $black;
+}
+
+.mt-percent{
+  margin-top: 3.2%;
 }
 .ng-scope.full-view{
   height: 100%;
   width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: $sans-serif;
-}
-
 .full-width{
   width: 100%;
 }
+
+.hero-container{}
 
 %absolute-center{
   position: absolute;
@@ -43,627 +82,378 @@ h1,h2,h3,h4,h5,h6{
   margin: auto;
 }
 
-.comparison{
-  border: 1px solid $beige; 
-  margin-bottom: 1em;
-  .price{
-    font-size: 125%;
-  }
-  .description{
-      color: $black;
-      font-size: 125%;
-      line-height: 1.2em;
-      padding: .25em 0;
-    }
-  &.product-comparison{
-    .product-photo{
-      float: left;
-      width: 17%;
-      padding: 1em 0;
-      .photo-background{
-        @include maintain-ratio(16 9);
-        background-size: contain;
-      }
-    }
-    .details{
-      float: left;
-      width: 63%;
-      padding: 1.5em 1em;
-      border-right: 1px solid $beige;
-      border-left: 1px solid $beige;
-      position: relative;
-      .favorite-heart{
-        top: 1.5em;
-        right: 1em;
-      }
-      .description{
-        padding-right: 1.5em;
-
-      }
-    } 
-    .reviews{
-      font-size: 12px;
-      padding: .5em;
-    }
-    .flavor-text{
-      line-height: 1.1em;
-      font-size: 12px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      padding-right: 2em;
-      position: relative;
-      &:after{
-        content: "more";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: $blue;
-        cursor: pointer;
-        &:hover{
-          color: $darker-blue;
-        }
-      }
-    }
-    .pricing{
-      width: 20%;
-      padding: 1.5em 2em;
-      float: left;
-      text-align: center;
-      position: relative;
-      .arrow{
-        background: sprite($view-sprite, arrow) no-repeat;
-        @include sprite-dimensions($view-sprite, arrow);
-        position: absolute;
-        top: 37%;
-        right: 2em;
-      }
-    }
-  }
-  
-  &.merchant-comparison{
-    .merchant-logo-container{
-      width: 15%;
-      min-height: 170px;
-      border-right: 1px solid $beige;
-      float: left;
-      .merchant-logo{
-        border: none;
-      }
-    }
-    .details{
-      float: left;
-      padding: 2em 1em;
-      width: 45%;
-      border-right: 1px solid $beige;
-      min-height: 170px;
-      position: relative;
-      .favorite-heart{
-        top: 1em;
-        right: 1em;
-      }
-    }
-    .calculations{
-      padding: 2em 1em;
-      min-height: 170px;
-      border-right: 1px solid $beige;
-      width: 15%;
-      float: left;
-      .discount{
-        font-size: 75%;
-        color: $green;
-      }
-    }
-    .purchase{
-      padding: 2em 1.5em;
-      float: left;
-      width: 25%; 
-      .pricing{
-        float: left;
-        width: 40%;
-      }
-      .buy-area{
-        float: left;
-        width: 60%;
-        .button{
-          width: 100%;
-          margin-top: .5em;
-        }
-      }
-    }
-
-  }
-  
-}
-
-%rounded-top{
-  border-radius: $radius $radius 0 0;
-}
-
-%rounded-bottom{
-  border-radius: 0 0 $radius $radius;
-}
-
-.relative{
-  position: relative;
-}
-
-.merchant-logo-container{
-    background-color: $white;
-  }
-
-//DEALS PAGE
-
-.coupons-used{
-  padding-top: 2em;
-  width: 100%;
-  .merchant-logo-container{
-    width: 25%;
-    float: left;
-    margin-right: 2.5%;
-  }
-  .coupons{
-    width: 72.5%;
-    float: left;
-    .coupon{
-      padding-left: 28px;
-      position: relative;
-      display: block;
-      padding-bottom: .5em;
-      &:last-child{
-        padding-bottom: none;
-      }
-      &:before{
-        background: sprite($view-sprite, Coupon_Outline) no-repeat;
-        @include sprite-dimensions($view-sprite, Coupon_Outline);
-        position: absolute;
-        left: 0;
-        top: 2px;
-        content: "";
-      }
-    }
-  }
-}
-
-
-.urgency{
-  color: $red;
-  padding-bottom: 1em;
-  .ending{
-    padding-left: 22px;
-    position: relative;
-    &:before{
-        background: sprite($view-sprite, Time_Alert) no-repeat;
-        @include sprite-dimensions($view-sprite, Time_Alert);
-        position: absolute;
-        left: 0;
-        top: 5 dpx;
-        content: "";
-      }
-  }
-}
-// Test Stuff
-
-.test-full{
-  padding: 1em;
-  border: 1px solid $beige;
-  margin-bottom: 2em;
-
-  .product-image{
-    width: 25%;
-    float: left;
-    margin-right: 2.5%;
-    img{
-      display: block;
-      width: 100%;
-    }
-  }
-  .product-description{
-    float: left;
-    width: 72.5%;
-  }
-}
-
-.module{
-  width: 100%;
-  margin: 0;
-  padding: 2em 0;
-}
-
-.strikethrough{
-  position: relative;
-  &:before {
-    position: absolute;
-    content: "";
-    left: -10%;
-    top: 50%;
-    right: 0;
-    border-top: 2px solid;
-    border-color: $green;
-    width: 120%;
-
-    -webkit-transform:rotate(-15deg);
-    -moz-transform:rotate(-15deg);
-    -ms-transform:rotate(-15deg);
-    -o-transform:rotate(-15deg);
-    transform:rotate(-15deg);
-  }
-}
-
-.carousel{
-  width: 90%;
+.hero-paragraph{
+  width: 80%;
+  font-size: 110%;
   margin: auto;
-  position: relative;
 }
 
-.triangle{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  content: "";
-  position: absolute;
-  top: 30%;
+.faux-link{
   cursor: pointer;
-  &.right{
-    right: -3em;
-    border-width: 25px 0 25px 25px;
-    border-color: transparent transparent transparent $beige;
-    &:hover{
-      border-color: transparent transparent transparent $darker-beige;
-    }
-  }
-  &.left{
-    left: -3em;
-    border-width: 25px 25px 25px 0;
-    border-color: transparent $beige transparent transparent;
-    &:hover{
-      border-color: transparent $darker-beige transparent transparent;
-    }
+  color: $blue;
+  &:hover{
+    color: $darker-blue;
   }
 }
 
-.merchant-logo{
-  @include maintain-ratio(1 1);
-  border: 1px solid $beige;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center center;
+.beige-bg{
+  background-color: $light-beige;
 }
 
-.sub-right{
-  font-size: 75%;
-  float: right;
-}
-
-.pb1{
-  padding-bottom: 1em;
-}
-
-.pt1{
+.view-more{
+  font-size: 125%;
   padding-top: 1em;
 }
 
-.border-bottom{
-  border-bottom: 1px solid $beige;
+.bold{
+  font-weight: bold;
 }
 
+.filter-nav{
+  border-top: 1px solid $beige;
+  border-bottom: 1px solid $beige;
+  padding: 1.5em;
+  ul{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    li{
+      display: inline-block;
+      position: relative;
+      margin-right: 1em;
+      .carrot{
+        font-size: 75%;
+        }
+      .sub-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid $blue;
+        z-index: 10;
+        li{
+          display: block;
+          margin-right: 0;
+          input[type="radio"]{
+            position: absolute;
+            left: -1000px;
+            & + label{
+              padding: 0;
+              display: block;
+              width: 100%;
+              height: 100%;
+              color: $blue;
+              padding: .5em 1em;
+              &:hover{
+                color: white;
+                background-color: $blue;
+                cursor: pointer;
+              }
+            }
+            &:checked + label{
+              color: white;
+              background-color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// FAVORITING
 .favorite-heart{
   @include sprite-dimensions($view-sprite, Heart_Red_Outline);
   background: sprite($view-sprite, Heart_Red_Outline) no-repeat;
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 5;
+  cursor: pointer;
+  &.active{
+    @include sprite-dimensions($view-sprite, Big_Heart_Red_Filled);
+    background: sprite($view-sprite, Big_Heart_Red_Filled) no-repeat;
+  }
 }
 
-.banner{
-  color: $white;
-  font-weight: bold;
-  padding: .5em 1em;
-  width: 33%;
-  font-size: 12px;
+.sale-alert{
+  @include sprite-dimensions($view-sprite, alarmclock-off);
+  background: sprite($view-sprite, alarmclock-off) no-repeat;
   position: absolute;
-  top: 1em;
-  right: -1px;
-  text-align: center;
-  &.best-price{
-    background: $green;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+  &.active{
+    @include sprite-dimensions($view-sprite, alarmclock-on);
+    background: sprite($view-sprite, alarmclock-on) no-repeat;
   }
 }
 
-
-.photo-background{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-}
-
-// DEALS HERO
-
-.deals-hero{
-  height: 50%;
-  width: 100%;
-  position: relative;
-  .background-container{
-    width: 100%;
-    height: 100%;
-  }
-  .hero-background{
-    width: 50%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: left;
-  }
-  .hero-description{
-    width: 50%;
-    padding: 1em;
-    border: solid 1px $beige;
-    border-radius: $radius;
-    float: right;
-    overflow: hidden;
-    .product-name{
-      font-size: 150%;
-      font-weight: bold;
-      color: $black;
-      line-height: 1.2em;
-    }
-    .pricing{
-      .new-price{
-        color: $green;
-        margin: 0 .5em;
-        font-size: 125%;
-      }
-    }
-    .button{
-      width: 25%;
-    }
-
-    .product-description{
-      padding: 1em 0;
-      line-height: 1.3em;
-    }
-  }
-}
-
-@include media($breakpoint-1000)  {
-  .desktop-show{
+.favorite-message{
+  width: 60%;
+  position: absolute;
+  bottom: 100%;
+  font-size: 12px;
+  left: 50%;
+  color: white;
+  left: 60%;
+  z-index: -5;
+  transition: .5s;
+  opacity: 0;
+  display: none;
+  @include media($breakpoint-800){
+    font-size: 14px;
     display: block;
   }
-  .desktop-hide{
-    display: none;
+  &.visible{
+    opacity: 1;
+    bottom: 102%;
+    z-index: 10;
   }
-
-  .coupons-used{
-    .merchant-logo-container{
-      width: 15%;
-      margin-right: 2.5%;
-    }
-    .coupons{
-      width: 82.5%;
+  .message-container{
+    padding: .5em;
+    background: $shadow-dark;
+    position: relative;
+    &:before{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 0 15px;
+      border-color: $shadow-dark transparent transparent transparent;
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+      bottom: -15px;
     }
   }
-
-  .product-coupon-description .description{
-    min-height: 62px;
-  }
-}
-
-.radio-filters{
-  input[type="radio"]{
-    position: absolute;
-    left: -1000px;
-    & + label{
-      display: block;
-      padding: 6px 12px;
-      text-transform: capitalize;
-      color: #349dc5;
-      cursor: pointer;
-      &.icon-label{
-        padding-left: 38px;
-        font-size: 14px;
-        background-position: 8px center;
-        background-repeat: no-repeat;
-        border-bottom: 1px solid #d9d9d6;
-        &.all{
-          background-image: url(../images/icons/All.png);
-        }
-        &.code{
-          background-image: url(../images/icons/Codes.png);
-        }
-        &.sale{
-          background-image: url(../images/icons/Sales.png);
-        }
-        &.printable{
-          background-image: url(../images/icons/Printable.png);
-        }
-        &.free-shipping{
-          background-image: url(../images/icons/Free-Shipping.png);
-        }
-        &.bogo{
-          background-image: url(../images/icons/filter-icon_14.png);
-        }
-        &.cash-off{
-          background-image: url(../images/icons/cash-off.png);
-        }
-        &.percent-off{
-          background-image: url(../images/icons/percent-off.png);
-        }
-      }
-    }
-    &:checked + label{
-      border-radius: 6px;
-      background-color: #DFDFDF;
-      //margin-right: 18px;
-      position: relative;
-      border: none;
-      &:after{
-        content: '';
-        position: absolute;
-        border-left: 18px solid #DFDFDF;
-        border-right: 18px solid transparent;
-        border-bottom: 18px solid transparent;
-        border-top: 18px solid transparent;
-        top: 0;
-        right: -32px;
-      }
-    }
+  p{
+    margin-bottom: .5em;
+    line-height: 1.2em;
   }
 }
 
-.tabs{
-  border-bottom: 1px solid $beige;
-  li{
-    display: inline-block;
-    margin-bottom: -1px;
-    padding: .5em 2em;
+
+// PRODUCT TILE
+.product-card{
+  margin-bottom: 3.2%;
+  position: relative;
+  .favorite-heart{
+    top: 1em;
+    right: 1em;
+  }
+  .sale-alert{
+    top: 3em;
+    right: 1em;
+  }
+  .product-photo-container{
+    width: 100%;
+    padding: 1em;
+    background-color: white;
     @extend %rounded-top;
     border: 1px solid $beige;
-    &.active{
-      border-bottom: 1px solid white;
+  }
+  .product-photo{
+    width: 100%;
+    @include maintain-ratio(4 3);
+    position: relative;
+    background-size: contain;
+    background-position: center center;
+  }
+  .product-description{
+    padding: 1em 1em;
+    border: 1px solid $beige;
+    border-top: none;
+    position: relative;
+    background-color
+    : white;
+    @extend %rounded-bottom;
+    .smaller{
+      color: $gray;
+      font-size: 75%;
+    }
+    .description{
+      font-weight: bold;
+      line-height: 1.2em;
+      padding: .25em 0;
+      height: 72px;
+      font-size: 12px;
+      overflow: hidden;
+      @include media($breakpoint-500) { font-size: 14px;}
+    }
+    .reviews{
+      padding-top: 4px;
+      @include media($breakpoint-500) { float: left; width: 40%;}
+    }
+    .price-reviews{
+      padding-top: .25em;
+    }
+    .expiration-price{
+      @include media($breakpoint-500) { float: left; width: 60%;}
+    }
+    .discount{
+      color: $green;
+      font-size: 80%;
+    }
+    .price{
+      font-weight: bold;
+      font-size: 110%;
+      color: $green;
+    }
+    .expiration-price{
+      padding-bottom: .5em;
+      @include media($breakpoint-500){ text-align: right; }
     }
   }
-
 }
 
-.compare{
-  display: none;
-  &.visible{
-    display: block;
+// CATEGORIES
+
+.view-more{
+  width: 100%;
+}
+
+.collection-container{
+  width: 100%;
+}
+
+.collection-name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $blue;
+  font-family: $serif;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  @include media($breakpoint-500){ font-size: 22px; }
+}
+.collection{
+  width: 100%;
+  @include maintain-ratio(16 9);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-radius: $radius;
+  
+}
+
+// PRODUCT PAGE
+
+.product-description{
+  .button{
+    min-width: 175px;
+    margin-top: 1em;
+  }
+  .merchant-logo-container{
+    float:left;
+    width: 20%;
+    @include media($breakpoint-800){
+      width: 8%;
+    }
+  }
+  .price-calculation{
+    float: left;
+    width: 80%;
+    padding-left: 1em;
+    .old-price-coupons{
+      line-height: 1em;
+    }
+    @include media($breakpoint-800){
+      width: 92%;
+    }
   }
 }
 
-.form-search.product-search{
-  margin-bottom: 2em;
-  width: 80%;
-  @include media($breakpoint-480-max) {
-    display: block !important; // JS Show/Hide override
-  }
-}
-
-
-
-@include media($breakpoint-800-max){
-  .mobile-hide{
-    display: none;
-  }
-
-  .tabs{
-    font-size: 12px;
-  }
-
-  .mobile-center{
-    display: block;
-    text-align: center;
-  }
-
-  .deals-hero{
-    max-height: 100%;
-    .hero-background{
-      width: 100%;
-      height: 50%;
-    }
-    .hero-description{
-      width: 100%;
-      border: none;
-      .product-name{
-        font-size: 115%;
-      }
-      .button{
-        width: 100%;
-      }
-    }
-  }
-
- .comparison{
-
-  &.product-comparison{
-    .product-photo{
-      width: 100%;
-      border-bottom: 1px solid $beige;
-    }
-    .details{
-      width: 100%;
-      clear: left;
-      border: none;
-      padding: .5em 1em 0;
-    }
-    .pricing{
-      width: 100%;
-      padding: 0 1em 1em;
-      clear: left;
-      .arrow{
-        top: -30%;
-        right: 1em;
-      }
-      div{
-        display: inline-block;
-      }
-      .strikethrough{
-        margin-right: .5em;
-      }
-      text-align: left;
-    }
-  }
-  &.merchant-comparison{
-    .merchant-logo-container{
-      width: 25%;
-      border: none;
-      min-height: 0;
-    }
-    .details{
-      width: 75%;
-      border: none;
-      min-height: 0;
-      padding: 1em;
-    }
-    .calculations{
-      display: none;
-    }
-    .purchase{
-      clear: left;
-      width: 100%;
-      padding: 1em;
+.price-compare{
+  padding: 0;
+  margin: 0;
+  li{
+    padding: .5em;
+    border-bottom: 1px solid $beige;
+    width: 100%;
+    &:first-child{
       border-top: 1px solid $beige;
-      .pricing{
-        text-align: right;
+    }
+    .merchant-info{
+      width: 70%;
+      float: left;
+      .merchant-logo-container{
+        width: 30%;
+        float: left;
+      }
+      .merchant-coupon-details{
+        width: 70%;
+        float: left;
+        padding-left: 1em;
         padding-right: 1em;
-        div{
-          display: inline-block;
-          .price{
-            padding-left: 1em;
-          }
+        .smaller{
+          line-height: 1.2em;
         }
       }
-      .buy-area .button{
-        margin-top: 0;
+    }
+    .purchase-price{
+      width: 30%;
+      text-align: right;
+      float: left;
+      text-align: center;
+      .price{
+        width: 100%;
+      }
+      .smaller{
+        padding-bottom: .5em;
+      }
+    }
+    @include media($breakpoint-800){
+      .merchant-info{
+        width: 80%;
+        .merchant-logo-container{
+          width: 10%;
+        }
+        .merchant-coupon-details{
+          width: 90%;
+          padding-left: 1em;
+          padding-top: 1.5em;
+        }
+      }
+      .purchase-price{
+        width: 20%;
+        text-align: right;
+        padding-top: 1.5em;
+        float: left;
+        .smaller{
+          padding-bottom: 0;
+        }
+        .price{
+          width: 60%;
+          float: left;
+        }
       }
     }
   }
- }
+}
 
-  .triangle{
-    top: 35%;
-    &.right{
-      right: -2em;
-      border-width: 20px 0 20px 20px;
-      border-color: transparent transparent transparent $beige;
+// Homepage Merchant Logos
+
+.top-deal-homepage{
+  .top{
+    @extend %rounded-top;
+    border-bottom: none;
+  }
+  .bottom{
+    @extend %rounded-bottom;
+    background: $shadow-medium;
+    color: white;
+    padding: .5em .25em;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2em;
+    @include media($breakpoint-800){
+      font-size: 14px;
     }
-    &.left{
-      left: -2em;
-      border-width: 20px 20px 20px 0;
-      border-color: transparent $beige transparent transparent;
-    }
   }
-
-  .ugc-photo, .product-coupon-item{
-    margin-bottom: 1em;
-  }
-
-  .collection-item{
-    margin-bottom: 1em;
-  }
-
 }
 
 

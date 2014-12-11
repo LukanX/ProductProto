@@ -3855,6 +3855,9 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #259fc4;
   font-family: "Adelle", Georgia, "Times New Roman", serif;
@@ -3871,7 +3874,7 @@ html, body {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003337}}
 .collection {
   width: 100%;
   width: 100%;
@@ -3883,128 +3886,128 @@ html, body {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003350}}
 .product-description .button, .product-description .button--blue, .product-description .button--primary {
   min-width: 175px;
   margin-top: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003354}}
 .product-description .merchant-logo-container {
   float: left;
   width: 20%;
 }
 @media screen and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003354}}
   .product-description .merchant-logo-container {
     width: 8%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003361}}
 .product-description .price-calculation {
   float: left;
   width: 80%;
   padding-left: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003365}}
 .product-description .price-calculation .old-price-coupons {
   line-height: 1em;
 }
 @media screen and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003361}}
   .product-description .price-calculation {
     width: 92%;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003374}}
 .price-compare {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003377}}
 .price-compare li {
   padding: .5em;
   border-bottom: 1px solid #d1d0c9;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003381}}
 .price-compare li:first-child {
   border-top: 1px solid #d1d0c9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003384}}
 .price-compare li .merchant-info {
   width: 70%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003387}}
 .price-compare li .merchant-info .merchant-logo-container {
   width: 30%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003391}}
 .price-compare li .merchant-info .merchant-coupon-details {
   width: 70%;
   float: left;
   padding-left: 1em;
   padding-right: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003396}}
 .price-compare li .merchant-info .merchant-coupon-details .smaller {
   line-height: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003401}}
 .price-compare li .purchase-price {
   width: 30%;
   text-align: right;
   float: left;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003406}}
 .price-compare li .purchase-price .price {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003409}}
 .price-compare li .purchase-price .smaller {
   padding-bottom: .5em;
 }
 @media screen and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003411}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003414}}
   .price-compare li .merchant-info {
     width: 80%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003416}}
   .price-compare li .merchant-info .merchant-logo-container {
     width: 10%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003416}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003419}}
   .price-compare li .merchant-info .merchant-coupon-details {
     width: 90%;
     padding-left: 1em;
     padding-top: 1.5em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003425}}
   .price-compare li .purchase-price {
     width: 20%;
     text-align: right;
     padding-top: 1.5em;
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003430}}
   .price-compare li .purchase-price .smaller {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003433}}
   .price-compare li .purchase-price .price {
     width: 60%;
     float: left;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003445}}
 .top-deal-homepage .top {
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003449}}
 .top-deal-homepage .bottom {
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -4014,24 +4017,24 @@ html, body {
   line-height: 1.2em;
 }
 @media screen and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003449}}
   .top-deal-homepage .bottom {
     font-size: 14px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003461}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003464}}
 .storepage {
   background: #f1f1f1;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003464}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003467}}
 .storepage img {
   display: block;
   width: 787px;
   margin: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003472}}
 .storepage .waypoint {
   width: 100%;
   z-index: 10;
@@ -4040,7 +4043,7 @@ html, body {
   top: 1200px;
   left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003478}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003481}}
 .storepage .popup {
   background: #efefe9;
   padding: 2em;
@@ -4051,11 +4054,11 @@ html, body {
   border-top: 1px solid #d1d0c9;
   transition: .5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003487}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003490}}
 .storepage .popup .container {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003492}}
 .storepage .popup .container .x-out {
   position: absolute;
   font-size: 24px;
@@ -4063,18 +4066,18 @@ html, body {
   right: 0;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003500}}
 .storepage .popup.poppedUp {
   bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003503}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003506}}
 .collection {
   border: 1px solid #d1d0c9;
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/lcookson\/dev\/ProductsProto\/app\/styles\/main\.scss}line{font-family:\00003512}}
 .collection-contianer {
   margin-bottom: 3.2%;
 }

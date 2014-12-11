@@ -189,7 +189,8 @@ module.exports = function (grunt) {
         httpImagesPath: '<%= yeoman.app %>/images',
         //httpGeneratedImagesPath: '/images/generated',
         httpGeneratedImagesPath: '<%= yeoman.app %>/images',
-        httpFontsPath: '/styles/fonts',
+        //httpFontsPath: '/styles/fonts',
+        httpFontsPath: '<%= yeoman.app %>/styles/fonts',
         relativeAssets: false,
         assetCacheBuster: false,
         raw: 'Sass::Script::Number.precision = 10\n'

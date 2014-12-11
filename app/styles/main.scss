@@ -316,21 +316,20 @@ html, body{
 
 .collection-container{
   width: 100%;
-  display: table;
 }
 
 .collection-name{
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: $blue;
   font-family: $serif;
   font-size: 14px;
   width: 100%;
   text-align: center;
-  // display: none;
-  @include media($breakpoint-500){ font-size: 22px;}
+  display: none;
+  @include media($breakpoint-500){ font-size: 22px; display: block;}
 }
 .collection{
   width: 100%;
@@ -339,8 +338,6 @@ html, body{
   background-size: contain;
   background-position: center center;
   border-radius: $radius;
-  display: table-cell;
-  vertical-align: middle;
   
 }
 

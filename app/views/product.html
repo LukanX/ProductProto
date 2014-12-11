@@ -22,7 +22,7 @@
         	</div>
           <div class="price-calculation">
           <div class="old-price-coupons">
-          	<span class="smaller"><span class="crossout">${{deal.oldPrice | number:2}}</span> + <span class="faux-link">Extra 17% Off Coupon</span> + <span class="faux-link">Free Shipping</span></span>
+          	<span class="smaller"><span class="crossout">${{deal.oldPrice | number:2}}</span> + <span class="faux-link">Extra {{((deal.oldPrice - deal.newPrice) / deal.oldPrice) * 100 | number: 0}}% Off Coupon</span> + <span class="faux-link">Free Shipping</span></span>
           </div>
           <div>
           	${{deal.newPrice | number:2}} <span class="smaller black">+ Free Shipping</span></div>

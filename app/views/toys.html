@@ -1,0 +1,74 @@
+<div class="module hero-module border-bottom">
+	<div class="container">
+		<h1 class="h2 centered">Wooden Toys</h1>
+			<p class="centered pt1 hero-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea minima tempore, mollitia praesentium temporibus, earum saepe officiis fugit possimus quasi, sed voluptatum repellat recusandae hic voluptate nulla error dignissimos?</p>
+		</div>
+</div>
+<div class="module filter-nav" ng-controller="FilterNavCtrl">
+	<div class="container">
+		<ul>
+			<li>Filters:</li>
+			<li><span class="faux-link" ng-click="showGender = !showGender"><span class="bold">Type</span><span class="mobile-hide">: {{genderFilter}}<span ng-show="genderFilter == ''">Both</span></span> <span class="carrot">&#9660;</span></span>
+				<ul class="sub-menu" ng-show="showGender">
+					<li>
+						<input type="radio" ng-model="genderFilter" id="both" value="">
+						<label for="both" ng-click="showGender = !showGender">Both</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="genderFilter" id="male" value="Male">
+						<label for="male" ng-click="showGender = !showGender">Filter 1</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="genderFilter" id="female" value="Female">
+						<label for="female" ng-click="showGender = !showGender">Filter 2</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="module">
+	<div class="container">
+		<div class="grid-row col-4">
+			<div ng-repeat="deal in filteredDeals = (deals | filter: {category: 'wooden toy'} | limitTo: viewLimit)">
+				
+				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
+					<a href="#/products/{{deal.productId}}" class="block-link"></a>
+					<div class="favorite-heart" ng-class="{'active':favorited}" ng-click="favorited = !favorited; showFavoriteMessage()"></div>
+					<div class="sale-alert" ng-class="{'active':saleAlerted}" ng-click="saleAlerted = !saleAlerted" ng-show="favorited"></div>
+					<div class="favorite-message" ng-class="{'visible':showMessageVisible && favorited && !alreadyFavorited}">
+						<div class="message-container centered">
+							<p>Favorited!</p>
+							<p>Set a sale alert on your favorite items by selecting the alarm clock below.</p>
+						</div>
+					</div>
+          <div class="product-photo-container">
+          	<div class="product-photo photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}"></div>
+          </div>
+          <div class="product-description">
+            <div class="smaller">{{deal.merchant}} {{deal.location}}</div>
+            <div class="description">{{deal.name}}</div>
+            <div class="discount">{{deal.couponDiscount}}</div>
+            <div class="price-reviews clearfix">
+	            <div class="reviews">
+	            	<img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt="">
+	            </div>
+	            <div class="expiration-price">
+	            	<span class="smaller strikethrough oldprice">${{deal.oldPrice | number:2}}</span> 
+	            	<span ng-switch on="deal.newPrice">
+	            		<span class="price" ng-switch-default>${{deal.newPrice | number: 2}}</span>
+	            		<span class="price" ng-switch-when="FREE">FREE!</span>
+	            	</span>
+		          </div>
+		        </div>
+	        </div>
+				</div> 
+				<!-- /PRODUCT CARD -->
+
+	    </div>
+
+		</div>
+		<div class="button view-more" ng-click="viewLimit = viewLimit+8" ng-hide="viewLimit > filteredDeals.length">view more</div>
+	</div>
+</div>

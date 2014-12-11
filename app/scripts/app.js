@@ -48,8 +48,72 @@ angular
         templateUrl: 'views/compare.html',
         controller: 'productCtrl'
       })
+      .when('/compare/laptopBags', {
+        templateUrl: 'views/compare-laptopBags.html',
+        controller: 'productCtrl'
+      })
+      .when('/compare/vacuums', {
+        templateUrl: 'views/compare-vacuums.html',
+        controller: 'productCtrl'
+      })
+      .when('/compare/fryingPans', {
+        templateUrl: 'views/compare-fryingPans.html',
+        controller: 'productCtrl'
+      })
       .when('/collection', {
         templateUrl: 'views/collection.html',
+        controller: 'productCtrl'
+      })
+      .when('/store', {
+        templateUrl: 'views/store.html',
+        controller: 'productCtrl'
+      })
+      .when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'productCtrl'
+      })
+      .when('/category/tablets', {
+        templateUrl: 'views/tablets.html',
+        controller: 'productCtrl'
+      })
+      .when('/category/laptopBags', {
+        templateUrl: 'views/laptopBags.html',
+        controller: 'productCtrl'
+      })
+      .when('/category/cameras', {
+        templateUrl: 'views/cameras.html',
+        controller: 'productCtrl'
+      })
+      .when('/category/vacuums', {
+        templateUrl: 'views/vacuums.html',
+        controller: 'productCtrl'
+      })
+      .when('/category/fryingPans', {
+        templateUrl: 'views/frypans.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/sweaters', {
+        templateUrl: 'views/sweaters.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/toys', {
+        templateUrl: 'views/toys.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/jackets', {
+        templateUrl: 'views/jackets.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/frozen', {
+        templateUrl: 'views/frozen.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/ornaments', {
+        templateUrl: 'views/ornaments.html',
+        controller: 'productCtrl'
+      })
+      .when('/collection/fitness', {
+        templateUrl: 'views/fitness.html',
         controller: 'productCtrl'
       })
       .otherwise({

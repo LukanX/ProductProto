@@ -19,6 +19,7 @@ angular.module('productsProtoApp')
     $scope.alreadyFavorited = false;
     $scope.viewLimit = 8;
     $scope.brandChecked = false;
+    $scope.showPopup = false;
 
 
     $scope.showFavoriteMessage = function(){
@@ -28,4 +29,8 @@ angular.module('productsProtoApp')
     		$scope.alreadyFavorited = true;
     	}, 5000);
     };
+
+    $scope.popupCounter = $timeout(function(){
+      $scope.showPopup = true;
+    }, 16000);
   }]);

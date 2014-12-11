@@ -107,7 +107,7 @@
 		<h3 class="h3 centered">Other shoppers also considered</h3>
 
 		<div class="grid-row col-4">
-			<div ng-repeat="deal in deals | filter: {dealType: 'product'} | filter: {category: featuredDeal[0].category} | filter: {productId: '!' + featuredDeal[0].productId } | limitTo: viewLimit">
+			<div ng-repeat="deal in deals | filter: {category: featuredDeal[0].category} | filter: {productId: '!' + featuredDeal[0].productId } | limitTo: viewLimit">
 				
 				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
           <a href="#/products/{{deal.productId}}" class="block-link"></a>

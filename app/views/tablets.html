@@ -1,0 +1,140 @@
+<div class="module beige-bg">
+	<div class="container">
+		<h1 class="h2">Tablets</h2>
+		<ul class="proto-grid-row clearfix">
+			<li class="col span_1 mt-percent">
+				<div class="merchant-logo" style="background-image: url(images/logos/apple.jpg);"></div>
+			</li>
+			<li class="col span_1 mt-percent">
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/store.microsoft.com-coupons.jpg);"></div>
+			</li>
+			<li class="col span_1 mt-percent">
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/samsung.com-coupons.jpg);"></div>
+			</li>
+			<li class="col span_1 mt-percent">
+				<div class="merchant-logo" style="background-image: url(images/logos/amazonKindle.jpg);"></div>
+			</li>
+			<li class="col span_1 mt-percent mobile-hide">
+				<div class="merchant-logo" style="background-image: url(images/logos/asus.jpg);"></div>
+			</li>
+			<li class="col span_1 mt-percent mobile-hide">
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/store.hp.com-coupons.jpg);"></div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="module filter-nav" ng-controller="FilterNavCtrl">
+	<div class="container">
+		<ul>
+			<li>Filters:</li>
+			<li><span class="faux-link" ng-click="showScreenSize = !showScreenSize"><span class="bold">Screen Size</span><span class="mobile-hide">: {{screenSizeFilter}}<span ng-show="screenSizeFilter == ''">All</span></span> <span class="carrot">&#9660;</span></span>
+				<ul class="sub-menu" ng-show="showScreenSize">
+					<li>
+						<input type="radio" ng-model="screenSizeFilter" id="allScreen" value="">
+						<label for="allScreen" ng-click="showScreenSize = !showScreenSize">All</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="screenSizeFilter" id="mini" value="Mini">
+						<label for="mini" ng-click="showScreenSize = !showScreenSize">Mini</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="screenSizeFilter" id="large" value="Large">
+						<label for="large" ng-click="showScreenSize = !showScreenSize">Large</label>
+					</li>
+				</ul>
+			</li>
+			<li><span class="faux-link" ng-click="showColor = !showColor"><span class="bold">Color</span><span class="mobile-hide">: {{colorFilter}}<span ng-show="colorFilter == ''">All</span></span> <span class="carrot">&#9660;</span></span>
+				<ul class="sub-menu" ng-show="showColor">
+					<li>
+						<input type="radio" ng-model="colorFilter" id="allColor" value="">
+						<label for="allColor" ng-click="showColor = !showColor">All</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="colorFilter" id="white" value="White">
+						<label for="white" ng-click="showColor = !showColor">White</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="colorFilter" id="black" value="Black">
+						<label for="black" ng-click="showColor = !showColor">Black</label>
+					</li>
+					<li>
+						<input type="radio" ng-model="colorFilter" id="silver" value="Silver">
+						<label for="silver" ng-click="showColor = !showColor">Silver</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="module">
+	<div class="container">
+		<div class="grid-row col-4">
+			<div ng-repeat="deal in limitedDeals = (deals | filter: {category: 'tablets'} | limitTo: viewLimit)">
+				
+				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
+					<a href="#/products/{{deal.productId}}" class="block-link"></a>
+					<div class="favorite-heart" ng-class="{'active':favorited}" ng-click="favorited = !favorited; showFavoriteMessage()"></div>
+					<div class="sale-alert" ng-class="{'active':saleAlerted}" ng-click="saleAlerted = !saleAlerted" ng-show="favorited"></div>
+					<div class="favorite-message" ng-class="{'visible':showMessageVisible && favorited && !alreadyFavorited}">
+						<div class="message-container centered">
+							<p>Favorited!</p>
+							<p>Set a sale alert on your favorite items by selecting the alarm clock below.</p>
+						</div>
+					</div>
+          <div class="product-photo-container">
+          	<div class="product-photo photo-background" ng-style="{'background-image':'url('+deal.bgImage+')'}"></div>
+          </div>
+          <div class="product-description">
+            <div class="smaller">{{deal.merchant}} {{deal.location}}</div>
+            <div class="description">{{deal.name}}</div>
+            <div class="discount">{{deal.couponDiscount}}</div>
+            <div class="price-reviews clearfix">
+	            <div class="reviews">
+	            	<img ng-src="images/utility-icons/{{deal.stars}}_Stars.png" alt="">
+	            </div>
+	            <div class="expiration-price">
+	            	<span class="smaller strikethrough oldprice">${{deal.oldPrice | number:2}}</span> 
+	            	<span ng-switch on="deal.newPrice">
+	            		<span class="price" ng-switch-default>${{deal.newPrice | number: 2}}</span>
+	            		<span class="price" ng-switch-when="FREE">FREE!</span>
+	            	</span>
+		          </div>
+		        </div>
+	        </div>
+				</div> 
+				<!-- /PRODUCT CARD -->
+
+	    </div>
+
+		</div>
+		<div class="button view-more" ng-click="viewLimit = viewLimit+8" ng-hide="viewLimit > limitedDeals.length">view more</div>
+	</div>
+</div>
+
+<div class="module beige-bg">
+	<div class="container">
+		<h3 class="h3 centered">Releated to Tablets</h3>
+
+		<div class="grid-row col-3">
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Fitness Trackers</div>
+				<div class="collection" style="background-image: url(images/collections/fitnessTrackers.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Holiday Sweaters</div>
+				<div class="collection" style="background-image: url(images/collections/holidaySweaters.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Performance Jackets</div>
+				<div class="collection" style="background-image: url(images/collections/performanceJackets.png);">	
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

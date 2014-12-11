@@ -456,6 +456,58 @@ html, body{
   }
 }
 
+// Store Page Stuff
+.storepage{
+  background: #f1f1f1;
+  position: relative;
+  img{
+    display: block;
+    width: 787px;
+    margin: auto;
+  }
+  .waypoint{
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+    //background: red;
+    position: absolute;
+    top: 1200px;
+    left: 0;
+  }
+  .popup{
+    background: $light-beige;
+    padding: 2em;
+    width: 100%;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    border-top: 1px solid $beige;
+    transition: .5s;
+    .container{
+      position: relative;
+      .x-out{
+        position: absolute;
+        font-size: 24px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+    &.poppedUp{
+      bottom: 0;
+    }
+  }
+}
+
+.collection{
+  border: 1px solid $beige;
+  border-radius: $radius;
+  // position: relative;
+}
+
+.collection-contianer{
+  margin-bottom: 3.2%;
+}
 
 
 

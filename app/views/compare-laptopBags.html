@@ -1,0 +1,48 @@
+<div class="module">
+	<div class="container">
+		<h2 class="h2">Compare Top 10 Laptop Bags</h2>
+		<table class="comparison-table">
+			<thead>
+				<tr>
+					<td class="product-cell">Product</td>
+					<td class="specs-cell">Specs</td>
+					<td class="coupons-cell mobile-hide">Promos</td>
+					<td class="price-cell">Price</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="deal in deals | filter: {category: 'laptopBag'} | filter: { top10: true } | limitTo: 10">
+					<td class="products-cell clearfix">
+						<div class="product-photo-container">
+							<div class="product-photo" ng-style="{'background-image':'url('+deal.bgImage+')'}"></div>
+						</div>
+						<div class="product-info">
+							<div class="product-name">
+								{{deal.name}}
+							</div>
+						</div>
+					</td>
+					<td class="specs-cell">
+						<ul>
+							<li>Fully automatic</li>
+							<li>Sleek design</li>
+							<li>Less explosions</li>
+							<li>Geosynchronus orbit</li>
+						</ul>
+					</td>
+					<td class="coupons-cell mobile-hide">
+						<ul>
+							<li class="green">25% Off</li>
+							<li class="green">Free shipping</li>
+							<li class="green">Extra Cheese</li>
+						</ul>
+					</td>
+					<td class="price-cell">
+						<div><span class="strikethrough smaller">${{deal.oldPrice}}</span> ${{deal.newPrice}}</div>
+						<div>at <span class="faux-link">{{deal.merchant}}</span></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

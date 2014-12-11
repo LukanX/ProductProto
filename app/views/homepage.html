@@ -3,7 +3,7 @@
 		<h1 class="h3 centered">Find the Best Prices at your Favorite Brands</h1>
 		<div class="form-search-container pt1">
                   
-			<form class="form-search product-search inline-form-elements" role="search" action="/search.php" method="get">
+			<form class="form-search product-search inline-form-elements" role="search" action="#/search" method="get">
       <input class="query" name="query" type="search" placeholder="What are you looking for today?" aria-label="Search" autocomplete="off" />
       <button type="submit" class="button button--red button--search" data-track-category="Masthead" data-track-action="search">
         <i class="icon icon-search button-image"></i>
@@ -69,7 +69,7 @@
 	<div class="container">
 		<h3 class="h3 centered">Today's Best Deals</h3>
 		<div class="grid-row col-4">
-			<div ng-repeat="deal in deals | filter: {dealType: 'product'} | limitTo: 4">
+			<div ng-repeat="deal in deals | filter: {bestDeal: true} | limitTo: 4">
 				
 				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
 					<a href="#/products/{{deal.productId}}" class="block-link"></a>
@@ -107,6 +107,55 @@
 	    </div>
 		</div>
 		<div class="centered"><span class="faux-link">See all Best Deals &raquo;</span></div>
-		<h3 class="h3 pt1 centered">Popular Categories</h3>
+		<h3 class="h3 pt1 centered">Popular Collections</h3>
+		<div class="grid-row col-3">
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Fitness Trackers</div>
+				<a href="#/collection/fitness" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/fitnessTrackers.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Holiday Sweaters</div>
+				<a href="#/collection/sweaters" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/holidaySweaters.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Performance Jackets</div>
+				<a href="#/collection/jackets" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/performanceJackets.png);">	
+				</div>
+			</div>
+
+		</div>
+
+		<div class="grid-row col-3">
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Holiday Ornaments</div>
+				<a href="#/collection/ornaments" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/holidayOrnaments.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Wooden Toys</div>
+				<a href="#/collection/toys" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/woodenToys.png);">	
+				</div>
+			</div>
+
+			<div class="grid-unit collection-contianer">
+				<div class="collection-name">Disney's Frozen</div>
+				<a href="#/collection/frozen" class="block-link"></a>
+				<div class="collection" style="background-image: url(images/collections/disneyFrozen.png);">	
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 </div>

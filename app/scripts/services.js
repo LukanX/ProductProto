@@ -11,7 +11,7 @@ productsProtoServices.factory('DealsA', ['$resource',
 
 productsProtoServices.factory('Product', ['$resource',
   function($resource){
-    return $resource('json/deals_c.json', {}, {
+    return $resource('json/products.json', {}, {
       query: {method:'GET', isArray:true}
     });
   }]);

@@ -80,6 +80,10 @@ angular
         templateUrl: 'views/laptopBags.html',
         controller: 'productCtrl'
       })
+      .when('/category/watches', {
+        templateUrl: 'views/watches.html',
+        controller: 'productCtrl'
+      })
       .when('/category/cameras', {
         templateUrl: 'views/cameras.html',
         controller: 'productCtrl'

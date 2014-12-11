@@ -1,30 +1,30 @@
 <div class="module beige-bg">
 	<div class="container">
-		<h1 class="h2">Laptop Bags</h2>
+		<h1 class="h2">Watches</h2>
 		<ul class="proto-grid-row clearfix">
 			<li class="col span_1 mt-percent">
-				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/caselogic.com-coupons.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/casio.com-coupons.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent">
-				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/targus.com-coupons.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(images/logos/seiko.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent">
-				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/timbuk2.com-coupons.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(images/logos/nixon.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent">
-				<div class="merchant-logo" style="background-image: url(images/logos/inateck.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(images/logos/citizen.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent mobile-hide">
-				<div class="merchant-logo" style="background-image: url(images/logos/gootium.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/fossil.com-coupons.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent mobile-hide">
-				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/samsonite.com-coupons.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/skagen.com-coupons.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent mobile-hide">
-				<div class="merchant-logo" style="background-image: url(images/logos/swissgear.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(http://o.rmncdn.com/thumbs/logos/l/store.swatch.com-coupons.jpg);"></div>
 			</li>
 			<li class="col span_1 mt-percent mobile-hide">
-				<div class="merchant-logo" style="background-image: url(images/logos/ogio.jpg);"></div>
+				<div class="merchant-logo" style="background-image: url(images/logos/timex.jpg);"></div>
 			</li>
 		</ul>
 	</div>
@@ -33,23 +33,23 @@
 	<div class="container">
 		<ul>
 			<li>Filters:</li>
-			<li><span class="faux-link" ng-click="showScreenSize = !showScreenSize"><span class="bold">Screen Size</span><span class="mobile-hide">: {{screenSizeFilter}}<span ng-show="screenSizeFilter == ''">All</span></span> <span class="carrot">&#9660;</span></span>
+			<li><span class="faux-link" ng-click="showScreenSize = !showScreenSize"><span class="bold">Type:</span><span class="mobile-hide">: {{screenSizeFilter}}<span ng-show="screenSizeFilter == ''">All</span></span> <span class="carrot">&#9660;</span></span>
 				<ul class="sub-menu" ng-show="showScreenSize">
 					<li>
 						<input type="radio" ng-model="screenSizeFilter" id="allScreen" value="">
 						<label for="allScreen" ng-click="showScreenSize = !showScreenSize">All</label>
 					</li>
 					<li>
-						<input type="radio" ng-model="screenSizeFilter" id="small" value="Small">
-						<label for="small" ng-click="showScreenSize = !showScreenSize">Small</label>
+						<input type="radio" ng-model="screenSizeFilter" id="Sport" value="Sport">
+						<label for="Sport" ng-click="showScreenSize = !showScreenSize">Sport</label>
 					</li>
 					<li>
-						<input type="radio" ng-model="screenSizeFilter" id="hipster" value="Hipster">
-						<label for="hipster" ng-click="showScreenSize = !showScreenSize">Hipster</label>
+						<input type="radio" ng-model="screenSizeFilter" id="Digital" value="Digital">
+						<label for="Digital" ng-click="showScreenSize = !showScreenSize">Digital</label>
 					</li>
 					<li>
-						<input type="radio" ng-model="screenSizeFilter" id="large" value="Large">
-						<label for="large" ng-click="showScreenSize = !showScreenSize">Large</label>
+						<input type="radio" ng-model="screenSizeFilter" id="Analog" value="Analog">
+						<label for="Analog" ng-click="showScreenSize = !showScreenSize">Analog</label>
 					</li>
 				</ul>
 			</li>
@@ -59,7 +59,7 @@
 <div class="module">
 	<div class="container">
 		<div class="grid-row col-4">
-			<div ng-repeat="deal in limitedDeals = (deals | filter: {category: 'laptopBag'} | limitTo: viewLimit)">
+			<div ng-repeat="deal in limitedDeals = (deals | filter: {category: 'watches'} | limitTo: viewLimit)">
 				
 				<div class="product-card grid-unit" ng-class="{'last':($index+1)%4 == 0, 'mobile-last':($index+1)%2 == 0}">
 					<a href="#/products/{{deal.productId}}" class="block-link"></a>
@@ -103,7 +103,7 @@
 
 <div class="module beige-bg">
 	<div class="container">
-		<h3 class="h3 centered">Releated to Laptop Bags</h3>
+		<h3 class="h3 centered">Releated to Watches</h3>
 
 		<div class="grid-row col-3">
 			<div class="grid-unit collection-contianer">

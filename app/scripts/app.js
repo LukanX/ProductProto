@@ -116,6 +116,10 @@ angular
         templateUrl: 'views/fitness.html',
         controller: 'productCtrl'
       })
+      .when('/dealoftheday', {
+        templateUrl: 'views/dealoftheday.html',
+        controller: 'productCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

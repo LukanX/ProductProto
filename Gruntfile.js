@@ -57,8 +57,8 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
-          //'<%= yeoman.app %>/styles/{,*/}*.css',
+          //'.tmp/styles/{,*/}*.css',
+          '<%= yeoman.app %>/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
@@ -177,18 +177,18 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
-        //cssDir: '<%= yeoman.app %>/styles',
-        generatedImagesDir: '.tmp/images/generated',
-        //generatedImagesDir: '<%= yeoman.app %>/images/generated',
+        //cssDir: '.tmp/styles',
+        cssDir: '<%= yeoman.app %>/styles',
+        //generatedImagesDir: '.tmp/images/generated',
+        generatedImagesDir: '<%= yeoman.app %>/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
         fontsDir: '<%= yeoman.app %>/styles/fonts',
         importPath: './bower_components',
-        httpImagesPath: '<%= yeoman.app %>/images',
         //httpImagesPath: '<%= yeoman.app %>/images',
-        httpGeneratedImagesPath: '/images/generated',
-        //httpGeneratedImagesPath: '<%= yeoman.app %>/images',
+        httpImagesPath: '<%= yeoman.app %>/images',
+        //httpGeneratedImagesPath: '/images/generated',
+        httpGeneratedImagesPath: '<%= yeoman.app %>/images',
         httpFontsPath: '/styles/fonts',
         relativeAssets: false,
         assetCacheBuster: false,

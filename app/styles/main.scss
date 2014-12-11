@@ -331,8 +331,7 @@ html, body{
   font-size: 14px;
   width: 100%;
   text-align: center;
-  display: none;
-  @include media($breakpoint-500){ font-size: 22px; display: block;}
+  @include media($breakpoint-500){ font-size: 22px;}
 }
 .collection{
   width: 100%;
